@@ -5,33 +5,11 @@ published: 2026-11-10
 tool: world
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> Learn Europe in five groups: Western Europe, the Nordic countries, Central Europe, Eastern Europe and the Balkans, then add the six microstates last. Most mistakes happen in the Balkans and between Slovakia and Slovenia, so give those extra practice.</p></div>
+Learn Europe backwards: start with the parts that cost points, while you are fresh, and leave the easy shapes for last as a reward. Europe packs 45 countries into a small space, which makes it the most crowded continent on a map, and a European countries quiz is less about knowing names than about telling neighbors apart. With one group a day, most people can place all 45 within a week.
 
-Europe packs 45 countries into a small space, which makes it the most crowded continent on a map. A European countries quiz is less about knowing names and more about telling neighbors apart. The approach below breaks the map into groups you can learn in a few minutes each.
+Our [Europe map quiz](/europe-map-quiz/) uses 45 countries: the 44 UN members usually counted in Europe, including Russia, plus Vatican City. Turkey, Georgia, Armenia, Azerbaijan and Kazakhstan are grouped with Asia, because most of their land lies there. Other lists add those countries or count Kosovo, which is why totals differ.
 
-Our [Europe map quiz](/europe-map-quiz/) uses 45 countries: the 44 UN members usually counted in Europe, including Russia, plus Vatican City. Turkey, Georgia, Armenia, Azerbaijan and Kazakhstan are grouped with Asia, because most of their land lies there.
-
-## Group 1: Western Europe
-
-Start with the shapes you already know: **Spain** and **Portugal** on the Iberian Peninsula, **France** above them, the boot of **Italy**, and the islands of **Great Britain** (part of the **United Kingdom**) and **Ireland**.
-
-Then add the smaller countries in between. **Belgium**, the **Netherlands** and **Luxembourg** (together called the Benelux) sit between France and Germany. **Switzerland** and **Austria** form a band through the Alps, with **Germany** to their north.
-
-## Group 2: The Nordic countries
-
-**Norway**, **Sweden** and **Finland** run across the north from west to east. **Denmark** is the small peninsula pointing up from Germany, and **Iceland** is the island far out in the Atlantic.
-
-## Group 3: Central Europe
-
-Below the Baltic Sea, **Poland** is the anchor. To its south sit **Czechia** and **Slovakia**, which were one country until 1993, and below them **Hungary**.
-
-The pair that costs the most points is **Slovakia** and **Slovenia**. Slovakia is north, next to Czechia and Poland. Slovenia is south, a small country bordering Italy, Austria, Hungary and Croatia, with a short coastline on the Adriatic Sea.
-
-## Group 4: Eastern Europe
-
-**Estonia**, **Latvia** and **Lithuania** are the three Baltic states, in that order from north to south. **Belarus** lies below them and **Ukraine**, the largest country entirely in Europe, below that. **Moldova** is the small landlocked country squeezed between Ukraine and **Romania**, and **Russia** stretches east across the edge of the map.
-
-## Group 5: The Balkans
+## First: the Balkans
 
 This is where most rounds go wrong. Work from northwest to southeast:
 
@@ -47,7 +25,11 @@ This is where most rounds go wrong. Work from northwest to southeast:
 
 Kosovo, between Serbia, Montenegro, Albania and North Macedonia, is drawn on our map but not asked, because not every UN member recognizes it.
 
-## Last: the microstates
+## Second: the pair that costs the most points
+
+**Slovakia** and **Slovenia**. Slovakia is north, next to Czechia and Poland; the two were one country until 1993. Slovenia is south, a small country bordering Italy, Austria, Hungary and Croatia, with a short coastline on the Adriatic Sea. Around them, **Poland** is the anchor below the Baltic Sea, and **Hungary** sits to the south of Slovakia and Czechia.
+
+## Third: the microstates
 
 Six tiny countries are easy to forget and hard to click. On our map each has a dot:
 
@@ -65,26 +47,20 @@ Six tiny countries are easy to forget and hard to click. On our map each has a d
 
 Vatican City is the smallest country in the world by both area and population.
 
+## Fourth: the east
+
+**Estonia**, **Latvia** and **Lithuania** are the three Baltic states, in that order from north to south. **Belarus** lies below them and **Ukraine** below that. **Moldova** is the small landlocked country squeezed between Ukraine and **Romania**, and **Russia** stretches east across the edge of the map. The largest country in Europe is Russia, which spans Europe and Asia; Ukraine is the largest country that lies entirely in Europe.
+
+## Fifth: the north
+
+**Norway**, **Sweden** and **Finland** run across the north from west to east. **Denmark** is the small peninsula pointing up from Germany, and **Iceland** is the island far out in the Atlantic.
+
+## Last, as a reward: the western shapes
+
+Start from the shapes you already know: **Spain** and **Portugal** on the Iberian Peninsula, **France** above them, the boot of **Italy**, and the islands of **Great Britain** (part of the **United Kingdom**) and **Ireland**. Then add the smaller countries in between. **Belgium**, the **Netherlands** and **Luxembourg** (together called the Benelux) sit between France and Germany. **Switzerland** and **Austria** form a band through the Alps, with **Germany** to their north.
+
 ## How to practice
 
 Take the [Europe map quiz](/europe-map-quiz/) with "Show names" on for one round, then off. When a round ends, the quiz lists every country you missed; study only those before the next round. On a phone, turn on Zoom for the Balkans and the microstates.
 
 Once Europe feels solid, the [flag quiz](/flag-quiz/) and the [world capitals quiz](/world-capitals-quiz/) both have a Europe filter, which is a good way to connect each country's name with its flag and capital.
-
-## Frequently asked questions
-
-### How many countries are in Europe?
-
-It depends on who's counting. This site uses 45, including Russia and Vatican City. Other lists add Turkey, Kazakhstan or the Caucasus countries, or count Kosovo.
-
-### Which part of Europe is hardest to learn?
-
-The Balkans, where nine countries share a small area, and the Slovakia–Slovenia pair in Central Europe.
-
-### What is the largest country in Europe?
-
-Russia, which spans Europe and Asia. Ukraine is the largest country that lies entirely in Europe.
-
-### How long does it take to learn all the countries in Europe?
-
-With a few short sessions, one group per day, most people can place all 45 within a week.

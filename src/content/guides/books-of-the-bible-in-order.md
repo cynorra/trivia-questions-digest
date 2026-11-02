@@ -5,70 +5,52 @@ published: 2026-11-02
 tool: knowledge
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> The Protestant Bible has 66 books: 39 in the Old Testament and 27 in the New Testament. It opens with Genesis and closes with Revelation. Catholic Bibles have 73 books, adding seven to the Old Testament: Tobit, Judith, 1 and 2 Maccabees, Wisdom, Sirach and Baruch.</p></div>
+Sixty-six books sounds like a lot until you notice they fall into ten groups, each with a fixed size. The Protestant Bible has 66 books, 39 in the Old Testament and 27 in the New, opening with Genesis and closing with Revelation; Catholic Bibles have 73. Knowing the order is useful in Bible study and a frequent question in [Bible trivia](/bible-trivia/). Here it is as a seven-day plan, one group a day, with the shape of the whole first.
 
-Knowing the order of the books is useful in Bible study and a frequent question in [Bible trivia](/bible-trivia/). The easiest way to learn them is by group, because each group has a clear purpose and a fixed number of books.
+## The shape: 5–12–5–5–12 and 4–1–13–8–1
 
-## The Old Testament (39 books)
+The Old Testament splits 5–12–5–5–12 and the New Testament 4–1–13–8–1. Once you know how many books a group holds, you notice when you have missed one.
 
-A memory pattern for the Old Testament groups is **5–12–5–5–12**.
+## Day 1: the Law (5)
 
-<div class="table-wrap"><table>
-<thead><tr><th>Group</th><th>Books</th><th>Count</th></tr></thead>
-<tbody>
-<tr><td>Law (Pentateuch)</td><td>Genesis, Exodus, Leviticus, Numbers, Deuteronomy</td><td>5</td></tr>
-<tr><td>History</td><td>Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther</td><td>12</td></tr>
-<tr><td>Poetry and Wisdom</td><td>Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon</td><td>5</td></tr>
-<tr><td>Major Prophets</td><td>Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel</td><td>5</td></tr>
-<tr><td>Minor Prophets</td><td>Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi</td><td>12</td></tr>
-</tbody>
-</table></div>
+Genesis, Exodus, Leviticus, Numbers, Deuteronomy. These five are also called the Pentateuch.
 
-"Major" and "minor" refer to the length of the books, not their importance. The twelve Minor Prophets were a single scroll in the Hebrew tradition, called "the Twelve."
+## Day 2: History (12)
 
-## The New Testament (27 books)
+Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther.
 
-The New Testament pattern is **4–1–13–8–1**.
+Learn them as a story: Joshua leads the people into the land, the Judges rule it, Ruth lives in that era, then Samuel anoints the first kings. Samuel, Kings and Chronicles each come as a 1 and 2, back to back.
 
-<div class="table-wrap"><table>
-<thead><tr><th>Group</th><th>Books</th><th>Count</th></tr></thead>
-<tbody>
-<tr><td>Gospels</td><td>Matthew, Mark, Luke, John</td><td>4</td></tr>
-<tr><td>History</td><td>Acts</td><td>1</td></tr>
-<tr><td>Letters of Paul</td><td>Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon</td><td>13</td></tr>
-<tr><td>General letters</td><td>Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude</td><td>8</td></tr>
-<tr><td>Prophecy</td><td>Revelation</td><td>1</td></tr>
-</tbody>
-</table></div>
+## Day 3: Poetry and Wisdom (5), then the Major Prophets (5)
 
-Paul's letters are arranged roughly from longest to shortest, first those to churches (Romans to 2 Thessalonians), then those to individuals (1 Timothy to Philemon).
+Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon. Then Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel.
 
-## Memory tips that work
+"Major" and "minor" refer to the length of the books, not their importance.
 
-- **Learn the shape first.** 5–12–5–5–12 and 4–1–13–8–1. Once you know how many books are in a group, you notice when you've missed one.
-- **Pair the doubles.** Samuel, Kings and Chronicles each come in a 1 and 2, back to back. So do Corinthians, Thessalonians, Timothy and Peter; John has three.
-- **Use story order for history.** Joshua leads the people into the land, the Judges rule it, Ruth lives in that era, then Samuel anoints the first kings.
-- **Sing it.** Many churches teach the books with a simple song. Singing the list a few times works better than reading it.
-- **Practice one group a day.** By the end of a week you'll have all 66.
+## Day 4: the Minor Prophets (12)
 
-## How Catholic and Orthodox Bibles differ
+Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi. In the Hebrew tradition the twelve were a single scroll, called "the Twelve."
 
-Catholic Bibles include seven more Old Testament books, called the deuterocanonical books: **Tobit, Judith, 1 Maccabees, 2 Maccabees, Wisdom, Sirach and Baruch**, plus longer versions of Esther and Daniel. That brings the total to 73. Eastern Orthodox Bibles include a few more still. The order of the Old Testament also differs slightly between traditions. In a trivia question, "How many books are in the Bible?" should say which Bible it means; our [Bible trivia](/bible-trivia/) explanation gives both numbers.
+## Day 5: the Gospels and Acts (4 + 1)
 
-## Frequently asked questions
+Matthew, Mark, Luke, John, then Acts, the New Testament's one history book.
 
-### How many books are in the Bible?
+## Day 6: the letters of Paul (13)
 
-The Protestant Bible has 66 books, 39 in the Old Testament and 27 in the New. Catholic Bibles have 73.
+Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon.
 
-### What is the shortest book of the Bible?
+They run roughly from longest to shortest: first the letters to churches (Romans to 2 Thessalonians), then those to individuals (1 Timothy to Philemon). Corinthians, Thessalonians and Timothy come in pairs.
 
-By number of words, 3 John is the shortest in most English translations. 2 John and Obadiah are also very short.
+## Day 7: the general letters (8) and Revelation (1)
 
-### What is the middle book of the Bible?
+Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, and then Revelation. John has three letters, Peter two.
 
-In the 66-book Protestant Bible, the 33rd and 34th books, Micah and Nahum, sit in the middle.
+Singing the list a few times works better than reading it; many churches teach the books with a simple song.
 
-### How can I memorize the books of the Bible quickly?
+## What Catholic and Orthodox Bibles add
 
-Learn the groups and their sizes first, then one group a day. Singing the names, as many Sunday schools do, makes them stick faster.
+Catholic Bibles include seven more Old Testament books, called the deuterocanonical books: **Tobit, Judith, 1 Maccabees, 2 Maccabees, Wisdom, Sirach and Baruch**, plus longer versions of Esther and Daniel. That brings the total to 73. Eastern Orthodox Bibles include a few more still, and the order of the Old Testament differs slightly between traditions. A trivia question asking "How many books are in the Bible?" should say which Bible it means; our [Bible trivia](/bible-trivia/) explanation gives both numbers.
+
+## Shortest and middle
+
+By number of words, 3 John is the shortest book in most English translations, with 2 John and Obadiah also very short. In the 66-book Protestant Bible, the 33rd and 34th books, Micah and Nahum, sit in the middle.

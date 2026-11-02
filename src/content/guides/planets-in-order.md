@@ -5,11 +5,29 @@ published: 2026-11-02
 tool: knowledge
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> In order from the Sun, the planets are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. A common memory sentence is "My Very Educated Mother Just Served Us Nachos." Pluto was reclassified as a dwarf planet in 2006, which is why there are eight, not nine.</p></div>
+Venus is hotter than Mercury, even though Mercury is closer to the Sun. That one fact trips up a surprising number of quiz teams, and it is a good way into the whole solar system, because nearly every planet has a detail like it. The order is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. What follows is a walk outward from the Sun, one thing to remember per stop, with the reference numbers at the end. For more space questions, see our [science trivia](/science-trivia/).
 
-Space questions are some of the most popular in any [science trivia](/science-trivia/) round, and many of them start with the planets. Here's the order, the numbers, and the facts that catch people out.
+## Walking outward from the Sun
 
-## The planets at a glance
+**Mercury.** The smallest planet and the fastest: a year here lasts only 88 days. It has no moons and almost no atmosphere to hold heat, so it is not the hottest planet despite its position.
+
+**Venus.** Its thick carbon dioxide atmosphere traps heat, pushing the surface to around 465°C. It also spins backward compared with most planets, so the Sun rises in the west, and a single day on Venus is longer than its year.
+
+**Earth.** The largest of the four rocky planets, with one moon and a year of 365.25 days. The distance from here to the Sun, about 150 million km, is the unit astronomers call 1 AU.
+
+**Mars.** Roughly half of Earth's diameter, with two small moons and a year of 687 days.
+
+**The asteroid belt.** Between Mars and Jupiter. It is the natural dividing line: four small rocky planets inside it, four giants outside.
+
+**Jupiter.** About 11 times Earth's diameter and more massive than all the other planets put together. It has at least 95 known moons, which makes it the runner-up in the moon count.
+
+**Saturn.** Saturn holds the moon record: 274 confirmed as of 2025, after astronomers confirmed 128 new ones that year. Its rings are the brightest, but not unique, since Jupiter, Uranus and Neptune have faint rings too. Saturn is also so light for its size that it is less dense than water, a favorite tiebreaker fact.
+
+**Uranus.** It rolls around the Sun on its side, its axis tilted about 98 degrees. A year here is 84 Earth years.
+
+**Neptune.** The farthest planet, 30 AU out, with a 165-year orbit and 16 known moons.
+
+## The numbers in one place
 
 <div class="table-wrap"><table>
 <thead><tr><th>#</th><th>Planet</th><th>Type</th><th>Diameter</th><th>Average distance from Sun</th><th>Year</th><th>Known moons (as of 2025)</th></tr></thead>
@@ -25,46 +43,12 @@ Space questions are some of the most popular in any [science trivia](/science-tr
 </tbody>
 </table></div>
 
-One AU (astronomical unit) is the average distance from Earth to the Sun, about 150 million km. Moon counts change as telescopes confirm new ones; "+" means more are known or awaiting confirmation. Figures follow NASA's planetary fact sheets.
+Moon counts change as telescopes confirm new ones; "+" means more are known or awaiting confirmation. Figures follow NASA's planetary fact sheets.
 
-## Remembering the order
+## A sentence to hold the order
 
-The most widely taught sentence is **"My Very Educated Mother Just Served Us Nachos"**: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Two other ways to hold it in your head:
+The most widely taught one is **"My Very Educated Mother Just Served Us Nachos."** Each first letter is a planet, in order.
 
-- **Four and four.** The four small rocky planets come first, then the four giants.
-- **The asteroid belt divides them.** It lies between Mars and Jupiter.
+## Why there are eight, not nine
 
-## Facts people get wrong
-
-1. **The hottest planet isn't the closest.** Venus is hotter than Mercury, around 465°C at the surface, because its thick carbon dioxide atmosphere traps heat.
-2. **Jupiter doesn't have the most moons.** Saturn does, after astronomers confirmed 128 new ones in 2025.
-3. **Saturn isn't the only planet with rings.** Jupiter, Uranus and Neptune have faint ring systems too; Saturn's are just the brightest.
-4. **Venus spins backward.** It rotates in the opposite direction to most planets, so the Sun rises in the west there. Its day is longer than its year.
-5. **Uranus rolls on its side.** Its axis is tilted about 98 degrees.
-6. **Pluto isn't the farthest thing in the solar system.** Many dwarf planets and comets orbit farther out.
-
-## Why Pluto isn't a planet
-
-In 2006 the International Astronomical Union defined a planet as a body that orbits the Sun, is round under its own gravity, and has cleared its orbit of other objects. Pluto meets the first two but shares its orbit with many other icy bodies in the Kuiper Belt, so it was reclassified as a dwarf planet, alongside Ceres and Eris.
-
-## Practice
-
-Try the space questions in our [science trivia](/science-trivia/) set, and browse the space section of our [fun facts](/fun-facts/) for tiebreaker material like Saturn's density (it's less dense than water).
-
-## Frequently asked questions
-
-### What are the planets in order from the Sun?
-
-Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.
-
-### Which planet is the biggest?
-
-Jupiter. Its diameter is about 11 times Earth's, and it is more massive than all the other planets combined.
-
-### Which planet has the most moons?
-
-As of 2025, Saturn, with 274 confirmed moons. Jupiter is second.
-
-### Why are there eight planets instead of nine?
-
-Because Pluto was reclassified as a dwarf planet in 2006, when the International Astronomical Union adopted its first formal definition of a planet.
+In 2006 the International Astronomical Union gave "planet" its first formal definition: a body that orbits the Sun, is round under its own gravity, and has cleared its orbit of other objects. Pluto meets the first two, but it shares its orbit with many other icy bodies in the Kuiper Belt, so it became a dwarf planet, alongside Ceres and Eris. It is not even the farthest object in the solar system; many dwarf planets and comets orbit farther out.

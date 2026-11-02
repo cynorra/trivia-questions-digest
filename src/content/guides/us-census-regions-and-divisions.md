@@ -5,11 +5,21 @@ published: 2026-11-11
 tool: us
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> The US Census Bureau divides the 50 states into four regions: the Northeast (9 states), the Midwest (12), the South (16) and the West (13). Each region is split again into divisions, nine in all. Washington, DC is counted in the South.</p></div>
+Delaware and Maryland are in the South. Oklahoma is in the South too, and Pennsylvania is in the Northeast. Those are the answers that surprise people, and they come from the US Census Bureau's regions, which appear in government statistics, textbooks and most US geography quizzes, including ours. "Which states are in the Midwest?" sounds like a simple question, but people answer it differently, and the Census gives one official answer.
 
-"Which states are in the Midwest?" sounds like a simple question, but people answer it differently. Is Ohio Midwestern? Is Maryland Southern? The most widely used answer comes from the US Census Bureau, whose regions appear in government statistics, textbooks and most US geography quizzes, including ours.
+The count: the Northeast has 9 states, the Midwest 12, the South 16 (plus Washington, DC) and the West 13, split into nine divisions.
 
-## The four regions and nine divisions
+## The surprises first
+
+**Delaware and Maryland are in the South.** Many people call them Mid-Atlantic states, and in everyday speech that's fine. In the Census definition they're in the South Atlantic division, along with Washington, DC.
+
+**Oklahoma is in the South, not the West or Midwest.** It sits with Texas, Louisiana and Arkansas in the West South Central division.
+
+**The Midwest stretches to the Dakotas.** The "Midwest" includes the Great Plains states of North Dakota, South Dakota, Nebraska and Kansas, not just the Great Lakes states.
+
+**Pennsylvania is in the Northeast.** It's grouped with New York and New Jersey as a Middle Atlantic state.
+
+## Every state, region and division
 
 <div class="table-wrap"><table>
 <thead><tr><th>Region</th><th>Division</th><th>States</th></tr></thead>
@@ -25,16 +35,6 @@ tool: us
 <tr><td>West</td><td>Pacific</td><td>Washington, Oregon, California, Alaska, Hawaii</td></tr>
 </tbody>
 </table></div>
-
-## The surprises in the Census map
-
-**Delaware and Maryland are in the South.** Many people call them Mid-Atlantic states, and in everyday speech that's fine. In the Census definition they're in the South Atlantic division, along with Washington, DC.
-
-**Oklahoma is in the South, not the West or Midwest.** It sits with Texas, Louisiana and Arkansas in the West South Central division.
-
-**The Midwest stretches to the Dakotas.** The "Midwest" includes the Great Plains states of North Dakota, South Dakota, Nebraska and Kansas, not just the Great Lakes states.
-
-**Pennsylvania is in the Northeast.** It's grouped with New York and New Jersey as a Middle Atlantic state.
 
 ## Other ways people divide the country
 
@@ -55,21 +55,3 @@ Regions are the best way to learn the 50 states, because each one is small enoug
 - [Western states quiz](/western-states-quiz/): 13 states, including Alaska and Hawaii
 
 When you can finish all four, try the [full US states map quiz](/us-states-map-quiz/). For a day-by-day plan, see [how to memorize the 50 states](/guides/how-to-memorize-the-50-states/).
-
-## Frequently asked questions
-
-### How many regions are there in the United States?
-
-The US Census Bureau uses four regions (Northeast, Midwest, South and West) and nine divisions within them.
-
-### Is Ohio in the Midwest?
-
-Yes. In the Census definition, Ohio is in the Midwest's East North Central division.
-
-### Which region has the most states?
-
-The South, with 16 states plus Washington, DC.
-
-### Is Washington, DC in a region?
-
-Yes, the Census Bureau counts it in the South Atlantic division, though it's a federal district rather than a state.

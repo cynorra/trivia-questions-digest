@@ -5,8 +5,6 @@ published: 2026-11-10
 tool: us
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> Sort the 50 capitals into three piles: ones you already know, ones that are famous cities, and the surprises. Learn the surprises with a hook, such as a person, a sound or a pairing, and practice one region at a time. The full list of states and capitals is on the <a href="/state-capitals-quiz/">state capitals quiz</a> page.</p></div>
-
 State capitals are a memory test with a twist: dozens of them are not the city you'd expect. Albany, not New York City. Springfield, not Chicago. Tallahassee, not Miami. That's what makes a state capitals quiz hard, and it's also what makes the capitals easier to learn once you sort them sensibly.
 
 ## Pile 1: the capitals you already know
@@ -56,6 +54,8 @@ The capitals left over are mostly smaller cities. A hook (a person, a sound, or 
 - **Sound-alikes:** Juneau, Alaska ("Do you know Juneau?"); Boise, Idaho; Dover, Delaware.
 - **Easy-to-swap pairs:** Columbia is South Carolina's capital and Columbus is Ohio's; Charleston is West Virginia's capital, while Charleston, South Carolina, is not a capital at all; Concord, New Hampshire, and Frankfort, Kentucky, both sound like they belong in New England.
 
+Pierre (South Dakota), Montpelier (Vermont) and Frankfort (Kentucky) are among the most often missed, because they are small and rarely in the news. There are 50 state capitals; Washington, DC is the national capital, not a state capital.
+
 ## Learn them region by region
 
 Just like the map, capitals are easier in groups. A suggested order:
@@ -76,21 +76,3 @@ In the [state capitals quiz](/state-capitals-quiz/), choose a region from the me
 - Day 5: all 50, then only the ones you missed.
 
 Say each pair out loud as one phrase, such as "Montpelier, Vermont." Hearing the state and capital together builds the link faster than reading a list.
-
-## Frequently asked questions
-
-### What is the easiest way to memorize state capitals?
-
-Learn the capitals you already know first, then the famous-city traps as pairs, then the rest with memory hooks, practicing one region at a time with a quiz.
-
-### Which state capitals are named after presidents?
-
-Jefferson City, Missouri; Lincoln, Nebraska; Madison, Wisconsin; and Jackson, Mississippi.
-
-### Which state capital is hardest to remember?
-
-It varies by person, but Pierre (South Dakota), Montpelier (Vermont) and Frankfort (Kentucky) are among the most often missed, because they're small and don't come up in the news much.
-
-### How many state capitals are there?
-
-Fifty, one for each state. Washington, DC is the national capital, not a state capital.

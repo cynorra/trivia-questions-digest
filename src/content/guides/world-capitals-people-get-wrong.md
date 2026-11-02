@@ -5,13 +5,11 @@ published: 2026-11-20
 tool: flags-capitals
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> Most capital mistakes come from three traps: guessing the biggest city (Sydney instead of Canberra), not knowing a capital moved (Lagos instead of Abuja), and mixing up similar names (Bratislava and Ljubljana). Learn the capitals in those groups and a country capital quiz gets much easier.</p></div>
+Say the capital out loud before you read the answer. A world capitals quiz has about 190 answers, but the misses aren't random: the same few dozen capitals cause most of the wrong answers. This page is a four-round drill, each round built around one reason people slip, and the answer sits right beside each prompt. Cover the right-hand side with your hand if you want it to count.
 
-A world capitals quiz has about 190 answers, but the misses aren't random. The same few dozen capitals cause most of the wrong answers, and they fall into clear groups. Here they are, with what to remember about each.
+## Round 1: the biggest city isn't the capital
 
-## Trap 1: the biggest city isn't the capital
-
-These are the classics. In each, a famous city overshadows the capital.
+In each of these, a famous city overshadows the real capital. The first one gets missed more than any other.
 
 <div class="table-wrap"><table>
 <thead><tr><th>Country</th><th>Common guess</th><th>Capital</th></tr></thead>
@@ -29,7 +27,7 @@ These are the classics. In each, a famous city overshadows the capital.
 </tbody>
 </table></div>
 
-## Trap 2: the capital moved
+## Round 2: the capital moved
 
 Several countries changed their capital in living memory. Older atlases, and older memories, still show the old one.
 
@@ -40,44 +38,26 @@ Several countries changed their capital in living memory. Older atlases, and old
 - **Côte d'Ivoire:** Yamoussoukro is the official capital, though Abidjan is the economic center.
 - **Tanzania:** Dodoma, not Dar es Salaam.
 
-## Trap 3: names that sound alike
+## Round 3: which is which?
 
-- **Bratislava** is the capital of Slovakia; **Ljubljana** is the capital of Slovenia. Like the countries themselves, these two are swapped constantly.
+Names that sound alike get swapped constantly.
+
+- **Bratislava** is the capital of Slovakia; **Ljubljana** is the capital of Slovenia. Like the countries themselves, these two are swapped all the time.
 - **Vienna** (Austria) and **Vientiane** (Laos).
 - **Bern** (Switzerland) and **Berlin** (Germany).
-- **Riga** (Latvia), **Tallinn** (Estonia) and **Vilnius** (Lithuania), the three Baltic capitals, in north-to-south order: Tallinn, Riga, Vilnius.
+- **Riga** (Latvia), **Tallinn** (Estonia) and **Vilnius** (Lithuania), the three Baltic capitals. North to south: Tallinn, Riga, Vilnius.
 - **Niamey** (Niger) and **Abuja** (Nigeria), for the same reason the countries get mixed up.
 
-## Trap 4: capitals that are hard to spell or say
+## Round 4: say it out loud
 
 These aren't usually guessed wrong so much as not remembered at all: **Ouagadougou** (Burkina Faso), **Antananarivo** (Madagascar), **Ulaanbaatar** (Mongolia), **Nuku'alofa** (Tonga), **Ngerulmud** (Palau). Saying them aloud a few times does more than reading them.
 
-## Free points: capitals that share the country's name
+## Bonus: free points
 
-When you're stuck, remember the easy ones: **Mexico City**, **Guatemala City**, **Panama City**, **Kuwait City**, **Singapore**, **Djibouti**, **Luxembourg**, **Monaco**, **San Marino** and **Vatican City**.
+When you're stuck, remember the capitals that share the country's name: **Mexico City**, **Guatemala City**, **Panama City**, **Kuwait City**, **Singapore**, **Djibouti**, **Luxembourg**, **Monaco**, **San Marino** and **Vatican City**.
 
-## How to practice capitals
+## After the drill
 
-1. Play the [world capitals quiz](/world-capitals-quiz/) one continent at a time. The wrong choices come from the same continent, so you can't get by on geography alone.
-2. After each round, look at the table further down that page for the capitals you missed, including the notes on countries with special arrangements.
-3. Add the [daily geography quiz](/daily-geography-quiz/), which asks three world capitals every day.
+Play the [world capitals quiz](/world-capitals-quiz/) one continent at a time. The wrong choices come from the same continent, so you can't get by on geography alone, and the table further down that page lists the capitals you missed, with notes on countries with special arrangements. Add the [daily geography quiz](/daily-geography-quiz/), which asks three world capitals every day.
 
 For the countries where "the capital" has more than one answer, see [countries with more than one capital](/guides/countries-with-more-than-one-capital/).
-
-## Frequently asked questions
-
-### What are the most commonly missed world capitals?
-
-Canberra, Ottawa, Ankara, Brasília and Bern are the classic misses, because a bigger or better-known city overshadows each one.
-
-### What is the capital of Australia?
-
-Canberra, a planned city chosen as a compromise between Sydney and Melbourne.
-
-### How many world capitals are there?
-
-About 195, one for each country, but a few countries have more than one capital or none in law, so totals vary slightly.
-
-### What's the best way to learn world capitals?
-
-Learn them continent by continent, focus on the trap groups above, and test yourself with multiple-choice rounds where the wrong answers come from the same region.

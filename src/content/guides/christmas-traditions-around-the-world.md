@@ -5,41 +5,49 @@ published: 2026-11-02
 tool: holidays
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> Christmas customs vary widely. Germany gave the world the Christmas tree and has famous Advent markets; Mexico celebrates nine nights of posadas; in the Netherlands, Sinterklaas arrives on December 5; Italy's La Befana brings gifts on January 6; and Norway has sent London a Christmas tree every year since 1947.</p></div>
+Christmas does not happen on one day in most of the world. It is a run of dates, from early December to the sixth of January, and each country treats a different one as the main event. Here is the season in calendar order, with the custom that belongs to each date. For ready-made questions, see our [Christmas trivia](/christmas-trivia/).
 
-Many familiar Christmas customs started in one country and spread. Others stayed local and are still unknown elsewhere. These are the traditions most worth knowing, for a trivia round or just for conversation. For ready-made questions, see our [Christmas trivia](/christmas-trivia/).
+## From September: the Philippines
 
-## Europe
+The Filipino Christmas season is one of the longest in the world, with decorations appearing as early as September. It builds to **Simbang Gabi**, a series of nine dawn Masses ending on Christmas Eve.
 
-**Germany.** The decorated Christmas tree is usually credited to German Christians from the 16th century. It became fashionable in Britain after Queen Victoria's German husband, Prince Albert, set one up at Windsor in the 1840s. German towns also hold Christmas markets through Advent; Nuremberg's and Dresden's are among the oldest and best known.
+## All of Advent: Germany's markets
 
-**The Netherlands and Belgium.** The main gift-giving day is traditionally **December 5**, the eve of St. Nicholas's Day, when Sinterklaas brings presents. The Dutch name is the origin of the English "Santa Claus."
+German towns hold Christmas markets through the weeks of Advent; those in Nuremberg and Dresden are among the oldest and best known. Germany is also where the decorated Christmas tree is usually traced, from the 16th century. It became fashionable in Britain only after Queen Victoria's German husband, Prince Albert, put one up at Windsor in the 1840s.
 
-**Italy.** Besides Christmas itself, many Italian families celebrate **Epiphany on January 6**, when La Befana, a kindly witch on a broomstick, fills children's stockings.
+## December 5: Sinterklaas
 
-**Sweden.** **St. Lucia's Day, December 13,** is marked by processions led by a girl wearing a crown of candles, with saffron buns called lussekatter.
+In the Netherlands and Belgium the main gift-giving day is traditionally the eve of St. Nicholas's Day, when Sinterklaas brings presents. The Dutch name is the origin of the English "Santa Claus," brought to New York by Dutch settlers.
 
-**Norway and Britain.** Since 1947, Oslo has sent a Norwegian spruce to stand in London's Trafalgar Square, as thanks for Britain's support during World War II.
+## December 13: St. Lucia's Day
 
-**The United Kingdom.** December 26 is **Boxing Day**, a public holiday also observed in Canada, Australia and New Zealand.
+Sweden marks the day with processions led by a girl in a crown of candles, and with saffron buns called lussekatter.
 
-## The Americas
+## December 16–24: Mexico's posadas
 
-**Mexico.** From December 16 to 24, families hold **posadas**, nine nights of processions that re-enact Mary and Joseph's search for shelter, often ending with a piñata. The poinsettia, native to Mexico, is called flor de Nochebuena, the Christmas Eve flower.
+Nine nights of processions re-enact Mary and Joseph's search for shelter, often ending in a piñata. The poinsettia, native to Mexico, is called *flor de Nochebuena*, the Christmas Eve flower.
 
-**The United States.** Many American traditions are fairly recent: Christmas became a federal holiday in 1870, Rudolph appeared in 1939, and the Rockefeller Center tree lighting in New York began in the 1930s.
+## Early December: Norway's gift to London
 
-**Brazil and Argentina.** Christmas falls in summer, and families often celebrate with a late-night feast on Christmas Eve followed by fireworks at midnight.
+Every year since 1947, Oslo has sent a Norwegian spruce to stand in London's Trafalgar Square, as thanks for Britain's support during World War II.
 
-## Asia and Oceania
+## December 24–25: Christmas itself, in summer and winter
 
-**Japan.** Christmas isn't a national holiday, but it is widely celebrated. A fried-chicken Christmas dinner became popular after a successful advertising campaign by KFC in the 1970s, and Christmas cake, a sponge cake with cream and strawberries, is a common treat.
+In Brazil and Argentina it falls in summer, and families celebrate with a late-night Christmas Eve feast and fireworks at midnight. In Australia it is a barbecue-and-beach day, and Melbourne is known for its Carols by Candlelight concerts.
 
-**The Philippines.** One of the longest Christmas seasons in the world, with decorations appearing as early as September. **Simbang Gabi** is a series of nine dawn Masses ending on Christmas Eve.
+In Japan, Christmas is not a national holiday, but it is widely celebrated. A fried-chicken dinner became a tradition after a successful KFC advertising campaign in the 1970s, and a Christmas cake of sponge, cream and strawberries is the usual treat.
 
-**Australia.** Christmas Day is in summer, so many families have a barbecue or go to the beach. Carols by Candlelight concerts are a big tradition in Melbourne and other cities.
+In the United States many traditions are fairly recent: Christmas became a federal holiday in 1870, Rudolph appeared in 1939, and the Rockefeller Center tree lighting in New York began in the 1930s.
 
-## Words for Christmas
+## December 26: Boxing Day
+
+A public holiday in the United Kingdom, and also observed in Canada, Australia and New Zealand. The name is usually traced to giving boxes of money or gifts to servants and tradespeople.
+
+## January 6: Epiphany and La Befana
+
+Many Italian families treat Epiphany as the real gift day, when La Befana, a kindly witch on a broomstick, fills children's stockings.
+
+## How to say it
 
 <div class="table-wrap"><table>
 <thead><tr><th>Language</th><th>Merry Christmas</th></tr></thead>
@@ -54,22 +62,4 @@ Many familiar Christmas customs started in one country and spread. Others stayed
 </tbody>
 </table></div>
 
-A translation round makes a good format change in a [Christmas trivia night](/guides/christmas-trivia-night/): read the greeting and ask which language it's in.
-
-## Frequently asked questions
-
-### Which country started the Christmas tree tradition?
-
-Germany is usually credited, from the 16th century. Prince Albert made the custom popular in Britain in the 1840s, and it spread to America in the same period.
-
-### Why do people in Japan eat fried chicken at Christmas?
-
-A KFC advertising campaign in the 1970s made a chicken dinner a popular Christmas tradition in Japan, where Christmas is not a religious or national holiday for most people.
-
-### Where does Santa Claus get his name?
-
-From Sinterklaas, the Dutch name for St. Nicholas, brought to New York by Dutch settlers.
-
-### What is Boxing Day?
-
-December 26, a public holiday in Britain and several Commonwealth countries. The name is usually traced to giving boxes of money or gifts to servants and tradespeople.
+A translation round makes a good change of format in a [Christmas trivia night](/guides/christmas-trivia-night/): read the greeting aloud and ask which language it is.

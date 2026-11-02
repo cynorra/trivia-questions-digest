@@ -5,27 +5,21 @@ published: 2026-11-05
 tool: trivia-night
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> Pick one short, surprising, true and work-safe fact each day, share it at the start of a meeting or in a team channel at a fixed time, rotate who shares it, and keep a source handy. Our <a href="/fun-facts/">fun facts page</a> shows a new sourced fact of the day every day you can borrow.</p></div>
+One short, true, work-safe fact, shared at the same time every day: that is the whole ritual, and it takes under a minute. It gives quiet colleagues an easy way to speak and starts the conversations that make remote and hybrid teams feel like teams. Our [fun facts page](/fun-facts/) shows a new sourced fact of the day, changing at midnight UTC, that you can borrow. The habit usually dies in the second week, so this guide is laid out as your first month, with the fix for each point where it tends to stall.
 
-A daily fun fact is one of the simplest team rituals there is. It takes under a minute, gives quiet colleagues an easy way to speak, and starts the conversations that make remote and hybrid teams feel like teams. Here's how to run it so it lasts beyond the first week.
+## Day 1: pick a slot and a rule for facts
 
-## What makes a good work fun fact
+Choose one fixed place: the first minute of the daily stand-up, or a post in the team channel at 9 a.m. Then agree what counts as a good fact, because the rule saves arguments later:
 
 - **True.** Check it against a real source. Nothing kills the habit faster than a colleague pointing out the fact is a myth. See [common trivia myths](/guides/common-trivia-myths/) for the usual suspects.
 - **Short.** One sentence, plus one sentence of explanation.
 - **Surprising.** "Octopuses have three hearts" works; "the Earth goes around the Sun" doesn't.
-- **Work-safe.** Avoid politics, religion as debate, health scares and anything graphic.
+- **Work-safe.** Skip politics, religion as debate, health scares and anything graphic. Stick to animals, space, history, places, food and words.
 - **Easy to discuss.** The best facts make someone ask "wait, why?"
 
-## How to run it
+## Week 1: borrow twelve starters
 
-1. **Pick a slot.** First minute of the daily stand-up, or a post in the team channel at 9 a.m.
-2. **Rotate the presenter.** Each person takes a week. It spreads the work and adds variety.
-3. **Add a guess.** Turn the fact into a question first: "How many hearts does an octopus have?" Then reveal it.
-4. **Keep a log.** A shared document of past facts stops repeats and becomes a fun archive.
-5. **Allow a skip day.** If a meeting is serious, skip it. Forced fun isn't fun.
-
-## 12 starter facts (with sources)
+You will not have time to research on day one, so start from facts that already have sources:
 
 <div class="table-wrap"><table>
 <thead><tr><th>Fact</th><th>Source</th></tr></thead>
@@ -47,27 +41,19 @@ A daily fun fact is one of the simplest team rituals there is. It takes under a 
 
 Each of these appears, with a fuller explanation, on our [fun facts](/fun-facts/) page.
 
-## Variations to keep it fresh
+## Week 2: add a guess
+
+Turn the fact into a question first: "How many hearts does an octopus have?" Let people shout numbers, then reveal it. This is the change that moves the ritual from announcement to a shared moment.
+
+## Week 3: rotate the presenter
+
+Each person takes a week. It spreads the work and adds variety, and it gives quieter colleagues a low-risk reason to speak. Keep a shared document of past facts so nobody repeats one, and so the log becomes a small archive the team enjoys.
+
+## Week 4 onward: keep it fresh
 
 - **Fact Friday:** a five-question quiz built from the week's facts.
 - **Bring your own:** once a month, everyone shares a fact about their hometown.
 - **Two truths and a myth:** share three facts, one false; the team guesses which.
 - **Daily quiz:** play [today's trivia quiz](/daily-trivia/) together and compare scores.
 
-## Frequently asked questions
-
-### What is a good fun fact of the day for work?
-
-One that's short, true, surprising and work-safe, such as 'a day on Venus is longer than its year.' Have the source ready in case someone asks.
-
-### How do you start a fun fact of the day at work?
-
-Pick a fixed time, such as the start of a daily meeting, rotate who shares it each week, and keep a shared list so facts don't repeat.
-
-### Where can I find a new fun fact every day?
-
-Our fun facts page shows a new sourced fact of the day, changing at midnight UTC, with dozens more listed by topic.
-
-### What topics should I avoid in a work fun fact?
-
-Politics, religion as debate, health scares and anything graphic. Stick to animals, space, history, places, food and words.
+And allow a skip day. If a meeting is serious, skip it. Forced fun isn't fun.

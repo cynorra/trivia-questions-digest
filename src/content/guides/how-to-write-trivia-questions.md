@@ -5,11 +5,21 @@ published: 2026-11-02
 tool: trivia-night
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> A good trivia question has exactly one answer, is worded so a listener understands it the first time, gives the player a fair chance to reason toward the answer, and is checked against a reliable source. Wrong options should be things people genuinely believe, not obvious filler.</p></div>
+We've written and checked every question on this site, and most of the work isn't finding facts. It's wording: making sure the question means one thing, that the answer can't be argued, and that a player who half-knows it can still work it out. The clearest way to show the rules is to take one fact through every draft, so that is where this guide starts. The rules, with the mistakes they prevent, follow.
 
-We've written and checked every question on this site, and most of the work isn't finding facts. It's wording: making sure the question means one thing, that the answer can't be argued, and that a player who half-knows it can still work it out. These are the rules we follow.
+## One fact, five drafts
 
-## 1. One question, one answer
+Start with a fact: *Alaska was bought from Russia in 1867.*
+
+1. **Draft:** "When did America get Alaska?" Vague: "get" could mean purchase or statehood (1959).
+2. **Fix the wording:** "From which country did the United States buy Alaska in 1867?"
+3. **Pick decoys:** Canada, Great Britain, Spain. All plausible to someone who doesn't know.
+4. **Write the explanation:** "Secretary of State William Seward arranged the $7.2 million purchase, mocked at the time as 'Seward's Folly.'"
+5. **Check:** confirmed against the US State Department's Office of the Historian.
+
+You'll find that exact question in our [history trivia](/history-trivia/) set. Each step is a rule in disguise.
+
+## One question, one answer
 
 The most common flaw is a question with two defensible answers.
 
@@ -18,14 +28,14 @@ The most common flaw is a question with two defensible answers.
 
 Watch for "biggest," "first" and "most." Biggest by area or population? First to do what, exactly? Add the measure to the question.
 
-## 2. Write for the ear
+## Write for the ear
 
 Most trivia is read aloud. Keep questions short, put the important word near the end, and avoid parentheses and long lists.
 
 - **Weak:** "Which planet, which some people confuse with Mercury because of its proximity to the Sun, has the hottest surface?"
 - **Better:** "Which planet has the hottest surface?" Then let the explanation do the work: it's Venus, because its thick atmosphere traps heat, even though Mercury is closer to the Sun.
 
-## 3. Make the wrong options worth thinking about
+## Make the wrong options worth thinking about
 
 For multiple choice, the three wrong options decide whether the question is fun. Pick answers people really believe:
 
@@ -40,52 +50,20 @@ For multiple choice, the three wrong options decide whether the question is fun.
 
 Strong decoys reward real knowledge and punish guessing. They also make the explanation more interesting, because you can say why the tempting answer is wrong.
 
-## 4. Fair, not tricky
+## Fair, not tricky
 
-A good hard question feels fair when you hear the answer: "Of course!" A bad one feels like a trick: "That's not what you asked." The test: would a knowledgeable player who got it wrong agree the question was fair?
+A good hard question feels fair when you hear the answer: "Of course!" A bad one feels like a trick: "That's not what you asked." The test: would a knowledgeable player who got it wrong agree the question was fair? "What is the closest star to Earth?" is fair because the Sun really is a star. Wordplay or hidden conditions that only the writer knows are not.
 
-Fair surprises work well. "What is the closest star to Earth?" is fair because the Sun really is a star. Wordplay or hidden conditions that only the writer knows are not.
+## Check every fact
 
-## 5. Check every fact
-
-Trivia lists are full of "facts" that are wrong, such as the Great Wall being visible from the Moon. Before a question goes in, check the answer against a primary or standard source: a government agency, a museum, an official record or a respected encyclopedia. Our [common trivia myths](/guides/common-trivia-myths/) guide lists some of the worst offenders.
+Trivia lists are full of "facts" that are wrong, such as the Great Wall being visible from the Moon. Before a question goes in, check the answer against a primary or standard source: a government agency, a museum, an official record or a respected encyclopedia, not another trivia list. Our [common trivia myths](/guides/common-trivia-myths/) guide lists some of the worst offenders.
 
 For facts that change, add a date: "As of 2025, which planet has the most confirmed moons?" That keeps the question correct even after new discoveries. Avoid "current champion" questions altogether unless you write them the week of the quiz.
 
-## 6. Add a one-line explanation
+## Add a one-line explanation
 
-An explanation turns an answer into a story. "The answer is Canberra. It was built as a compromise between Sydney and Melbourne." Every question on this site has one, so hosts can read it out and players learn something even when they miss.
+An explanation turns an answer into a story: "The answer is Canberra. It was built as a compromise between Sydney and Melbourne." Every question on this site has one, so hosts can read it out and players learn something even when they miss.
 
-## 7. Balance the difficulty
+## Balance the difficulty
 
 In a round of ten, aim for about four easy, four medium and two hard questions. Put an easy one first to get everyone writing. Test the round on one or two people before the night; if nobody gets a question, it's too hard or badly worded.
-
-## A worked example
-
-Start with a fact: *Alaska was bought from Russia in 1867.*
-
-1. **Draft:** "When did America get Alaska?" Vague: "get" could mean purchase or statehood (1959).
-2. **Fix the wording:** "From which country did the United States buy Alaska in 1867?"
-3. **Pick decoys:** Canada, Great Britain, Spain. All plausible to someone who doesn't know.
-4. **Write the explanation:** "Secretary of State William Seward arranged the $7.2 million purchase, mocked at the time as 'Seward's Folly.'"
-5. **Check:** confirmed against the US State Department's Office of the Historian.
-
-You'll find that exact question in our [history trivia](/history-trivia/) set.
-
-## Frequently asked questions
-
-### How hard should trivia questions be?
-
-Most of a round should be answerable by most of the room. A mix of about four easy, four medium and two hard questions per ten keeps everyone involved.
-
-### How do you write multiple-choice trivia questions?
-
-Write the question so it has one clear answer, then add three wrong options that people genuinely believe. Avoid joke options; they make the question too easy.
-
-### Should trivia questions have trick answers?
-
-Fair surprises, yes; tricks, no. The player who gets it wrong should agree the question was fair once they hear the answer.
-
-### How do I check if a trivia answer is right?
-
-Look it up in a primary or standard source, such as a government agency, museum or reputable encyclopedia, not another trivia list.

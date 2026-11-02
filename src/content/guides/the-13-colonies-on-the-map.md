@@ -5,11 +5,17 @@ published: 2026-11-19
 tool: us
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> The 13 colonies were New Hampshire, Massachusetts, Rhode Island and Connecticut (New England); New York, New Jersey, Pennsylvania and Delaware (the Middle colonies); and Maryland, Virginia, North Carolina, South Carolina and Georgia (the Southern colonies). They run along the Atlantic coast from New Hampshire to Georgia.</p></div>
+Maine, Vermont and Florida all touch the East Coast, and none of them was one of the thirteen. Getting that straight is half the battle with this map. The thirteen British colonies that declared independence in 1776 became the first states of the United States, and on a modern map they are easy to find once you know the three groups, because they run in order down the coast. This guide starts with what is missing, then the groups, then a path from top to bottom.
 
-The thirteen British colonies that declared independence in 1776 became the first states of the United States. On a modern map they're easy to find once you know the three groups, because they run in order down the East Coast.
+## What is missing from the coast
 
-## The three groups
+- **Maine** was part of Massachusetts and became a separate state only in 1820.
+- **Vermont** was not one of the thirteen. Its land was disputed between New York and New Hampshire, and it joined the Union in 1791 as the 14th state.
+- **Florida** was not among the thirteen either.
+
+Our [13 colonies map quiz](/13-colonies-map-quiz/) uses modern state borders, as most textbooks and classes do. The colonial map differed in other ways, too. Several colonies, especially Virginia, claimed land far to the west; Virginia's included what became Kentucky and West Virginia. And Delaware was governed together with Pennsylvania for much of the colonial period before becoming fully separate.
+
+## Count 4, 4 and 5
 
 <div class="table-wrap"><table>
 <thead><tr><th>Group</th><th>Colonies</th><th>On today's map</th></tr></thead>
@@ -20,7 +26,7 @@ The thirteen British colonies that declared independence in 1776 became the firs
 </tbody>
 </table></div>
 
-## A memory path down the coast
+## A path down the coast
 
 Start at the top and follow the coast south:
 
@@ -38,39 +44,8 @@ Start at the top and follow the coast south:
 12. **South Carolina**, in that order.
 13. **Georgia**, the southernmost and last founded, in 1732.
 
-## Colonial borders vs. today's
-
-Our [13 colonies map quiz](/13-colonies-map-quiz/) uses modern state borders, as most textbooks and classes do. The colonial map looked different in a few important ways:
-
-- **Maine** was part of Massachusetts and became a separate state only in 1820.
-- **Vermont** was not one of the thirteen. Its land was claimed by New York and New Hampshire, and it joined the Union in 1791 as the 14th state.
-- **Western claims:** several colonies, especially Virginia, claimed land far to the west. Virginia's included what became Kentucky and West Virginia.
-- **Delaware** was governed together with Pennsylvania for much of the colonial period before becoming fully separate.
-
-## Easy ways to remember them
-
-- **Count by group:** 4 New England, 4 Middle, 5 Southern.
-- **Remember what's missing:** Maine, Vermont and Florida are on the coast nearby but were not among the thirteen.
-- **Remember the ends:** New Hampshire at the top, Georgia at the bottom.
+Virginia was the first, with Jamestown founded in 1607. So the ends to remember are New Hampshire at the top and Georgia at the bottom.
 
 ## Practice
 
 Play the [13 colonies map quiz](/13-colonies-map-quiz/) with "Show names" on once, then off. Delaware and Rhode Island are small; on a phone, use Zoom. To place the colonies within the rest of the country, the [Northeast](/northeast-states-quiz/) and [Southern](/southern-states-quiz/) states quizzes are the next step.
-
-## Frequently asked questions
-
-### What were the 13 colonies?
-
-New Hampshire, Massachusetts, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina and Georgia.
-
-### Which was the first of the 13 colonies?
-
-Virginia, where Jamestown was founded in 1607.
-
-### Which was the last of the 13 colonies?
-
-Georgia, founded in 1732.
-
-### Why weren't Maine and Vermont colonies?
-
-Maine was part of Massachusetts, and Vermont's land was disputed between New York and New Hampshire. Both became separate states after independence.

@@ -5,32 +5,33 @@ published: 2026-11-21
 tool: world
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> South America has 12 countries; Brazil covers almost half the continent and borders every country except Chile and Ecuador. Central America has 7 countries from Guatemala to Panama, and the Caribbean adds 13 island nations. Learn the mainland first, then the islands.</p></div>
+The Americas look simple from far away and get complicated up close. South America's countries are big and distinct, Central America's are a narrow chain of seven, and the Caribbean is a scatter of islands, several of them too small to see on a world map. The easiest way through is to walk it: start at the Mexican border, go down the isthmus, cross into South America, run down the Pacific side and back up the Atlantic side, and finish in the islands.
 
-The Americas look simple from far away and get complicated up close. South America's countries are big and distinct, Central America's are a narrow chain of seven, and the Caribbean is a scatter of islands, several of them too small to see on a world map. Here's an order that makes them manageable.
-
-## South America (12)
-
-Start with **Brazil**, which borders nine of the other eleven countries, every one except Chile and Ecuador. Then go around it:
-
-- **North coast, west to east:** **Colombia**, **Venezuela**, **Guyana** and **Suriname**. French Guiana, next to Suriname, is part of France and isn't a country.
-- **Down the west side:** **Ecuador** (on the equator, which gives it its name), **Peru** and the long, thin **Chile**.
-- **The south:** **Argentina**, the second-largest country on the continent, and **Uruguay**, a small country between Argentina and Brazil.
-- **Landlocked, in the middle:** **Bolivia** and **Paraguay**, the continent's only two landlocked countries.
-
-## Central America (7)
+## Step 1: down the isthmus (Central America, 7)
 
 The isthmus runs from Mexico to Colombia. From northwest to southeast:
 
 1. **Guatemala**, bordering Mexico.
 2. **Belize**, on the Caribbean coast east of Guatemala.
 3. **El Salvador**, the smallest, and the only one without a Caribbean coastline.
-4. **Honduras**, with a long Caribbean coast.
+4. **Honduras**, with a long Caribbean coast, north of Nicaragua.
 5. **Nicaragua**, the largest of the seven.
 6. **Costa Rica**.
 7. **Panama**, which connects to South America and is crossed by the Panama Canal.
 
-## The Caribbean (13)
+## Step 2: down the Pacific side (South America)
+
+Cross from Panama into **Colombia**, then follow the west coast: **Ecuador** (on the equator, which gives it its name), **Peru** and the long, thin **Chile**.
+
+## Step 3: the Southern Cone and the middle
+
+At the bottom sit **Argentina**, the second-largest country on the continent, and **Uruguay**, a small country between Argentina and Brazil. Uruguay is on the coast; north of it, in the middle of the continent, are **Bolivia** and **Paraguay**, the only two landlocked countries in South America.
+
+## Step 4: Brazil and the north coast
+
+**Brazil** covers almost half the continent and borders nine of the other eleven countries, every one except Chile and Ecuador. Then walk the north coast, west to east: **Venezuela**, **Guyana** and **Suriname**. French Guiana, next to Suriname, is part of France and isn't a country, and the Falkland Islands are a British territory, so neither is counted. South America has 12 countries in all.
+
+## Step 5: the Caribbean (13)
 
 The island nations are where most points are lost. Group them by size:
 
@@ -40,36 +41,10 @@ The island nations are where most points are lost. Group them by size:
 
 Puerto Rico, the US Virgin Islands and several other islands are territories of other countries, so our quiz draws them but doesn't ask them.
 
-## Mistakes to avoid
+## Look-alikes to watch
 
-<div class="table-wrap"><table>
-<thead><tr><th>Mix-up</th><th>The fix</th></tr></thead>
-<tbody>
-<tr><td>Uruguay and Paraguay</td><td>Uruguay is on the coast; Paraguay is landlocked to its north.</td></tr>
-<tr><td>Guyana, Suriname and French Guiana</td><td>West to east: Guyana, Suriname, then French Guiana, which is part of France.</td></tr>
-<tr><td>Honduras and Nicaragua</td><td>Honduras is north of Nicaragua; Nicaragua is the largest Central American country.</td></tr>
-<tr><td>Dominica and the Dominican Republic</td><td>Dominica is a small island nation in the Lesser Antilles; the Dominican Republic shares Hispaniola with Haiti.</td></tr>
-</tbody>
-</table></div>
+Dominica is a small island nation in the Lesser Antilles; the Dominican Republic shares Hispaniola with Haiti. Walking west to east along the north coast gives Guyana, Suriname, then French Guiana, so you don't mix the three Guianas.
 
 ## Practice
 
 The [North and South America map quiz](/americas-map-quiz/) has filters for North America (including Central America and the Caribbean) and South America, so you can learn each part separately. The small Caribbean islands are shown with dots; on a phone, turn on Zoom. Then add the [world capitals quiz](/world-capitals-quiz/) with the South America or North America filter.
-
-## Frequently asked questions
-
-### How many countries are in South America?
-
-Twelve. French Guiana is part of France, and the Falkland Islands are a British territory, so neither is counted.
-
-### How many countries are in Central America?
-
-Seven: Guatemala, Belize, El Salvador, Honduras, Nicaragua, Costa Rica and Panama.
-
-### Which South American countries are landlocked?
-
-Bolivia and Paraguay.
-
-### Which country is the largest in South America?
-
-Brazil, which covers almost half the continent's area.

@@ -5,8 +5,6 @@ published: 2026-11-04
 tool: trivia-night
 ---
 
-<div class="key-takeaway"><p><strong>Quick answer:</strong> A good fun fact about yourself is short, true, a little unexpected and easy to ask a follow-up about, such as an unusual skill, a place you've lived, a small record or a near-miss with someone famous. Have one ready for work, one for social settings, and a set of three for "two truths and a lie."</p></div>
-
 "Tell us a fun fact about yourself" is the most common icebreaker there is, and it makes almost everyone freeze. The trick is that a fun fact doesn't need to be impressive. It needs to be specific. "I like hiking" is a hobby; "I once hiked 20 miles in a day by taking a wrong turn" is a fun fact.
 
 ## How to find your fun fact
@@ -105,20 +103,6 @@ At school, keep facts simple: a pet's name, a favorite book, a place you've been
 
 Sometimes "fun fact" means a fact about the world, not about you. Then pick something short and surprising, like "octopuses have three hearts." Our [fun facts](/fun-facts/) page has dozens, each with a source, and a new one every day.
 
-## Frequently asked questions
+## If you can't think of one
 
-### What is a good fun fact about myself?
-
-Something short, true and specific that invites a follow-up question, such as an unusual skill, a place you've lived or a small record. "I've lived in five countries" works better than "I like travel."
-
-### What should I say if I don't have a fun fact?
-
-Everyone has one. Think of a first, an odd skill, a surprising number or a near-miss with someone famous. Even "I've never seen Star Wars" gets a reaction.
-
-### What are three interesting facts about me examples?
-
-Pick one from work or school, one about a place, and one skill or quirk, for example: "I've worked in three industries, I grew up on an island, and I can juggle."
-
-### What's a good fun fact for a work meeting?
-
-Something light and work-safe, like a first job, a skill, or a place you've lived. Avoid anything too personal, political or that could embarrass someone else.
+Everyone has one: a first, an odd skill, a surprising number or a near-miss with someone famous. Even "I've never seen Star Wars" gets a reaction. For a work meeting, keep it light and work-safe, such as a first job, a skill or a place you've lived, and avoid anything too personal, political or that could embarrass someone else.

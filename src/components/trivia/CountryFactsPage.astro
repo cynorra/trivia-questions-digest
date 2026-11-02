@@ -1,0 +1,43 @@
+---
+// A country fact page (rendered by src/pages/[slug].astro).
+import HubLayout from "../../layouts/HubLayout.astro";
+import Faq from "../Faq.astro";
+import { getCollection } from "astro:content";
+import { COUNTRY_PAGES } from "../../lib/trivia/country-facts.js";
+import { unlinkMissingGuides } from "../../lib/live-links.js";
+import { pageDates } from "../../page-dates.js";
+import { faqSchema } from "../../lib/schema.js";
+
+const { country } = Astro.props;
+const d = pageDates(`/${country.slug}/`);
+const live = (await getCollection("guides", (g) => !g.data.draft)).map((g) => g.id);
+const body = unlinkMissingGuides(country.body, live);
+const others = COUNTRY_PAGES.filter((c) => c.key !== country.key);
+---
+<HubLayout
+  topic="world"
+  title={country.title}
+  h1={country.h1}
+  description={country.description}
+  lead={country.lead}
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Facts", value: `${country.facts.length}` }, { label: "Sources", value: "Named for every fact" }, { label: "Country", value: country.country }, { label: "Good for", value: "Class, quiz night or travel" }]}
+  sources={country.sources}
+  extraSchema={[faqSchema(country.faq)]}
+>
+  <h2>{country.facts.length} facts about {country.country}</h2>
+  <ol class="fact-list">
+    {country.facts.map(([fact, why, src]) => <li><strong>{fact}</strong> {why} <span class="fact-src">Source: {src}</span></li>)}
+  </ol>
+
+  <Fragment set:html={body} />
+
+  <Faq items={country.faq} />
+
+  <h2>More country facts</h2>
+  <ul class="cat-links">
+    {others.map((c) => <li><a href={`/${c.slug}/`}>{c.h1}</a></li>)}
+    <li><a href="/fun-facts/">Fun facts by topic</a></li>
+  </ul>
+</HubLayout>

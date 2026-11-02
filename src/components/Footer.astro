@@ -1,0 +1,42 @@
+---
+import Logo from "./Logo.astro";
+import { SITE, FOOTER_LINKS } from "../site.config.js";
+const year = new Date().getFullYear();
+---
+<footer class="mt-20 border-t border-border bg-card">
+  <div class="mx-auto max-w-6xl px-4 py-10 grid gap-8 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,1fr)]">
+    <div class="flex flex-col gap-2">
+      <a href="/" class="flex items-center gap-2 no-underline text-foreground">
+        <Logo size={22} />
+        <span class="font-display font-extrabold">{SITE.name}</span>
+      </a>
+      <p class="text-sm text-muted-foreground max-w-xs">
+        A free daily trivia quiz, hand-written trivia questions and answers, map quizzes and a fun fact every day.
+      </p>
+    </div>
+    <nav aria-label="Sections">
+      <h2 class="text-xs uppercase tracking-wider text-muted-foreground mb-3">Trivia</h2>
+      <ul class="grid gap-1 text-sm">
+        <li><a href="/daily-trivia/">Daily trivia</a> · <a href="/fun-facts/">Fun facts</a></li>
+        <li><a href="/general-knowledge-trivia/">General knowledge</a> · <a href="/history-trivia/">History</a></li>
+        <li><a href="/science-trivia/">Science</a> · <a href="/movie-trivia/">Movies</a> · <a href="/music-trivia/">Music</a></li>
+        <li><a href="/sports-trivia/">Sports</a> · <a href="/nfl-quiz/">NFL</a> · <a href="/nba-quiz/">NBA</a></li>
+        <li><a href="/80s-trivia/">80s</a> · <a href="/90s-trivia/">90s</a> · <a href="/food-trivia/">Food</a> · <a href="/bible-trivia/">Bible</a></li>
+        <li><a href="/christmas-trivia/">Christmas</a> · <a href="/thanksgiving-trivia/">Thanksgiving</a></li>
+        <li><a href="/map-quizzes/">Map quizzes</a> · <a href="/flag-quiz/">Flags</a> · <a href="/world-capitals-quiz/">Capitals</a></li>
+        <li><a href="/guides/">Guides</a> · <a href="/rss.xml">RSS</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Site information">
+      <h2 class="text-xs uppercase tracking-wider text-muted-foreground mb-3">About this site</h2>
+      <ul class="grid grid-cols-2 gap-1 text-sm">
+        {FOOTER_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-border">
+    <p class="mx-auto max-w-6xl px-4 py-4 text-xs text-muted-foreground">
+      © {year} {SITE.name}. Questions written and checked by hand. Maps: US Census Bureau and Natural Earth (public domain). Flags: flag-icons (MIT license).
+    </p>
+  </div>
+</footer>

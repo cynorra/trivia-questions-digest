@@ -1,0 +1,82 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import AuthorBox from "../../components/AuthorBox.astro";
+import OnThisPage from "../../components/OnThisPage.astro";
+import { getCollection, render } from "astro:content";
+import { articleSchema, breadcrumbSchema, faqSchema } from "../../lib/schema.js";
+import { guideFaqs } from "../../lib/guide-faqs.js";
+import { AUTHOR } from "../../site.config.js";
+import { TOPIC_BY_KEY } from "../../lib/topics.js";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides", (g) => !g.data.draft);
+  return guides.map((guide) => ({ params: { slug: guide.id }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+const { Content, headings } = await render(guide);
+const toc = headings.filter((h) => h.depth === 2).map((h) => ({ id: h.slug, text: h.text }));
+const { title, description, published, updated, tool } = guide.data;
+const path = `/guides/${guide.id}/`;
+
+const topic = TOPIC_BY_KEY[tool];
+const faqs = guideFaqs(guide.body ?? "");
+
+const related = (await getCollection("guides", (g) => !g.data.draft && g.data.tool === tool && g.id !== guide.id)).slice(0, 4);
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Guides", path: "/guides/" },
+  { name: title, path },
+];
+const fmtDate = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+---
+<Base
+  title={title}
+  description={description}
+  ogType="article"
+  published={published}
+  updated={updated}
+  schema={[breadcrumbSchema(crumbs), articleSchema({ title, description, path, published, updated }), ...(faqs.length ? [faqSchema(faqs)] : [])]}
+>
+  <div class="relative overflow-hidden border-b">
+    <div class="plan-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pt-6 pb-8">
+      <Breadcrumbs crumbs={crumbs} />
+      <p class="text-brand mt-5 text-sm font-medium">{topic.label}</p>
+      <h1 class="mt-2 max-w-[24ch] text-4xl font-extrabold md:text-5xl">{title}</h1>
+      <p class="text-muted-foreground mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+        <span>By <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a></span>
+        <span aria-hidden="true">·</span>
+        <span>Published <time datetime={published.toISOString()}>{fmtDate(published)}</time></span>
+        {updated && <><span aria-hidden="true">·</span><span>Updated <time datetime={updated.toISOString()}>{fmtDate(updated)}</time></span></>}
+      </p>
+    </div>
+  </div>
+
+  <div class="mx-auto mt-10 grid max-w-6xl gap-12 px-4 lg:grid-cols-[minmax(0,1fr)_260px]">
+    <article class="prose-site min-w-0">
+      <Content />
+      <AuthorBox published={published} updated={updated} />
+    </article>
+    <aside class="flex min-w-0 flex-col gap-8 self-start lg:sticky lg:top-20" aria-label="Page navigation and related guides">
+      <OnThisPage items={toc} />
+      {topic.hubName && (
+        <a href={topic.href} class="bg-brand-soft border-brand/30 hover:border-brand block rounded-xl border p-5 no-underline text-foreground transition-colors">
+          <span class="text-brand text-xs font-semibold tracking-wider uppercase">{topic.ctaKicker}</span>
+          <span class="font-display mt-1 block text-lg font-bold">{topic.hubName} →</span>
+          <span class="text-muted-foreground mt-1 block text-sm">{topic.blurb}</span>
+        </a>
+      )}
+      {related.length > 0 && (
+        <div>
+          <p class="text-muted-foreground mb-3 text-xs font-semibold tracking-wider uppercase">Related guides</p>
+          <ul class="grid gap-3 text-sm">
+            {related.map((g) => <li><a href={`/guides/${g.id}/`} class="font-medium leading-snug">{g.data.title}</a></li>)}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+</Base>

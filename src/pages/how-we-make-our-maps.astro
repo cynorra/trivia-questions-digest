@@ -1,0 +1,44 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE } from "../site.config.js";
+import { COUNTRIES, CAPITAL_NOTES, UN_MEMBER_COUNT } from "../lib/geo/countries.js";
+const notes = COUNTRIES.filter((c) => CAPITAL_NOTES[c.a2]);
+const left = COUNTRIES.filter((c) => !c.askCapital);
+---
+<PageLayout
+  title="How We Make Our Maps"
+  description={`Where ${SITE.name}'s maps, country list, capitals and flags come from, how they're checked against two datasets, and how disputed places are handled.`}
+  updated={pageDates("/how-we-make-our-maps/").updated ?? pageDates("/how-we-make-our-maps/").published}
+>
+  <p>Every quiz on {SITE.name} is built from public data by code, then checked by automated tests before the site is published. This page explains where each piece comes from and the choices we made along the way.</p>
+
+  <h2>Map sources</h2>
+  <ul>
+    <li><strong>US states:</strong> the US Census Bureau's cartographic boundary files, through the open-source us-atlas package. The map uses the Albers USA projection, which places Alaska and Hawaii as insets in the lower left. Their position and size there are not true to life.</li>
+    <li><strong>World countries:</strong> Natural Earth's 1:50 million country boundaries, which are in the public domain, through the world-atlas package. We simplify the outlines so maps load quickly; small islands and fine coastline detail are smoothed.</li>
+    <li><strong>Projections:</strong> the world map uses the Equal Earth projection, which keeps countries' relative sizes honest. Europe uses a conic projection, and the regional maps of Africa, Asia, the Americas and Oceania use Mercator for familiar shapes at that scale.</li>
+  </ul>
+  <p>All maps are drawn when the site is built and sent as plain SVG, so they display without JavaScript and look sharp at any zoom level.</p>
+
+  <h2>Which countries are included</h2>
+  <p>The quizzes ask about the {UN_MEMBER_COUNT} member states of the United Nations plus its two observer states, Vatican City and Palestine: {COUNTRIES.length} in all. Other places, including dependent territories like Greenland and Puerto Rico and partially recognized states like Kosovo and Taiwan, are drawn on the maps in gray but never asked. That rule is simple, public and doesn't require us to take a side in any dispute.</p>
+  <p>Continents follow the countries-list dataset with two changes: Russia is grouped with Europe, where map quizzes usually place it, and Timor-Leste is grouped with Southeast Asia. Countries too small to click at their map's scale are shown with a dot.</p>
+
+  <h2>Capitals: checked twice</h2>
+  <p>Capitals come from the countries-list dataset (MIT license). An automated test compares every one with a second, independent dataset, world-countries, and stops the build if they disagree. Where the official capital differs from the dataset's entry, we use the official one and say so.</p>
+  <p>{left.length} countries are left out of capital questions because a single answer would mislead: {left.map((c) => c.name).join(", ")}. The table below lists every note we show with an answer.</p>
+  <div class="table-wrap"><table><thead><tr><th>Country</th><th>Capital used</th><th>Note</th></tr></thead><tbody>{notes.map((c) => <tr><td>{c.name}</td><td>{c.askCapital ? c.capital : "Not asked"}</td><td class="!whitespace-normal">{c.capitalNote}</td></tr>)}</tbody></table></div>
+
+  <h2>US states and capitals</h2>
+  <p>The 50 states, their capitals and their Census regions are written out by hand. A test checks that every state name matches a shape on the Census map exactly, that there are 50 states and 50 capitals, and that each Census region has the right number of states: 9 in the Northeast, 12 in the Midwest, 16 in the South and 13 in the West.</p>
+
+  <h2>Flags and outlines</h2>
+  <p>Flags come from the open-source flag-icons project (MIT license). Country outlines in the shape quiz are drawn from the same Natural Earth data as the maps, each scaled to fill the same box, so size is not a clue.</p>
+
+  <h2>Scoring</h2>
+  <p>On map quizzes, a place counts as correct only if you click it on the first try. After three wrong clicks the map highlights the answer and moves on, and the place goes on your "practice these" list. Multiple-choice quizzes draw their wrong options from the same continent or US region as the answer.</p>
+
+  <h2>Corrections</h2>
+  <p>Names and capitals change. If you spot something out of date, email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Confirmed fixes are made in the data files, the tests run again, and the page's updated date changes.</p>
+</PageLayout>

@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import MapSvg from "../components/geo/MapSvg.astro";
+import Faq from "../components/Faq.astro";
+import { PAGES } from "../lib/geo/pages.js";
+import { usMap } from "../lib/geo/maps.js";
+import { breadcrumbSchema, faqSchema } from "../lib/schema.js";
+
+const preview = usMap();
+const link = (key) => PAGES.find((p) => p.key === key);
+const groups = [
+  { title: "United States", keys: ["us-states", "state-capitals", "northeast", "midwest", "south", "west", "colonies"] },
+  { title: "The world", keys: ["world", "europe", "africa", "asia", "americas", "oceania"] },
+  { title: "Capitals, flags and shapes", keys: ["capitals", "flags", "shapes"] },
+];
+const crumbs = [{ name: "Home", path: "/" }, { name: "Map quizzes", path: "/map-quizzes/" }];
+const faq = [
+  { q: "Are these map quizzes free?", a: "Yes. Every map game, flag quiz and capitals quiz is free, needs no account and runs in your browser. Nothing you click is sent to a server." },
+  { q: "Which map quiz should I start with?", a: "If you live in the US, start with the US states map quiz and turn on 'Show names' for the first round. For the world, start with one continent, such as Europe or South America, before trying all 195 countries." },
+  { q: "Do the map quizzes work on a phone?", a: "Yes. Use the Zoom button to enlarge the map for small states and island countries; every quiz also has a list mode for capitals, flags and shapes." },
+];
+---
+<Base title="Map Quizzes: US States, World Countries, Capitals and Flags" description="Free map quizzes and geography games: click the 50 US states or all 195 countries on a blank map, plus world and state capitals, flags and country shapes." schema={[breadcrumbSchema(crumbs), faqSchema(faq)]}>
+  <section class="relative overflow-hidden border-b">
+    <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 md:grid-cols-[1.1fr_1fr] md:py-14">
+      <div>
+        <Breadcrumbs crumbs={crumbs} />
+        <h1 class="mt-5 max-w-[16ch] text-4xl leading-[1.05] font-extrabold md:text-6xl">Map quizzes and geography games</h1>
+        <p class="text-muted-foreground mt-5 max-w-[56ch] text-lg">Click-the-map quizzes for the 50 states and all 195 countries, plus capitals, flags and country shapes. Three tries per place; a wrong click shows you where it really is.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/us-states-map-quiz/" class="bg-brand text-brand-foreground rounded-lg px-5 py-2.5 font-semibold no-underline">US states quiz</a>
+          <a href="/world-map-quiz/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">World map quiz</a>
+          <a href="/daily-geography-quiz/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Daily geography quiz</a>
+        </div>
+      </div>
+      <a href="/us-states-map-quiz/" class="block no-underline" aria-label="Play the US states map quiz">
+        <MapSvg id="hub-map" viewBox={preview.viewBox} shapes={preview.shapes} label="Map of the 50 US states" />
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14" aria-labelledby="games-h">
+    <h2 id="games-h" class="text-2xl font-extrabold md:text-3xl">Pick a map quiz</h2>
+    <div class="mt-8 grid gap-10 md:grid-cols-3">
+      {groups.map((grp) => (
+        <div>
+          <h3 class="text-muted-foreground text-xs font-semibold tracking-wider uppercase">{grp.title}</h3>
+          <ul class="mt-3 grid gap-3">
+            {grp.keys.map((k) => { const p = link(k); return <li><a href={`/${p.slug}/`} class="font-semibold">{p.h1.charAt(0).toUpperCase() + p.h1.slice(1)}</a><span class="text-muted-foreground block text-sm">{p.lead.split(". ")[0]}.</span></li>; })}
+            {grp.title === "Capitals, flags and shapes" && <li><a href="/geography-trivia/" class="font-semibold">Geography trivia</a><span class="text-muted-foreground block text-sm">Forty questions on rivers, mountains, borders and records, each explained.</span></li>}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="border-t">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-extrabold">Why clicking beats reading a list</h2>
+        <p class="mt-3">Reading "Montana borders Idaho, Wyoming, North Dakota and South Dakota" is easy to forget. Finding Montana on a blank map, missing it twice and seeing where it really sits is not. Each quiz gives you three tries per place, then shows the answer and moves on, and the end-of-round list tells you exactly which places to practice next.</p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-extrabold">Where the maps come from</h2>
+        <p class="mt-3">US borders come from the Census Bureau and world borders from Natural Earth, both public domain. Every country name and capital is checked against two independent datasets before the site is built. Read <a href="/how-we-make-our-maps/">how we make our maps</a>, including how we handle disputed borders and capitals.</p>
+      </div>
+    </div>
+    <div class="prose-site mx-auto max-w-3xl px-4 pb-14"><Faq items={faq} title="Map quiz questions" /></div>
+  </section>
+</Base>

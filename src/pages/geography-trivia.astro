@@ -1,0 +1,49 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import TriviaQuiz from "../components/trivia/TriviaQuiz.tsx";
+import { MAP_METHOD } from "../site.config.js";
+import Faq from "../components/Faq.astro";
+import { TRIVIA } from "../lib/geo/trivia.js";
+import { pageDates } from "../page-dates.js";
+import { faqSchema } from "../lib/schema.js";
+
+const d = pageDates("/geography-trivia/");
+// Shuffle each question's choices deterministically from its id, so the answer isn't always A.
+const hash = (s) => [...s].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 2654435761) >>> 0, 2166136261);
+function shuffle4(id) {
+  let x = hash(id) || 1;
+  const next = () => { x ^= x << 13; x >>>= 0; x ^= x >>> 17; x ^= x << 5; x >>>= 0; return x / 4294967296; };
+  const o = [0, 1, 2, 3];
+  for (let i = 3; i > 0; i--) { const j = Math.floor(next() * (i + 1)); [o[i], o[j]] = [o[j], o[i]]; }
+  return o;
+}
+const questions = TRIVIA.map((t) => {
+  const order = shuffle4(t.id);
+  return { id: t.id, q: t.q, why: t.why, choices: order.map((i) => t.choices[i]), answer: order.indexOf(0) };
+});
+const faq = [
+  { q: "How hard are these geography trivia questions?", a: "They range from warm-ups, like the largest ocean, to questions most people miss, like the world's two doubly landlocked countries. A score of 30 out of 40 is strong." },
+  { q: "Can I use these questions for a trivia night?", a: "Yes. Read them out with the four choices, or drop the choices for a harder round. Each explanation gives the host a sentence to add after the answer." },
+  { q: "Why do some answers mention a debate?", a: "Some records depend on how they're measured. The Nile and the Amazon, for example, swap places depending on where each river's source is placed, so the explanation says which answer most references give." },
+];
+---
+<HubLayout
+  topic="world"
+  method={MAP_METHOD}
+  title="Geography Trivia Quiz: 40 World and US Geography Questions"
+  h1="Geography trivia questions"
+  description="A world and US geography quiz: forty geography trivia questions with answers and explanations on oceans, mountains, rivers, borders and records."
+  lead="Forty questions on rivers, mountains, borders and records. Every answer comes with a sentence of explanation, so a wrong guess still teaches you something."
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Questions", value: `${questions.length}` }, { label: "Format", value: "Multiple choice, 4 options" }, { label: "Explanations", value: "Every question" }, { label: "Good for", value: "Solo play or trivia night" }]}
+  extraSchema={[faqSchema(faq)]}
+>
+  <div slot="app"><TriviaQuiz client:visible questions={questions} /></div>
+
+  <h2>What these questions cover</h2>
+  <p>The set mixes physical geography (the highest, deepest and longest places on Earth), political geography (borders, capitals and how countries are counted) and a handful of US questions. Records that depend on measurement, such as the length of rivers, say so in the explanation rather than pretending there's one undisputed number.</p>
+  <p>If you'd rather test yourself on the map, try the <a href="/world-map-quiz/">world map quiz</a> or the <a href="/us-states-map-quiz/">US states quiz</a>. For a shorter mixed set that changes every day, there's the <a href="/daily-geography-quiz/">daily geography quiz</a>.</p>
+
+  <Faq items={faq} />
+</HubLayout>

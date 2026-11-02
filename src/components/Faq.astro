@@ -1,0 +1,7 @@
+---
+// Visible Q&A section. The same array feeds faqSchema() so markup and schema match.
+interface Props { items: { q: string; a: string }[]; title?: string }
+const { items, title = "Questions people ask" } = Astro.props;
+---
+<h2>{title}</h2>
+{items.map(({ q, a }) => (<><h3>{q}</h3><p>{a}</p></>))}

@@ -1,0 +1,52 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import FactOfDay from "../components/trivia/FactOfDay.tsx";
+import Faq from "../components/Faq.astro";
+import { FACTS } from "../lib/trivia/facts.js";
+import { pageDates } from "../page-dates.js";
+import { faqSchema } from "../lib/schema.js";
+
+const d = pageDates("/fun-facts/");
+const GROUPS = { animals: "Animals", space: "Space", places: "Places", history: "History", food: "Food", science: "Science", people: "People and companies", words: "Words" };
+const grouped = Object.entries(GROUPS).map(([k, label]) => ({ k, label, items: FACTS.filter((f) => f[0] === k) })).filter((g) => g.items.length);
+const faq = [
+  { q: "Where do these fun facts come from?", a: "Each fact names the source it was checked against, such as NASA, NOAA, the Smithsonian or Encyclopaedia Britannica. If we couldn't confirm a popular 'fact', it isn't here." },
+  { q: "How is the fun fact of the day chosen?", a: `The ${FACTS.length} facts are shuffled once and shown one a day in that order, so the same fact won't come round again until all of them have been shown. It changes at midnight UTC.` },
+  { q: "Can I use these facts at work or in a newsletter?", a: "Yes. They're short, work-safe and sourced, which makes them a good fit for a 'fun fact of the day' in a team meeting, a classroom or an email. A link back is appreciated." },
+];
+---
+<HubLayout
+  topic="knowledge"
+  title={`Fun Facts: ${FACTS.length} Random, Interesting and Weird Facts`}
+  h1="Fun facts and random facts"
+  description={`${FACTS.length} random, interesting and weird fun facts about animals, space, history and food, each sourced, plus an interesting fact of the day.`}
+  lead={`${FACTS.length} random facts that are surprising and true, each with a line of explanation and the source we checked it against. One is featured as the fact of the day.`}
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Facts", value: `${FACTS.length}` }, { label: "Sources", value: "Named for every fact" }, { label: "Fact of the day", value: "Changes at midnight UTC" }, { label: "Work-safe", value: "Yes" }]}
+  sources={[{ label: "NASA Science", href: "https://science.nasa.gov/" }, { label: "NOAA", href: "https://www.noaa.gov/" }, { label: "Smithsonian Institution", href: "https://www.si.edu/" }, { label: "Encyclopaedia Britannica", href: "https://www.britannica.com/" }]}
+  extraSchema={[faqSchema(faq)]}
+>
+  <div slot="app" class="max-w-3xl"><FactOfDay client:load buildTime={Date.now()} facts={FACTS} /></div>
+
+  <h2>What counts as a fun fact here</h2>
+  <p>A good fun fact is surprising, short enough to repeat, and true. That last part is where most lists fail: the Great Wall of China is not visible from the Moon, and glass is not a slow-moving liquid. We include both, the right way round, because myth-busting facts are some of the best ones to share.</p>
+  <p>Every fact below has a source in small print. Where a fact depends on a definition, like why bananas count as berries or why Antarctica is a desert, the explanation gives the definition.</p>
+
+  {grouped.map((g) => (
+    <>
+      <h2>Fun facts about {g.label.toLowerCase()}</h2>
+      <ul class="fact-list">
+        {g.items.map(([, fact, why, src]) => <li><strong>{fact}</strong> {why} <span class="fact-src">Source: {src}</span></li>)}
+      </ul>
+    </>
+  ))}
+
+  <h2>Facts about countries</h2>
+  <p>Separate pages collect facts about single countries, each with sources: <a href="/facts-about-japan/">Japan</a>, <a href="/facts-about-mexico/">Mexico</a> and <a href="/facts-about-canada/">Canada</a>.</p>
+
+  <h2>Using facts at a trivia night</h2>
+  <p>Facts make good tiebreakers if you turn them into a number question: how many hearts does an octopus have, how long did the Anglo-Zanzibar War last, how many rooms are in the White House? Closest answer wins. For full rounds of questions, see <a href="/general-knowledge-trivia/">general knowledge trivia</a> or <a href="/daily-trivia/">today's trivia questions</a>.</p>
+
+  <Faq items={faq} />
+</HubLayout>

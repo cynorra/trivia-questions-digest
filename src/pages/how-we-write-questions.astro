@@ -1,0 +1,44 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+import { CATS, DAILY_POOL } from "../lib/trivia/cats.js";
+import { FACTS } from "../lib/trivia/facts.js";
+const total = CATS.reduce((n, c) => n + c.items.length, 0);
+---
+<PageLayout
+  title="How We Write and Check Trivia Questions"
+  description={`How ${SITE.name} writes trivia questions, chooses wrong answers, checks every answer against a source, dates facts that can change and fixes mistakes.`}
+  updated={pageDates("/how-we-write-questions/").updated ?? pageDates("/how-we-write-questions/").published}
+>
+  <p>{SITE.name} has {total} trivia questions and {FACTS.length} fun facts. Every one was written by hand by <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a> and checked against a source before it was published. This page explains how.</p>
+
+  <h2>1. One clear answer</h2>
+  <p>A trivia question needs exactly one answer that an informed person would accept. We rewrite or drop questions that have two defensible answers. If a common question has a catch, such as "the closest star" (the Sun) or "the most time zones" (France, counting its territories), the wording makes the catch fair, and the explanation spells it out.</p>
+
+  <h2>2. Wrong answers that are worth considering</h2>
+  <p>Each question has three wrong options. We pick the ones people genuinely believe, such as Sydney for Australia's capital or Mercury for the hottest planet, rather than obvious filler. The order of the options is shuffled the same way every time, so the right answer isn't always in the same spot.</p>
+
+  <h2>3. A source for every answer</h2>
+  <p>Answers are checked against a primary or standard source: NASA for space, the National Archives and the White House for US history, the Academy's database for the Oscars, Halls of Fame for sports, USDA statistics for food production, and Encyclopaedia Britannica for general reference. Bible answers give the book and chapter. Each category page lists the sources used for it.</p>
+
+  <h2>4. Dating facts that can change</h2>
+  <p>We avoid questions whose answer changes every season, such as current champions or the latest box-office leader. When a fact can still change, like the number of known moons of Saturn or the most Olympic medals, the question says "as of" a year. We review dated questions when their sources update.</p>
+
+  <h2>5. Explanations</h2>
+  <p>Every answer has one or two sentences explaining it, usually with a second fact or the reason the tempting wrong answer is wrong. The explanation is what turns a quiz into something you learn from, and it gives a trivia host something to say after each answer.</p>
+
+  <h2>6. Automated checks</h2>
+  <p>Before the site is built, tests check every question: four distinct options, no question repeated anywhere on the site, and no repeated FAQ on any page. A failed test stops the build. The tests also confirm that the daily quiz deals out all {DAILY_POOL.length} questions in its pool before any question repeats.</p>
+
+  <h2>7. What we leave out</h2>
+  <ul>
+    <li>Popular "facts" we couldn't confirm, such as the goldfish's three-second memory.</li>
+    <li>Questions that depend on an opinion, such as "the best" film or song.</li>
+    <li>Graphic or adult content. "Trivia for adults" here means harder, not explicit.</li>
+    <li>Questions on contested politics, where a short answer would mislead.</li>
+  </ul>
+
+  <h2>Corrections</h2>
+  <p>If you think an answer is wrong, email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> with the question and your source. Confirmed corrections are made in the next build and the page's updated date changes. See also the <a href="/editorial-policy/">editorial policy</a>.</p>
+</PageLayout>

@@ -1,0 +1,24 @@
+---
+// A quiz map drawn at build time: plain SVG in the page, so it shows without
+// JavaScript and search engines see every region name in the labels.
+// MapQuiz.tsx attaches to it by id.
+interface Shape { id: string; name: string; d: string; cx: number; cy: number; ask: boolean; small?: boolean }
+interface Props { id: string; viewBox: string; shapes: Shape[]; label: string }
+const { id, viewBox, shapes, label } = Astro.props;
+const asked = shapes.filter((s) => s.ask);
+const [, , vw] = viewBox.split(" ").map(Number);
+const r = Math.max(3.5, vw / 220);
+---
+<figure class="geo-figure not-prose">
+  <svg id={id} class="geo-map" viewBox={viewBox} role="img" aria-label={label}>
+    <g class="geo-shapes">
+      {shapes.filter((s) => s.d).map((s) => <path d={s.d} data-id={s.ask ? s.id : undefined} data-name={s.name} class={s.ask ? "ask" : "ctx"}><title>{s.name}</title></path>)}
+    </g>
+    <g class="geo-markers">
+      {asked.filter((s) => s.small).map((s) => <circle cx={s.cx} cy={s.cy} r={r} data-id={s.id} data-name={s.name} class="ask marker"><title>{s.name}</title></circle>)}
+    </g>
+    <g class="geo-labels" aria-hidden="true">
+      {asked.map((s) => <text x={s.cx} y={s.cy} data-for={s.id} style={`font-size:${Math.max(7, vw / 110)}px`}>{s.name}</text>)}
+    </g>
+  </svg>
+</figure>

@@ -1,0 +1,50 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import SpiritAnimalQuiz from "../components/trivia/SpiritAnimalQuiz.tsx";
+import Faq from "../components/Faq.astro";
+import { ANIMALS, ANIMAL_ORDER, QUESTIONS } from "../lib/trivia/spirit-animal.js";
+import { pageDates } from "../page-dates.js";
+import { faqSchema } from "../lib/schema.js";
+
+const d = pageDates("/spirit-animal-quiz/");
+const list = ANIMAL_ORDER.map((k) => ANIMALS[k]);
+const faq = [
+  { q: "How does this spirit animal quiz work?", a: `You answer ${QUESTIONS.length} questions about how you spend your time, make decisions and get along with people. Each answer adds a point to two of eight animals, and the animal with the most points is your match. Ties go to the animal in your most recent answer.` },
+  { q: "Is the spirit animal test scientific?", a: "No. It's a light personality game, not a psychological assessment. The animal facts on this page are real and sourced; the personality matches are for fun." },
+  { q: "Which animals can I get?", a: "Wolf, owl, dolphin, fox, bear, eagle, otter and elephant. Each result describes the personality it stands for, its strengths and something to watch out for." },
+];
+---
+<HubLayout
+  topic="knowledge"
+  title="Spirit Animal Quiz: Which Animal Matches Your Personality?"
+  h1="Spirit animal quiz"
+  description="A free spirit animal quiz: answer 10 questions to find which of eight animals matches your personality, with your strengths, a runner-up and real facts about each animal."
+  lead="Ten quick questions about how you spend your time, make decisions and treat other people. At the end you'll get your animal match and a runner-up; real, sourced facts about all eight animals are further down the page."
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Questions", value: `${QUESTIONS.length}` }, { label: "Possible results", value: `${list.length} animals` }, { label: "Time", value: "About 2 minutes" }, { label: "Saved or sent", value: "Nothing" }]}
+  sources={[{ label: "Smithsonian's National Zoo", href: "https://nationalzoo.si.edu/" }, { label: "Monterey Bay Aquarium", href: "https://www.montereybayaquarium.org/" }, { label: "National Park Service: wildlife", href: "https://www.nps.gov/subjects/wildlife/" }, { label: "Cornell Lab of Ornithology", href: "https://www.birds.cornell.edu/" }]}
+  extraSchema={[faqSchema(faq)]}
+>
+  <div slot="app" class="max-w-3xl"><SpiritAnimalQuiz client:visible /></div>
+
+  <h2>A game, not a diagnosis</h2>
+  <p>This is a personality match for fun. There are no right or wrong answers and no hidden scoring beyond what's described below: each answer gives one point to two animals, and the most points wins. If two animals tie, the one in your most recent answer takes it. Every animal appears equally often in the answers, so no result is more likely by design.</p>
+  <p>A note on the name: in some Indigenous cultures, a spirit animal has real spiritual meaning. This quiz uses the phrase in its everyday sense, a playful match between your personality and an animal's reputation, and doesn't describe any tradition.</p>
+
+  <h2>All eight results</h2>
+  {list.map((a) => (
+    <>
+      <h3>{a.name}: {a.tagline.toLowerCase()}</h3>
+      <p>{a.traits}</p>
+      <ul class="fact-list">
+        {a.facts.map(([fact, why, src]) => <li><strong>{fact}</strong> {why} <span class="fact-src">Source: {src}</span></li>)}
+      </ul>
+    </>
+  ))}
+
+  <h2>Into animals?</h2>
+  <p>Test what you know with our <a href="/animal-trivia/">animal trivia</a>, or browse the animals section of the <a href="/fun-facts/">fun facts</a> for more real facts with sources.</p>
+
+  <Faq items={faq} />
+</HubLayout>

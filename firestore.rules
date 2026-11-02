@@ -1,0 +1,15 @@
+rules_version = '2';
+// Trivia Questions Digest: the public (and the site build) can read published articles only.
+// Nobody can write from a client; the pipeline writes with the Admin SDK,
+// which bypasses these rules.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /articles/{slug} {
+      allow get, list: if resource.data.status == 'published';
+      allow write: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

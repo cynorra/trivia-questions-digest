@@ -1,0 +1,64 @@
+# Daily article pipeline (ported from aiandsoftwarehub / plumbright):
+#   generate.ts   -> one draft (Gemini + deterministic gates), written to
+#                    src/content/guides/<slug>.md (draft: true) and Firestore
+#   auto-publish.ts --apply -> AI audit (fails closed), publishes passers on
+#                    their date, flips the .md to draft: false
+#   commit the .md files, then dispatch deploy.yml
+#
+# The cron is OFF until the first articles have been read by hand
+# (playbook rule 10). Run it from the Actions tab, read the output, then
+# uncomment the schedule.
+#
+# Secrets: GEMINI_API_KEY, FIREBASE_SERVICE_ACCOUNT (this job only)
+name: Daily Auto-Blog Generator & Publisher
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 4 * * 1,3,5"   # 3 a week: Mon, Wed, Fri (no scaled-content bursts)
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: auto-blog
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Tests (question bank + pipeline gates)
+        run: npm test && npm run test:pipeline
+      - name: Generate one draft
+        run: npx tsx scripts/pipeline/generate.ts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      - name: Audit drafts and publish the passers
+        run: npx tsx scripts/pipeline/auto-publish.ts --apply
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      - name: Commit article files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/guides
+          if git diff --cached --quiet; then echo "No article changes."; exit 0; fi
+          git commit -m "Auto-blog: new draft / published guides"
+          git pull --rebase origin main
+          git push origin main
+      - name: Deploy
+        run: gh workflow run deploy.yml
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,121 @@
+---
+// Every map, flag and capitals quiz page (rendered by src/pages/[slug].astro): a static map or question set, the game island, and the
+// page's own hand-written text (src/lib/geo/pages.js).
+import HubLayout from "../../layouts/HubLayout.astro";
+import MapSvg from "./MapSvg.astro";
+import MapQuiz from "./MapQuiz.tsx";
+import ChoiceQuiz from "./ChoiceQuiz.tsx";
+import Faq from "../Faq.astro";
+import { usMap, worldMap } from "../../lib/geo/maps.js";
+import { STATES, REGIONS, THIRTEEN_COLONIES } from "../../lib/geo/us-states.js";
+import { COUNTRIES, CONTINENTS } from "../../lib/geo/countries.js";
+import { pageDates } from "../../page-dates.js";
+import { faqSchema, webAppSchema } from "../../lib/schema.js";
+import { existsSync } from "node:fs";
+import { MAP_METHOD } from "../../site.config.js";
+
+const { page } = Astro.props;
+const g = page.game;
+const path = `/${page.slug}/`;
+const d = pageDates(path);
+const CHECKED = "2026-11-02";
+
+// Headings for the tips section, written per page rather than one shared phrase.
+const TIPS_TITLE = {
+  "us-states": "How to learn all 50 states", "state-capitals": "Ways to remember state capitals", northeast: "Telling the small states apart",
+  midwest: "Getting the plains states right", south: "Shapes worth knowing in the South", west: "Spotting the Mountain states",
+  colonies: "Remembering the thirteen", world: "How to learn the world map", europe: "Untangling Europe", africa: "Finding your way around Africa",
+  asia: "Where people get lost in Asia", americas: "Central America and the Caribbean", oceania: "Placing the Pacific islands",
+  capitals: "Capitals people get wrong", flags: "Look-alike flags", shapes: "Reading a country's shape",
+};
+
+const continentFilters = (codes) => codes.map((c) => ({ key: c, label: CONTINENTS[c].name }));
+let map, targets = [], filters = [], choice = null, table = null;
+
+if (g.kind === "us-map" || g.kind === "us-region" || g.kind === "us-colonies") {
+  const ask = g.kind === "us-map" ? STATES.map((s) => s.name) : g.kind === "us-region" ? STATES.filter((s) => s.region === g.region).map((s) => s.name) : THIRTEEN_COLONIES;
+  map = usMap({ ask, focus: g.kind === "us-map" ? undefined : ask });
+  targets = map.shapes.filter((s) => s.ask).map((s) => ({ id: s.id, name: s.name, group: s.meta.region }));
+  if (g.kind === "us-map") filters = Object.values(REGIONS).map((r) => ({ key: r.slug, label: r.name }));
+  const rows = STATES.filter((s) => ask.includes(s.name));
+  table = { head: ["State", "Capital", "Region"], rows: rows.map((s) => [s.name, s.capital, REGIONS[s.region].name]) };
+} else if (g.kind === "world-map") {
+  const codes = g.continents ?? Object.keys(CONTINENTS);
+  const list = COUNTRIES.filter((c) => codes.includes(c.continent));
+  map = worldMap(g.view, list.map((c) => c.a2));
+  targets = map.shapes.filter((s) => s.ask).map((s) => ({ id: s.id, name: s.name, group: s.meta.continent }));
+  if (codes.length > 1) filters = continentFilters(codes);
+  table = { head: ["Country", "Capital", ...(codes.length > 1 ? ["Continent"] : [])], rows: list.map((c) => [c.name, c.capital, ...(codes.length > 1 ? [CONTINENTS[c.continent].name] : [])]) };
+} else if (g.kind === "state-capitals") {
+  choice = { mode: "state-capital", label: "50 states", items: STATES.map((s) => ({ id: s.abbr.toLowerCase(), name: s.name, capital: s.capital, group: s.region })), groups: Object.values(REGIONS).map((r) => ({ key: r.slug, label: r.name })) };
+  table = { head: ["State", "Capital", "Region"], rows: STATES.map((s) => [s.name, s.capital, REGIONS[s.region].name]) };
+} else if (g.kind === "capitals") {
+  const asked = COUNTRIES.filter((c) => c.askCapital);
+  choice = { mode: "capital", label: `${asked.length} countries`, items: asked.map((c) => ({ id: c.id, name: c.name, capital: c.capital, group: c.continent, note: c.capitalNote })), groups: continentFilters(Object.keys(CONTINENTS)) };
+  table = { head: ["Country", "Capital", "Note"], rows: COUNTRIES.map((c) => [c.name, c.capital, c.capitalNote ?? ""]) };
+} else if (g.kind === "flags") {
+  choice = { mode: "flag", label: "195 countries", items: COUNTRIES.map((c) => ({ id: c.id, name: c.name, group: c.continent })), groups: continentFilters(Object.keys(CONTINENTS)) };
+} else if (g.kind === "outlines") {
+  const have = COUNTRIES.filter((c) => existsSync(`${process.cwd()}/public/outlines/${c.id}.svg`));
+  choice = { mode: "outline", label: `${have.length} countries`, items: have.map((c) => ({ id: c.id, name: c.name, group: c.continent })), groups: continentFilters(Object.keys(CONTINENTS)) };
+}
+
+const count = map ? targets.length : choice.items.length;
+const facts = [
+  { label: map ? "On the map" : "In the quiz", value: `${count} ${page.section === "us" && !choice ? "states" : choice?.mode === "state-capital" ? "states" : "countries"}` },
+  { label: "Format", value: map ? "Click the map" : choice.mode === "flag" ? "Pick the country for each flag" : choice.mode === "outline" ? "Pick the country for each outline" : "Multiple choice, 4 options" },
+  { label: "Rounds", value: map ? "Timed, scored on first clicks" : "10 questions or the full list" },
+  { label: "Cost", value: "Free, no account" },
+];
+const crumbs = [{ name: "Home", path: "/" }, { name: page.h1, path }];
+---
+<HubLayout
+  topic={page.section === "us" ? "us" : g.kind === "flags" || g.kind === "capitals" ? "flags-capitals" : "world"}
+  title={page.title}
+  h1={page.h1}
+  description={page.description}
+  lead={page.lead}
+  published={d.published}
+  updated={d.updated}
+  checked={CHECKED}
+  method={MAP_METHOD}
+  crumbs={crumbs}
+  facts={facts}
+  extraSchema={[webAppSchema({ name: page.h1, description: page.description, path }), faqSchema(page.faq)]}
+>
+  <div slot="app">
+    {map && (
+      <div class="grid gap-4">
+        <MapQuiz client:load mapId="quiz-map" targets={targets} plural={g.kind === "us-colonies" ? "colonies" : page.section === "us" ? "states" : "countries"} filters={filters} />
+        <MapSvg id="quiz-map" viewBox={map.viewBox} shapes={map.shapes} label={`Blank map for the ${page.h1.toLowerCase()}`} />
+      </div>
+    )}
+    {choice && <ChoiceQuiz client:visible items={choice.items} mode={choice.mode} groups={choice.groups} label={choice.label} />}
+  </div>
+
+  <Fragment set:html={page.body} />
+
+  <h2>{TIPS_TITLE[page.key]}</h2>
+  <ul>{page.tips.map((t) => <li>{t}</li>)}</ul>
+
+  {table && (
+    <>
+      <h2>{g.kind === "capitals" ? "Every country and its capital" : page.section === "us" ? `The ${table.rows.length} ${g.kind === "us-colonies" ? "colonies as modern states" : "states"} in this quiz` : `The ${table.rows.length} countries in this quiz`}</h2>
+      <div class="table-wrap"><table><thead><tr>{table.head.map((h) => <th>{h}</th>)}</tr></thead><tbody>{table.rows.map((r) => <tr>{r.map((c) => <td class="!whitespace-normal">{c}</td>)}</tr>)}</tbody></table></div>
+    </>
+  )}
+
+  {g.kind === "flags" && (
+    <>
+      <h2>Every flag in the quiz</h2>
+      {Object.entries(CONTINENTS).map(([code, cont]) => (
+        <>
+          <h3>{cont.name}</h3>
+          <ul class="flag-grid">{COUNTRIES.filter((c) => c.continent === code).map((c) => <li><img src={`/flags/${c.id}.svg`} alt={`Flag of ${c.name}`} width="48" height="36" loading="lazy" /> {c.name}</li>)}</ul>
+        </>
+      ))}
+    </>
+  )}
+
+  <Faq items={page.faq} />
+</HubLayout>

@@ -1,0 +1,65 @@
+---
+import { pageDates } from "../../page-dates.js";
+import PageLayout from "../../layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
+import { AUTHOR, SITE } from "../../site.config.js";
+import { existsSync } from "node:fs";
+
+// Portrait: add public/images/eren-simsir.jpg and it appears here and in the schema.
+const hasPhoto = existsSync(`${process.cwd()}/public${AUTHOR.photo}`);
+
+const guides = (await getCollection("guides", (g) => !g.data.draft))
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE.url}/author/${AUTHOR.slug}/#person`,
+  name: AUTHOR.name,
+  url: `${SITE.url}/author/${AUTHOR.slug}/`,
+  jobTitle: AUTHOR.role,
+  description: AUTHOR.shortBio,
+  ...(hasPhoto ? { image: `${SITE.url}${AUTHOR.photo}` } : {}),
+  alumniOf: [
+    { "@type": "CollegeOrUniversity", name: "Düzce University" },
+    { "@type": "CollegeOrUniversity", name: "Kocaeli University" },
+  ],
+  knowsAbout: ["Computer engineering", "Software engineering", "Industrial engineering", "Quiz and game design", "Fact-checking", "Trivia", "Geographic data processing", "World geography"],
+  sameAs: [AUTHOR.linkedin, AUTHOR.github],
+  worksFor: { "@id": `${SITE.url}/#organization` },
+};
+---
+<PageLayout
+  title={AUTHOR.name}
+  description={`${AUTHOR.name} writes and checks the trivia questions on ${SITE.name} and built its daily quiz. Background, how he works and how to reach him.`}
+  updated={pageDates("/author/eren-simsir/").updated ?? pageDates("/author/eren-simsir/").published}
+  extraSchema={[person]}
+>
+  {hasPhoto && <img src={AUTHOR.photo} alt={`Portrait of ${AUTHOR.name}`} width="160" height="160" class="mb-6 h-40 w-40 rounded-full object-cover" />}
+  <p class="text-muted-foreground">{AUTHOR.role}</p>
+  <p><strong>{AUTHOR.name}</strong> is the founder and editor of {SITE.name}. He writes and checks the questions, built the daily quiz, the map quiz engine and the tests that cross-check every country and capital, and writes the guides.</p>
+
+  <h2>Background</h2>
+  <ul>
+    <li>B.Sc. in Computer Engineering, Düzce University (2025)</li>
+    <li>M.Sc. student in Computer Engineering, Kocaeli University</li>
+    <li>Is completing a double major in Industrial Engineering</li>
+    <li>Works as a software developer; previously worked as a data scientist</li>
+  </ul>
+
+  <h2>How he works</h2>
+  <p>Eren is a computer engineer, not a historian or a scientist, and the site doesn't pretend otherwise. What he brings is care with facts: every answer is checked against a named source, questions whose answers change are dated, and automated tests catch duplicates and broken answers before anything is published. See <a href="/how-we-write-questions/">how we write questions</a> and the <a href="/editorial-policy/">editorial policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Found a wrong answer, or want a new category? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or use the <a href="/contact/">contact page</a>.</p>
+  <p>Elsewhere: <a href={AUTHOR.linkedin} rel="me noopener" target="_blank">LinkedIn</a> · <a href={AUTHOR.github} rel="me noopener" target="_blank">GitHub</a></p>
+
+  {guides.length > 0 && (
+    <>
+      <h2>Guides by {AUTHOR.name}</h2>
+      <ul>
+        {guides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}
+      </ul>
+    </>
+  )}
+</PageLayout>

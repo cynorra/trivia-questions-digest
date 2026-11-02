@@ -1,0 +1,156 @@
+---
+import Base from "../layouts/Base.astro";
+import FactOfDay from "../components/trivia/FactOfDay.tsx";
+import Faq from "../components/Faq.astro";
+import { getCollection } from "astro:content";
+import { SITE, AUTHOR } from "../site.config.js";
+import { TOPIC_BY_KEY } from "../lib/topics.js";
+import { CATS, CAT_BY_KEY } from "../lib/trivia/cats.js";
+import { PAGES as GEO_PAGES } from "../lib/geo/pages.js";
+import { FACTS } from "../lib/trivia/facts.js";
+import { faqSchema } from "../lib/schema.js";
+
+const guides = (await getCollection("guides", (g) => !g.data.draft)).sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf()).slice(0, 6);
+const buildTime = Date.now();
+const total = CATS.reduce((n, c) => n + c.items.length, 0);
+const groups = [
+  { title: "Everyday trivia", keys: ["general", "adults", "food"] },
+  { title: "History, science and Bible", keys: ["history", "presidents", "black-history", "science", "space", "animals", "bible"] },
+  { title: "Decades", keys: ["eighties", "nineties", "seniors"] },
+  { title: "Sports", keys: ["sports", "nfl", "nba"] },
+  { title: "Movies and music", keys: ["screen", "guess-movie", "music"] },
+  { title: "Holidays", keys: ["christmas", "thanksgiving", "halloween", "easter"] },
+];
+const faq = [
+  { q: "Who writes the trivia questions on this site?", a: `Every question and fact is written by hand by ${AUTHOR.name} and checked against a named source, such as NASA, the National Archives, a museum or a standard reference. Sources are listed at the bottom of each page.` },
+  { q: "Can I read these questions out at my own trivia night?", a: "Yes. Every category page lists its questions with the answers hidden until you open them, plus a sentence the host can read after each answer. Please don't republish them on another website." },
+  { q: "How often is new content added?", a: "A new daily quiz and fact of the day appear every day at midnight UTC, and new guides are published through the month. Pages show the date they were last updated." },
+];
+---
+<Base title={`${SITE.name}: Today's Trivia Questions, Answers and Fun Fact`} description={SITE.description} schema={[faqSchema(faq)]}>
+  <section class="border-b">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1.3fr_1fr] md:py-14">
+      <div>
+        <p class="text-brand text-sm font-semibold tracking-wider uppercase">Trivia, facts and map quizzes</p>
+        <h1 class="mt-3 max-w-[20ch] text-4xl leading-[1.05] font-extrabold md:text-6xl">Trivia questions you can trust, and a new set every day.</h1>
+        <p class="text-muted-foreground mt-5 max-w-[58ch] text-lg">{total} hand-written trivia questions with answers and explanations, sourced fun facts, map quizzes for every state and country, and guides for hosting a trivia night. Every answer is checked against a named source.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/daily-trivia/" class="bg-brand text-brand-foreground rounded-lg px-5 py-2.5 font-semibold no-underline">Today's trivia questions</a>
+          <a href="/map-quizzes/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Map quizzes</a>
+          <a href="/guides/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Guides</a>
+        </div>
+      </div>
+      <div class="self-center"><FactOfDay client:load buildTime={buildTime} facts={FACTS} /></div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14" aria-labelledby="start-h">
+    <h2 id="start-h" class="text-2xl font-extrabold md:text-3xl">Where to start</h2>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      <div class="bg-card rounded-xl border p-5">
+        <h3 class="text-lg font-bold"><a href="/daily-trivia/">Today's trivia questions</a></h3>
+        <p class="text-muted-foreground mt-2 text-sm">Ten new questions every day at midnight UTC, the same for everyone, mixing history, science, film, music, sports and general knowledge. Each answer comes with a one-line explanation.</p>
+      </div>
+      <div class="bg-card rounded-xl border p-5">
+        <h3 class="text-lg font-bold"><a href="/general-knowledge-trivia/">Trivia questions by category</a></h3>
+        <p class="text-muted-foreground mt-2 text-sm">{CATS.length} categories, from general knowledge and US history to Christmas, Bible and NFL trivia. Read them out at a party or play them online; answers stay hidden until you open them.</p>
+      </div>
+      <div class="bg-card rounded-xl border p-5">
+        <h3 class="text-lg font-bold"><a href="/guides/how-to-host-a-trivia-night/">Hosting a trivia night</a></h3>
+        <p class="text-muted-foreground mt-2 text-sm">How many rounds, how to score, which tiebreakers settle a draw and how to keep a mixed group playing. Start with general knowledge, then move to the harder questions for adults and finish with a themed round.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t" aria-labelledby="cats-h">
+    <div class="mx-auto max-w-6xl px-4 py-14">
+      <h2 id="cats-h" class="text-2xl font-extrabold md:text-3xl">Trivia questions and answers by category</h2>
+      <p class="text-muted-foreground mt-2 max-w-[65ch]">{total} questions, written and checked by hand. Play them online or read them out at a trivia night; answers stay hidden until you open them.</p>
+      <div class="mt-8 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+        {groups.map((grp) => (
+          <div>
+            <h3 class="text-muted-foreground text-xs font-semibold tracking-wider uppercase">{grp.title}</h3>
+            <ul class="mt-3 grid gap-3">
+              {grp.keys.map((k) => { const c = CAT_BY_KEY[k]; return <li><a href={`/${c.slug}/`} class="font-semibold">{c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}</a><span class="text-muted-foreground block text-sm">{c.items.length} questions</span></li>; })}
+              {grp.title === "Everyday trivia" && <li><a href="/spirit-animal-quiz/" class="font-semibold">Spirit animal quiz</a><span class="text-muted-foreground block text-sm">10 questions, 8 possible animals</span></li>}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t" aria-labelledby="maps-h">
+    <div class="mx-auto max-w-6xl px-4 py-14">
+      <div class="flex flex-wrap items-baseline justify-between gap-4">
+        <h2 id="maps-h" class="text-2xl font-extrabold md:text-3xl">Map quizzes and geography games</h2>
+        <a href="/map-quizzes/" class="text-sm font-medium">All map quizzes →</a>
+      </div>
+      <p class="text-muted-foreground mt-2 max-w-[65ch]">Click the states or countries on a blank map, or name flags, capitals and country shapes. Every quiz is free and gives three tries per place.</p>
+      <ul class="mt-6 grid gap-3 sm:grid-cols-2 md:grid-cols-4">
+        {[
+          ["/us-states-map-quiz/", "US states map quiz", "All 50 states on a blank map"],
+          ["/world-map-quiz/", "World map quiz", "195 countries, by continent"],
+          ["/flag-quiz/", "Flags of the world quiz", "Guess the flag of every country"],
+          ["/world-capitals-quiz/", "World capitals quiz", "Capital cities of every country"],
+          ["/state-capitals-quiz/", "State capitals quiz", "All 50 states and capitals"],
+          ["/guess-the-country/", "Guess the country", "Name a country from its outline"],
+          ["/geography-trivia/", "Geography trivia", "40 questions with explanations"],
+          ["/daily-geography-quiz/", "Daily geography quiz", "10 new map questions a day"],
+        ].map(([href, name, blurb]) => <li class="bg-card rounded-xl border p-4"><a href={href} class="font-semibold">{name}</a><span class="text-muted-foreground block text-sm">{blurb}</span></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="border-t">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-extrabold">Why every answer has a source</h2>
+        <p class="mt-3">Trivia lists online are full of "facts" nobody checked: the Great Wall visible from space, goldfish with three-second memories. Here every question was written for this site and checked against a primary or standard source, and facts that can change carry an "as of" date. The explanation after each answer says why it's right, and often why the tempting wrong answer isn't. Read <a href="/how-we-write-questions/">how we write questions</a>.</p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-extrabold">A fact a day, with the source</h2>
+        <p class="mt-3">The fact of the day at the top of this page changes at midnight UTC. All {FACTS.length} facts are listed by topic on the <a href="/fun-facts/">fun facts</a> page, each with a short explanation and the source it was checked against. They're short and work-safe, so they suit a team meeting, a classroom or a tiebreaker.</p>
+      </div>
+    </div>
+  </section>
+
+  {guides.length > 0 && (
+    <section class="border-t" aria-labelledby="guides-h">
+      <div class="mx-auto max-w-6xl px-4 py-14">
+        <div class="flex items-baseline justify-between gap-4">
+          <h2 id="guides-h" class="text-2xl font-extrabold md:text-3xl">Latest guides</h2>
+          <a href="/guides/" class="text-sm font-medium">All guides →</a>
+        </div>
+        <ul class="mt-6 grid gap-4 md:grid-cols-3">
+          {guides.map((g) => (
+            <li class="bg-card rounded-xl border p-5">
+              <p class="text-muted-foreground text-xs font-semibold tracking-wider uppercase">{TOPIC_BY_KEY[g.data.tool]?.label}</p>
+              <a href={`/guides/${g.id}/`} class="font-display mt-2 block text-lg leading-snug font-bold">{g.data.title}</a>
+              <p class="text-muted-foreground mt-2 text-sm">{g.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="border-t">
+    <div class="mx-auto max-w-3xl px-4 py-14 prose-site">
+      <Faq items={faq} title="About the questions" />
+    </div>
+    <div class="mx-auto grid max-w-6xl gap-4 px-4 pb-6 sm:grid-cols-3">
+      {[
+        ["Checked, not copied", "Every answer is checked against a named source, such as NASA, the National Archives or a museum. Sources are listed on each page."],
+        ["Dated when it can change", "Facts that can change, like a planet's moon count, carry an \"as of\" date and are updated when the source changes."],
+        ["No account, no paywall", "Every question is free. Your answers stay in your browser; nothing is sent to a server."],
+      ].map(([h, p]) => (
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-base font-bold">{h}</h3>
+          <p class="text-muted-foreground mt-1 text-sm">{p}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mx-auto max-w-6xl px-4 pb-14 text-sm text-muted-foreground">Written and checked by <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>. Read <a href="/how-we-write-questions/">how we write questions</a>.</p>
+  </section>
+</Base>

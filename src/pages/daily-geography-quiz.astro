@@ -1,0 +1,46 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import Daily from "../components/geo/Daily.tsx";
+import Faq from "../components/Faq.astro";
+import { COUNTRIES } from "../lib/geo/countries.js";
+import { STATES } from "../lib/geo/us-states.js";
+import { SITE, MAP_METHOD } from "../site.config.js";
+import { pageDates } from "../page-dates.js";
+import { faqSchema, webAppSchema } from "../lib/schema.js";
+import { existsSync } from "node:fs";
+
+const d = pageDates("/daily-geography-quiz/");
+const countries = COUNTRIES.map((c) => ({ id: c.id, name: c.name, group: c.continent }));
+const capitals = COUNTRIES.filter((c) => c.askCapital).map((c) => ({ id: c.id, name: c.name, capital: c.capital, group: c.continent, note: c.capitalNote }));
+const outlines = countries.filter((c) => existsSync(`${process.cwd()}/public/outlines/${c.id}.svg`));
+const states = STATES.map((s) => ({ id: s.abbr.toLowerCase(), name: s.name, capital: s.capital, group: s.region }));
+const faq = [
+  { q: "When does a new challenge start?", a: "Every day at midnight UTC, which is 7 p.m. Eastern or 4 p.m. Pacific in winter. The page shows today's number and date at the top." },
+  { q: "Is the challenge the same for everyone?", a: "Yes. The ten questions are picked from the day's number, so everyone who plays on the same day gets the same set, which is what makes comparing scores fair." },
+  { q: "Can I replay an earlier day?", a: "Not yet. Each day's set replaces the previous one. For unlimited practice, use the flag, capitals and shape quizzes, which draw a new round every time." },
+  { q: "Where is my result saved?", a: "Only in your own browser, so the page remembers your answers if you come back later the same day. Nothing is sent to our servers." },
+];
+---
+<HubLayout
+  topic="world"
+  method={MAP_METHOD}
+  title="Daily Geography Game: 10 New Map Questions Every Day"
+  h1="Daily geography challenge"
+  description="A free daily geography game: ten questions on flags, world capitals, country shapes and US state capitals, the same for everyone, with a result you can share."
+  lead="Ten questions, the same for everyone today: three flags, three world capitals, two country shapes and two US state capitals."
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Questions", value: "10 a day" }, { label: "New set", value: "Midnight UTC" }, { label: "Topics", value: "Flags, capitals, shapes" }, { label: "Cost", value: "Free, no account" }]}
+  extraSchema={[webAppSchema({ name: "Daily geography challenge", description: "Ten geography questions a day.", path: "/daily-geography-quiz/" }), faqSchema(faq)]}
+>
+  <div slot="app"><Daily client:load buildTime={Date.now()} countries={countries} capitals={capitals} outlines={outlines} states={states} site={SITE.name} url={`${SITE.url}/daily-geography-quiz/`} /></div>
+
+  <h2>How the daily challenge works</h2>
+  <p>Each question has four choices and one chance. Answer all ten and you can copy your result as a row of green and red squares to share, without giving away the answers. The mix is fixed so every day tests a little of everything: flags train your eye, capitals train your memory, and country shapes train you to picture the map.</p>
+  <p>Wrong choices are never random. Flag and capital options come from the same continent as the answer, and state capitals come from the same region, so you have to know the answer rather than rule out a far-off guess.</p>
+
+  <h2>Getting better between challenges</h2>
+  <p>Missed a flag? The <a href="/flag-quiz/">flag quiz</a> lets you practice one continent at a time. Mixed up two capitals? The <a href="/world-capitals-quiz/">world capitals quiz</a> and the <a href="/state-capitals-quiz/">state capitals quiz</a> draw a new round every time. Shapes are hardest for most players; the <a href="/guess-the-country/">country shape quiz</a> is built for exactly that.</p>
+
+  <Faq items={faq} />
+</HubLayout>

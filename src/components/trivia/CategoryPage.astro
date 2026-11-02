@@ -1,0 +1,42 @@
+---
+// A trivia category page (rendered by src/pages/[slug].astro).
+import HubLayout from "../../layouts/HubLayout.astro";
+import TriviaQuiz from "./TriviaQuiz.tsx";
+import Faq from "../Faq.astro";
+import { getCollection } from "astro:content";
+import { CATS, questionsOf, shuffled } from "../../lib/trivia/cats.js";
+import { unlinkMissingGuides } from "../../lib/live-links.js";
+import { pageDates } from "../../page-dates.js";
+import { faqSchema } from "../../lib/schema.js";
+
+const { cat } = Astro.props;
+const d = pageDates(`/${cat.slug}/`);
+const questions = questionsOf(cat).map(shuffled);
+const live = (await getCollection("guides", (g) => !g.data.draft)).map((g) => g.id);
+const body = unlinkMissingGuides(cat.body, live);
+const others = CATS.filter((c) => c.key !== cat.key);
+---
+<HubLayout
+  topic={cat.topic}
+  title={cat.title}
+  h1={cat.h1.charAt(0).toUpperCase() + cat.h1.slice(1)}
+  description={cat.description}
+  lead={cat.lead}
+  published={d.published}
+  updated={d.updated}
+  checked={d.updated ? d.updated.toISOString().slice(0, 10) : d.published.toISOString().slice(0, 10)}
+  facts={[{ label: "Questions", value: `${questions.length}` }, { label: "Format", value: "Multiple choice, 4 options" }, { label: "Explanations", value: "Every question" }, { label: "Answers", value: "Hidden until you open them" }]}
+  sources={cat.sources}
+  extraSchema={[faqSchema(cat.faq)]}
+>
+  <div slot="app"><TriviaQuiz client:visible questions={questions} /></div>
+
+  <Fragment set:html={body} />
+
+  <Faq items={cat.faq} />
+
+  <h2>More trivia categories</h2>
+  <ul class="cat-links">
+    {others.map((c) => <li><a href={`/${c.slug}/`}>{c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}</a> ({c.items.length})</li>)}
+  </ul>
+</HubLayout>

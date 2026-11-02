@@ -1,0 +1,99 @@
+---
+// Tool, list and data pages: answer-first lead, key facts,
+// an optional interactive block, the page body with an auto table of
+// contents, a visible Sources section and a "data checked" date.
+import Base from "./Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import AuthorBox from "../components/AuthorBox.astro";
+import OnThisPage from "../components/OnThisPage.astro";
+import KeyFacts from "../components/KeyFacts.astro";
+import { getCollection } from "astro:content";
+import { breadcrumbSchema, webPageSchema } from "../lib/schema.js";
+import { addHeadingIds } from "../lib/toc.js";
+import { AUTHOR, METHOD } from "../site.config.js";
+
+interface Props {
+  topic: string; // key from src/lib/topics.js
+  title: string;
+  h1?: string;
+  description: string;
+  lead: string;
+  facts?: { label: string; value: string }[];
+  sources?: { label: string; href: string }[];
+  published: Date;
+  updated?: Date;
+  checked?: string; // YYYY-MM-DD the data was last verified
+  crumbs?: { name: string; path: string }[];
+  extraSchema?: object[];
+  method?: { href: string; label: string; checkedLabel: string };
+}
+
+const { topic, title, h1 = title, description, lead, facts = [], sources = [], published, updated, checked, crumbs: crumbsProp, extraSchema = [], method = METHOD } = Astro.props;
+const path = Astro.url.pathname;
+const crumbs = crumbsProp ?? [{ name: "Home", path: "/" }, { name: title, path }];
+const guides = (await getCollection("guides", (g) => !g.data.draft && g.data.tool === topic))
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf())
+  .slice(0, 8);
+
+const bodyHtml = await Astro.slots.render("default");
+const { html, toc } = addHeadingIds(bodyHtml);
+const fullToc = [...toc, ...(sources.length ? [{ id: "sources", text: "Sources" }] : [])];
+const lastDate = updated ?? published;
+const fmtDate = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+const fmtDay = (s: string) => fmtDate(new Date(`${s}T12:00:00Z`));
+const schema = [breadcrumbSchema(crumbs), webPageSchema({ name: title, description, path, updated: lastDate.toISOString().slice(0, 10) }), ...extraSchema];
+const hasApp = Astro.slots.has("app");
+---
+<Base title={title} description={description} schema={schema} published={published} updated={updated}>
+  <div class="relative overflow-hidden border-b">
+    <div class="plan-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pt-6 pb-8">
+      <Breadcrumbs crumbs={crumbs} />
+      <h1 class="mt-5 max-w-[22ch] text-4xl font-extrabold md:text-5xl">{h1}</h1>
+      <p class="text-muted-foreground mt-4 max-w-[64ch] text-lg">{lead}</p>
+      <p class="text-muted-foreground mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+        <span>By <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a></span>
+        <span aria-hidden="true">·</span>
+        <span>Updated <time datetime={lastDate.toISOString()}>{fmtDate(lastDate)}</time></span>
+        {checked && <><span aria-hidden="true">·</span><span>{method.checkedLabel} <time datetime={checked}>{fmtDay(checked)}</time></span></>}
+        <span aria-hidden="true">·</span>
+        <a href={method.href}>{method.label}</a>
+      </p>
+    </div>
+  </div>
+
+  {hasApp && (
+    <section class="mx-auto mt-8 max-w-6xl px-4">
+      <slot name="app" />
+    </section>
+  )}
+
+  {facts.length > 0 && <KeyFacts facts={facts} />}
+
+  <div class="mx-auto mt-14 grid max-w-6xl gap-12 px-4 lg:grid-cols-[minmax(0,1fr)_260px]">
+    <article class="prose-site min-w-0">
+      <Fragment set:html={html} />
+      {sources.length > 0 && (
+        <>
+          <h2 id="sources">Sources</h2>
+          <ul>
+            {sources.map((s) => <li><a href={s.href} rel={s.href.startsWith("http") ? "noopener" : undefined}>{s.label}</a></li>)}
+          </ul>
+        </>
+      )}
+      <AuthorBox published={published} updated={updated} />
+    </article>
+
+    <aside class="flex min-w-0 flex-col gap-8 self-start lg:sticky lg:top-20" aria-label="Page navigation and related guides">
+      <OnThisPage items={fullToc} />
+      {guides.length > 0 && (
+        <div>
+          <p class="text-muted-foreground mb-3 text-xs font-semibold tracking-wider uppercase">Related guides</p>
+          <ul class="grid gap-3 text-sm">
+            {guides.map((g) => <li><a href={`/guides/${g.id}/`} class="font-medium leading-snug">{g.data.title}</a></li>)}
+          </ul>
+        </div>
+      )}
+    </aside>
+  </div>
+</Base>

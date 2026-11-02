@@ -1,0 +1,27 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE } from "../site.config.js";
+---
+<PageLayout
+  title="Terms of Use"
+  description={`The terms for using ${SITE.name}, including how our trivia questions may be used at events and shared.`}
+  updated={pageDates("/terms/").updated ?? pageDates("/terms/").published}
+>
+  <p>By using {SITE.name} ({SITE.domain}) you agree to these terms. If you don't agree, please don't use the site.</p>
+
+  <h2>For fun and learning</h2>
+  <p>The questions and map quizzes are for entertainment and learning. We check every answer, but facts can change and maps are simplified. See the <a href="/disclaimer/">disclaimer</a>.</p>
+
+  <h2>Use of the site</h2>
+  <p>You may read and share the site freely. You may not copy its questions, text or code in bulk, scrape it, or republish its content as your own. You are welcome to read our questions aloud at your own trivia night, classroom, church group or community event, and to print them for that use. Quoting a short passage with a link back is fine.</p>
+
+  <h2>Limitation of liability</h2>
+  <p>To the extent the law allows, {SITE.name} is not liable for any loss arising from use of the site.</p>
+
+  <h2>Links</h2>
+  <p>Links to other websites are provided for convenience. We are not responsible for their content.</p>
+
+  <h2>Changes</h2>
+  <p>These terms may change. The date at the top shows the latest version. Questions: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+</PageLayout>

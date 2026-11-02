@@ -1,0 +1,21 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE } from "../site.config.js";
+---
+<PageLayout
+  title="Disclaimer"
+  description={`${SITE.name} is an entertainment and learning site. Answers are checked against sources, but facts can change, some are disputed, and maps are simplified.`}
+  updated={pageDates("/disclaimer/").updated ?? pageDates("/disclaimer/").published}
+>
+  <p>{SITE.name} is for entertainment and learning. We check every answer against a named source, but facts can change, sources can be wrong, and some questions have more than one reasonable answer. Explanations say so where we know of a dispute.</p>
+  <h2>Not professional advice</h2>
+  <p>Questions about science, health, history or religion are trivia, not advice. Nothing here should be used for medical, legal, financial or religious decisions.</p>
+  <h2>Maps</h2>
+  <p>The maps are simplified so they load quickly and are easy to click; they are not survey-accurate and should not be used for navigation, legal or official purposes. Borders follow the public-domain Natural Earth dataset and the US Census Bureau's cartographic boundary files. Showing a border or a name does not mean we endorse any claim. Flags come from the open-source flag-icons project (MIT license).</p>
+  <h2>Names and trademarks</h2>
+  <p>Films, TV shows, songs, teams and products are named for the purpose of trivia questions. They belong to their owners, and naming them doesn't mean they endorse or are connected with this site.</p>
+  <h2>Using our questions</h2>
+  <p>You're welcome to read our questions out at your own trivia night, classroom or community event. Please don't republish them in bulk on another website. See the <a href="/terms/">terms of use</a>.</p>
+  <p>Spotted an error? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+</PageLayout>

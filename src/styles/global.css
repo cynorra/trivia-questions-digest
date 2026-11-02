@@ -1,0 +1,229 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import "@fontsource-variable/archivo";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+/* Dark mode follows a .dark class on <html>, set before first paint by the
+   inline script in Base.astro (system preference unless the visitor chose). */
+@custom-variant dark (&:is(.dark *));
+
+/* Trivia Questions Digest on shadcn tokens. Concept: a quiz-show card table. Warm
+   cream ground, deep plum type, one action color (--brand, a vivid violet),
+   amber for the fact of the day, green and red reserved for right and wrong
+   answers. Archivo for display type: bold and compact like a game-show board. */
+:root {
+  --radius: 0.55rem;
+  --background: oklch(0.984 0.008 80);
+  --foreground: oklch(0.23 0.04 305);
+  --card: oklch(0.998 0.002 85);
+  --card-foreground: var(--foreground);
+  --popover: oklch(0.998 0.002 85);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.27 0.06 305);
+  --primary-foreground: oklch(0.985 0.006 85);
+  --secondary: oklch(0.955 0.012 85);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.955 0.01 85);
+  --muted-foreground: oklch(0.47 0.035 305);
+  --accent: oklch(0.945 0.015 85);
+  --accent-foreground: var(--foreground);
+  --destructive: oklch(0.55 0.2 27);
+  --border: oklch(0.89 0.014 85);
+  --input: oklch(0.86 0.016 85);
+  --ring: oklch(0.55 0.17 295);
+  --brand: oklch(0.5 0.19 295);
+  --brand-foreground: oklch(0.99 0.01 295);
+  --brand-soft: oklch(0.95 0.035 295);
+  --link: oklch(0.45 0.16 295);
+  --note: oklch(0.95 0.07 85);
+  --note-foreground: oklch(0.36 0.08 60);
+  --tile: oklch(0.92 0.05 82);
+  --tile-edge: oklch(0.8 0.07 75);
+  --tile-ink: oklch(0.24 0.04 260);
+  --hit: oklch(0.62 0.15 150);
+  --near: oklch(0.78 0.15 85);
+}
+
+.dark {
+  --background: oklch(0.17 0.025 300);
+  --foreground: oklch(0.95 0.008 85);
+  --card: oklch(0.21 0.028 300);
+  --card-foreground: var(--foreground);
+  --popover: oklch(0.225 0.028 300);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.95 0.008 85);
+  --primary-foreground: oklch(0.2 0.025 300);
+  --secondary: oklch(0.26 0.028 300);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.25 0.025 300);
+  --muted-foreground: oklch(0.75 0.025 300);
+  --accent: oklch(0.28 0.03 300);
+  --accent-foreground: var(--foreground);
+  --destructive: oklch(0.7 0.17 25);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.74 0.14 295);
+  --brand: oklch(0.76 0.13 295);
+  --brand-foreground: oklch(0.18 0.04 300);
+  --brand-soft: oklch(0.29 0.07 295);
+  --link: oklch(0.8 0.11 295);
+  --note: oklch(0.28 0.05 75);
+  --note-foreground: oklch(0.88 0.1 90);
+  --tile: oklch(0.86 0.06 82);
+  --tile-edge: oklch(0.66 0.07 75);
+  --tile-ink: oklch(0.2 0.03 260);
+  --hit: oklch(0.6 0.14 150);
+  --near: oklch(0.74 0.14 85);
+}
+
+@theme inline {
+  --font-display: "Archivo Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, Menlo, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
+  --color-link: var(--link);
+  --color-note: var(--note);
+  --color-note-foreground: var(--note-foreground);
+  --color-tile: var(--tile);
+  --color-hit: var(--hit);
+  --color-near: var(--near);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { color-scheme: light; scroll-padding-top: 5rem; }
+  html.dark { color-scheme: dark; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; letter-spacing: -0.01em; font-variation-settings: "wdth" 92; }
+  p { text-wrap: pretty; }
+  a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: var(--brand); }
+}
+
+@layer components {
+  /* Letter tile: the site's recurring mark. */
+  .tile {
+    display: inline-grid; place-items: center; position: relative;
+    width: 2.1em; height: 2.1em; border-radius: 0.28em;
+    background: var(--tile); color: var(--tile-ink);
+    box-shadow: inset 0 -0.14em 0 var(--tile-edge), 0 1px 0 color-mix(in oklch, var(--tile-edge) 60%, transparent);
+    font-family: var(--font-display); font-weight: 700; text-transform: uppercase; line-height: 1;
+  }
+  .tile > sub { position: absolute; right: 0.22em; bottom: 0.2em; font-family: var(--font-sans); font-size: 0.42em; font-weight: 600; }
+  .tile.hit { background: var(--hit); color: white; box-shadow: inset 0 -0.14em 0 color-mix(in oklch, var(--hit) 70%, black); }
+  .tile.near { background: var(--near); color: var(--tile-ink); box-shadow: inset 0 -0.14em 0 color-mix(in oklch, var(--near) 70%, black); }
+  .tile.miss { background: color-mix(in oklch, var(--foreground) 55%, var(--background)); color: var(--background); box-shadow: none; }
+
+  /* A row of small tiles under headings (replaces a rule line). */
+  .tick-rule {
+    height: 10px;
+    background-image: repeating-linear-gradient(90deg, var(--tile) 0 10px, transparent 10px 14px);
+    border-radius: 2px;
+    box-shadow: inset 0 -2px 0 color-mix(in oklch, var(--tile-edge) 50%, transparent);
+  }
+
+  /* Ruled answer-sheet backdrop for hero areas. */
+  .plan-grid {
+    background-image:
+      repeating-linear-gradient(0deg, color-mix(in oklch, var(--brand) 9%, transparent) 0 1px, transparent 1px 28px);
+    mask-image: linear-gradient(to bottom, black 35%, transparent 100%);
+  }
+
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+
+  /* Long-form text */
+  .prose-site { max-width: 68ch; }
+  .prose-site :where(h2, h3) { font-weight: 800; scroll-margin-top: 5rem; }
+  .prose-site :where(h2) { font-size: 1.65rem; line-height: 1.2; margin-top: 2.6rem; margin-bottom: 0.7rem; }
+  .prose-site :where(h3) { font-size: 1.2rem; margin-top: 1.8rem; margin-bottom: 0.4rem; }
+  .prose-site :where(p, ul, ol, figure) { margin-bottom: 1rem; }
+  .prose-site :where(ul) { list-style: disc; padding-left: 1.3rem; }
+  .prose-site :where(ol) { list-style: decimal; padding-left: 1.3rem; }
+  .prose-site :where(li) { margin-bottom: 0.35rem; }
+  .prose-site :where(li)::marker { color: var(--muted-foreground); }
+  .prose-site :where(strong) { font-weight: 650; }
+  .prose-site :where(code) { font-family: var(--font-mono); font-size: 0.9em; background: var(--muted); padding: 0.1em 0.35em; border-radius: 4px; }
+  .prose-site .key-takeaway { border: 1px solid color-mix(in oklch, var(--brand) 35%, transparent); background: var(--brand-soft); border-radius: var(--radius); padding: 0.9rem 1.1rem; margin-bottom: 1.4rem; }
+  .prose-site .key-takeaway p { margin: 0; }
+  .prose-site :where(blockquote) { border-left: 3px solid var(--brand); padding-left: 1rem; color: var(--muted-foreground); }
+
+  /* Data tables: always inside .table-wrap so wide tables scroll on phones */
+  .table-wrap { overflow-x: auto; margin: 1.25rem 0 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+  .table-wrap table, .prose-site table { width: 100%; border-collapse: collapse; font-size: 0.94rem; font-variant-numeric: tabular-nums; }
+  .table-wrap th, .table-wrap td { text-align: left; padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .table-wrap th { font-family: var(--font-display); font-weight: 700; font-size: 0.74rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted-foreground); background: var(--muted); }
+  .table-wrap tbody tr:hover { background: color-mix(in oklch, var(--muted) 60%, transparent); }
+  .table-wrap tr:last-child td { border-bottom: 0; }
+  .table-wrap caption { caption-side: bottom; text-align: left; padding: 0.55rem 0.85rem; color: var(--muted-foreground); font-size: 0.84rem; border-top: 1px solid var(--border); }
+  .table-wrap td.num, .table-wrap td:has(> .num) { font-family: var(--font-mono); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ---------------------------------------------------------------- Trivia */
+@layer components {
+  .fact-list { list-style: none !important; padding: 0 !important; display: grid; gap: 0.9rem; }
+  .fact-list li { margin: 0 !important; padding: 0.85rem 1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+  .fact-list strong { display: block; font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 0.2rem; }
+  .fact-src { display: block; margin-top: 0.3rem; font-size: 0.82rem; color: var(--muted-foreground); }
+  .cat-links { list-style: none !important; padding: 0 !important; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.35rem 1.2rem; }
+  .cat-links li { margin: 0 !important; }
+  /* Question-mark confetti for hero areas (the site's recurring mark). */
+  .qm-rule { height: 12px; background-image: radial-gradient(circle at 6px 6px, var(--brand) 0 3px, transparent 3.5px), radial-gradient(circle at 6px 6px, var(--near) 0 3px, transparent 3.5px); background-size: 28px 12px, 28px 12px; background-position: 0 0, 14px 0; opacity: 0.7; }
+}
+
+/* ---------------------------------------------------------------- Quiz maps */
+@layer components {
+  .geo-figure { margin: 0; border: 1px solid var(--border); border-radius: var(--radius); background: color-mix(in oklch, var(--brand) 6%, var(--card)); overflow: auto; }
+  .geo-map { display: block; width: 100%; height: auto; touch-action: manipulation; }
+  .geo-figure.zoomed .geo-map { width: 220%; max-width: none; }
+  .geo-map path, .geo-map circle { stroke: var(--card); stroke-width: 0.6; vector-effect: non-scaling-stroke; transition: fill 0.15s; }
+  .geo-map .ctx { fill: color-mix(in oklch, var(--muted-foreground) 22%, var(--card)); }
+  .geo-map .ask { fill: color-mix(in oklch, var(--muted-foreground) 42%, var(--card)); cursor: pointer; }
+  .geo-map circle.ask { stroke: var(--foreground); stroke-width: 0.8; }
+  .geo-map .ask:hover { fill: color-mix(in oklch, var(--brand) 55%, var(--card)); }
+  .geo-map .ask.dim { fill: color-mix(in oklch, var(--muted-foreground) 22%, var(--card)); cursor: default; }
+  .geo-map .ask.ok { fill: var(--hit); }
+  .geo-map .ask.miss { fill: var(--destructive); }
+  .geo-map .ask.flash { fill: color-mix(in oklch, var(--destructive) 60%, var(--card)); }
+  .geo-map .ask.reveal { animation: geo-pulse 0.5s ease-in-out 3; }
+  @keyframes geo-pulse { 50% { fill: var(--brand); } }
+  .geo-labels text { display: none; fill: var(--foreground); text-anchor: middle; dominant-baseline: middle; paint-order: stroke; stroke: var(--card); stroke-width: 2px; pointer-events: none; font-family: var(--font-sans); font-weight: 600; }
+  .geo-map.show-labels .geo-labels text { display: block; }
+  .flag-grid { list-style: none !important; padding: 0 !important; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.5rem 1rem; }
+  .flag-grid li { display: flex; align-items: center; gap: 0.6rem; margin: 0 !important; }
+  .flag-grid img { width: 2.25rem; height: auto; border: 1px solid var(--border); border-radius: 2px; }
+}

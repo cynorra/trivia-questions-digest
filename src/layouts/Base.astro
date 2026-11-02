@@ -1,0 +1,116 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+
+interface Props {
+  title: string;
+  description: string;
+  /** Extra JSON-LD objects for this page (Article, BreadcrumbList, ...). */
+  schema?: object[];
+  noindex?: boolean;
+  ogType?: "website" | "article";
+  ogImage?: string;
+  published?: Date;
+  updated?: Date;
+}
+
+const { title, description, schema = [], noindex = false, ogType = "website", ogImage = "/og.png", published, updated } = Astro.props;
+const ogImageUrl = new URL(ogImage, SITE.url).href;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const isHome = Astro.url.pathname === "/";
+// The brand suffix is dropped on long titles so search results show the page's own words, not a cut-off brand.
+const fullTitle = isHome ? `${SITE.name}: ${SITE.tagline}` : title.length > 52 ? title : `${title} | ${SITE.name}`;
+
+// Site-wide entities. Pages reference them by @id instead of repeating them.
+const siteSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE.url}/#organization`,
+    name: SITE.name,
+    url: SITE.url,
+    logo: { "@type": "ImageObject", url: `${SITE.url}/logo-512.png`, width: 512, height: 512 },
+    email: SITE.email,
+    founder: { "@id": `${SITE.url}/author/${AUTHOR.slug}/#person` },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE.url}/#website`,
+    name: SITE.name,
+    url: SITE.url,
+    inLanguage: SITE.language,
+    publisher: { "@id": `${SITE.url}/#organization` },
+  },
+];
+const allSchema = [...siteSchema, ...schema];
+---
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <script is:inline>
+      // Set the theme before first paint to avoid a flash.
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem("theme"); } catch (e) {}
+        var dark = t === "dark" || (t !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.toggle("dark", dark);
+      })();
+    </script>
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
+    {SITE.verification.google && <meta name="google-site-verification" content={SITE.verification.google} />}
+    {SITE.verification.bing && <meta name="msvalidate.01" content={SITE.verification.bing} />}
+    {SITE.verification.yandex && <meta name="yandex-verification" content={SITE.verification.yandex} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbf8f1" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161c2b" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title={`${SITE.name} guides`} />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site summary" />
+    <meta name="author" content={AUTHOR.name} />
+
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={SITE.locale} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${SITE.name}: ${SITE.tagline}`} />
+    {published && <meta property="article:published_time" content={published.toISOString()} />}
+    {(updated || published) && <meta property="article:modified_time" content={(updated ?? published)!.toISOString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {allSchema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+
+    {SITE.adsensePublisherId && (
+      <script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsensePublisherId}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-card px-3 py-2 rounded-md border">Skip to content</a>
+    <Header />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

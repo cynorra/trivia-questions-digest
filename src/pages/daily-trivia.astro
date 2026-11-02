@@ -1,0 +1,40 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import DailyTrivia from "../components/trivia/DailyTrivia.tsx";
+import Faq from "../components/Faq.astro";
+import { SITE } from "../site.config.js";
+import { CAT_BY_KEY, DAILY_POOL, CATS } from "../lib/trivia/cats.js";
+import { pageDates } from "../page-dates.js";
+import { faqSchema } from "../lib/schema.js";
+
+const d = pageDates("/daily-trivia/");
+const pool = DAILY_POOL.map((q) => ({ id: q.id, q: q.q, choices: q.choices, answer: q.answer, why: q.why, cat: CAT_BY_KEY[q.cat].name }));
+const dailyCats = CATS.filter((c) => c.daily);
+const faq = [
+  { q: "When does the daily trivia quiz change?", a: "A new set of ten questions starts every day at midnight UTC, which is 7 p.m. Eastern time (8 p.m. during daylight saving time). Everyone gets the same ten." },
+  { q: "Will I see the same daily question twice?", a: `Not for a long time. The daily quiz deals out a pool of ${pool.length} questions in a shuffled order and only starts a new shuffle once every question has been used.` },
+  { q: "Is the daily trivia quiz free?", a: "Yes. There's no account, no app to install and no limit. Your answers for the day are saved only in your own browser." },
+];
+---
+<HubLayout
+  topic="trivia-night"
+  title="Daily Trivia: Today's 10 Trivia Questions With Answers"
+  h1="Daily trivia questions"
+  description="Daily trivia: ten new trivia questions every day, the same for everyone, mixing history, science, movies, music and sports, with an explanation for each answer."
+  lead="Ten trivia questions for today, the same for every player. Pick an answer and you'll see the right one with a sentence of explanation. It takes about five minutes."
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Questions today", value: "10" }, { label: "New set", value: "Every day, midnight UTC" }, { label: "Question pool", value: `${pool.length}` }, { label: "Cost", value: "Free, no account" }]}
+  extraSchema={[faqSchema(faq)]}
+>
+  <div slot="app" class="max-w-3xl"><DailyTrivia client:load buildTime={Date.now()} pool={pool} site={SITE.name} url={`${SITE.url}/daily-trivia/`} /></div>
+
+  <h2>How today's questions are chosen</h2>
+  <p>The daily set draws on {dailyCats.length} everyday categories: {dailyCats.map((c) => c.name.toLowerCase()).join(", ")}. All {pool.length} questions in that pool are shuffled once and dealt out ten a day, so you won't meet the same question again until the whole pool has been used. Holiday and Bible questions stay on their own pages, so you won't get a Christmas question in July.</p>
+  <h2>Playing with friends</h2>
+  <p>Because everyone gets the same ten, the daily quiz works as a small daily competition. When you finish, copy your result: it shows your score and a row of squares for right and wrong answers, without giving away the questions. Families and office teams often post it in a group chat each morning.</p>
+  <h2>Want more than ten?</h2>
+  <p>Each category has its own page with every question and answer, starting with <a href="/general-knowledge-trivia/">general knowledge trivia</a>. For one question at a time from the whole library, use the <a href="/random-trivia-questions/">random trivia generator</a>. Geography fans have their own <a href="/daily-geography-quiz/">daily geography quiz</a>.</p>
+
+  <Faq items={faq} />
+</HubLayout>

@@ -1,0 +1,41 @@
+---
+import HubLayout from "../layouts/HubLayout.astro";
+import RandomTrivia from "../components/trivia/RandomTrivia.tsx";
+import Faq from "../components/Faq.astro";
+import { CATS, questionsOf, shuffled } from "../lib/trivia/cats.js";
+import { pageDates } from "../page-dates.js";
+import { faqSchema } from "../lib/schema.js";
+
+const d = pageDates("/random-trivia-questions/");
+const questions = CATS.flatMap((c) => questionsOf(c).map(shuffled).map((q) => ({ id: q.id, q: q.q, choices: q.choices, answer: q.answer, why: q.why, cat: c.name })));
+const faq = [
+  { q: "How does the random trivia question generator work?", a: `It picks a question at random from all ${questions.length} questions on the site, or from one category if you choose one, and avoids repeating a question until you've seen most of the set.` },
+  { q: "Can I use the random generator for a trivia night?", a: "Yes. Put it on a big screen, pick a category and press Next question for each round. The explanation appears after anyone answers, so the host can read it out." },
+  { q: "Does the generator include holiday questions?", a: "Yes. Unlike the daily quiz, it draws on every category, including Christmas, Thanksgiving, Halloween and Bible trivia. Pick a category to stay on one theme." },
+];
+---
+<HubLayout
+  topic="trivia-night"
+  title="Random Trivia Question Generator: One Question at a Time"
+  h1="Random trivia questions"
+  description={`A random trivia question generator drawing from ${questions.length} hand-written questions with answers. Pick a category or mix them all; each answer is explained.`}
+  lead={`Press the button for a random question from ${questions.length} questions across ${CATS.length} categories. Pick a category to stay on one theme, or leave it on All for a mix.`}
+  published={d.published}
+  updated={d.updated}
+  facts={[{ label: "Questions", value: `${questions.length}` }, { label: "Categories", value: `${CATS.length}` }, { label: "Repeats", value: "Avoided within a session" }, { label: "Score", value: "Kept for this visit" }]}
+  extraSchema={[faqSchema(faq)]}
+>
+  <div slot="app" class="max-w-3xl"><RandomTrivia client:load questions={questions} cats={CATS.map((c) => c.name)} /></div>
+
+  <h2>When a random question beats a set list</h2>
+  <p>A fixed list is best for a planned quiz night. Random questions are better for filling a few minutes: a road trip, the start of a class, a team call or a family dinner. Nobody can read ahead, and the host gets to play too.</p>
+  <h2>Ideas for using it</h2>
+  <ul>
+    <li><strong>Hot seat:</strong> pass the phone around; each person answers one question and keeps their own score.</li>
+    <li><strong>Category roulette:</strong> roll a die to choose the category before each question.</li>
+    <li><strong>Steal:</strong> if someone misses, the next player can steal the point by explaining why the right answer is right.</li>
+  </ul>
+  <p>Prefer every question laid out with answers to reveal? Each category has its own page, starting with <a href="/general-knowledge-trivia/">general knowledge</a>.</p>
+
+  <Faq items={faq} />
+</HubLayout>

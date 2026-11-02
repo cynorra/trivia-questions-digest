@@ -1,0 +1,32 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+import { CATS } from "../lib/trivia/cats.js";
+import { FACTS } from "../lib/trivia/facts.js";
+const total = CATS.reduce((n, c) => n + c.items.length, 0);
+---
+<PageLayout
+  title={`About ${SITE.name}`}
+  description={`${SITE.name} publishes a free daily trivia quiz, hand-written trivia questions and answers by category, and map quizzes for US states, countries and flags.`}
+  updated={pageDates("/about/").updated ?? pageDates("/about/").published}
+>
+  <p>{SITE.name} is a free daily trivia game and a library of trivia questions you can play online or read out at a party, a pub quiz, a classroom or a family dinner. Every question is written by hand, has a short explanation, and is checked against a named source.</p>
+  <h2>Why this site exists</h2>
+  <p>Search for "trivia questions" and you'll find long lists copied from one site to the next, often with wrong answers nobody has checked: the Great Wall visible from space, goldfish with three-second memories. We wanted the opposite: fewer questions, each one checked, each with a sentence that explains the answer so a wrong guess still teaches you something.</p>
+  <h2>What you'll find here</h2>
+  <ul>
+    <li><a href="/daily-trivia/">Daily trivia</a>: ten questions, the same for everyone, new every day at midnight UTC.</li>
+    <li>{total} questions in {CATS.length} categories, from <a href="/general-knowledge-trivia/">general knowledge</a> and <a href="/history-trivia/">history</a> to <a href="/christmas-trivia/">Christmas</a> and <a href="/bible-trivia/">Bible</a> trivia.</li>
+    <li>{FACTS.length} <a href="/fun-facts/">fun facts</a>, one featured each day, every one with a source.</li>
+    <li>A <a href="/random-trivia-questions/">random question generator</a> drawing from the whole library.</li>
+    <li><a href="/map-quizzes/">Map quizzes</a>: click the 50 states or all 195 countries on a blank map, plus <a href="/world-capitals-quiz/">capitals</a>, <a href="/flag-quiz/">flags</a>, <a href="/guess-the-country/">country shapes</a> and a <a href="/daily-geography-quiz/">daily geography quiz</a>.</li>
+    <li><a href="/guides/">Guides</a> on hosting trivia nights, writing questions and the history behind popular topics.</li>
+  </ul>
+  <h2>Who runs it</h2>
+  <p>{SITE.name} is written and built by <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>, a computer engineer. He writes and checks the questions, built the daily quiz and wrote the tests that stop a duplicate question or a broken answer from being published. See <a href="/how-we-write-questions/">how we write questions</a> and <a href="/how-we-make-our-maps/">how we make our maps</a>.</p>
+  <h2>How it's funded</h2>
+  <p>Everything here is free and needs no account. The site may show advertising to cover hosting; advertisers have no say in what we publish. See the <a href="/editorial-policy/">editorial policy</a>.</p>
+  <h2>Get in touch</h2>
+  <p>Think an answer is wrong? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> with the question and your source, or use the <a href="/contact/">contact page</a>. We read every report.</p>
+</PageLayout>

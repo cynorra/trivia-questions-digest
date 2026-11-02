@@ -1,0 +1,26 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+---
+<PageLayout
+  title={"Editorial Policy"}
+  description={`How ${SITE.name} writes and checks trivia questions and guides, handles disputed answers, uses AI tools and corrects mistakes.`}
+  updated={pageDates("/editorial-policy/").updated ?? pageDates("/editorial-policy/").published}
+>
+  <p>Every page on {SITE.name} is the responsibility of <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>. These are the rules we follow.</p>
+  <h2>Every answer is checked</h2>
+  <p>Each question's answer is checked against a named source: a government agency such as NASA or the National Archives, a museum, an official body such as the Academy of Motion Picture Arts and Sciences, or a standard reference. The sources for each category are listed at the bottom of its page. The full process is on <a href="/how-we-write-questions/">how we write questions</a>.</p>
+  <h2>No answers that quietly go stale</h2>
+  <p>We avoid questions whose answers change often, such as current champions or box-office leaders. When a fact can change, such as the number of moons a planet has, the question says "as of" a date, and we update it when the source does.</p>
+  <h2>Disputed answers</h2>
+  <p>Where respected sources disagree, the explanation says so rather than pretending there is one answer. Where an answer depends on a tradition, such as the number of books in Protestant and Catholic Bibles, we give both.</p>
+  <h2>Maps, borders and capitals</h2>
+  <p>Country names, capitals and continents are checked against two independent datasets by automated tests before every build; a disagreement stops the build until a person resolves it. The map quizzes ask about the 193 UN member states and the two UN observer states, and leave out capital questions where a single answer would mislead. Disputed areas are drawn without taking a side. Details: <a href="/how-we-make-our-maps/">how we make our maps</a>.</p>
+  <h2>How questions and guides are written</h2>
+  <p>Questions and guides are written and edited by a person. AI tools may help draft or check text, but every page is read in full before it is published, and every fact in it is checked against a source. We don't publish pages written to fill a keyword list, and automated tests block a build if a question is duplicated or an answer is malformed.</p>
+  <h2>Corrections</h2>
+  <p>Report a mistake to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Confirmed errors are fixed in the next build, and the page's updated date changes.</p>
+  <h2>Advertising</h2>
+  <p>The site may show ads. Advertisers never choose topics or questions and never review content before it is published.</p>
+</PageLayout>

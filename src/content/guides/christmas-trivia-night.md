@@ -5,7 +5,7 @@ published: 2026-11-02
 tool: holidays
 ---
 
-Ninety minutes is enough for a good Christmas quiz, and the evening comes together around one tiebreaker: how many gifts are given in total in "The Twelve Days of Christmas"? The answer is 364. Everything else is five rounds of eight questions, and you can take the questions straight from our [Christmas trivia](/christmas-trivia/) set. Here is the night in the order it happens.
+Ninety minutes is enough for a good Christmas quiz, and the evening comes together around one tiebreaker: how many gifts are given in total in "The Twelve Days of Christmas"? The answer is 364. Everything else is five rounds of eight questions, and you can take the questions straight from our [Christmas trivia](/trivia/christmas-trivia/) set. Here is the night in the order it happens.
 
 ## 0:00 – Teams and picture sheets
 

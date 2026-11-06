@@ -1,0 +1,137 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import Faq from "../../components/Faq.astro";
+import { CATS, CAT_BY_KEY } from "../../lib/trivia/cats.js";
+import { breadcrumbSchema, collectionSchema, faqSchema } from "../../lib/schema.js";
+
+const total = CATS.reduce((n, c) => n + c.items.length, 0);
+
+const groups = [
+  { title: "Everyday trivia", keys: ["general", "family", "adults", "food"] },
+  { title: "Movies, music and pop culture", keys: ["disney", "pop-culture", "screen", "guess-movie", "music"] },
+  { title: "Decades", keys: ["eighties", "nineties", "two-thousands", "seniors"] },
+  { title: "History, science and Bible", keys: ["history", "presidents", "black-history", "science", "space", "animals", "bible"] },
+  { title: "Sports", keys: ["sports", "nfl", "nba"] },
+  { title: "Holidays", keys: ["christmas", "thanksgiving", "halloween", "easter"] },
+];
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Trivia", path: "/trivia/" },
+];
+
+const faq = [
+  {
+    q: "How many trivia questions and categories are available on this site?",
+    a: `There are currently ${total} hand-written trivia questions organized into ${CATS.length} distinct categories, ranging from general knowledge and world history to Disney, 80s, 90s, 2000s, NFL and sports trivia.`,
+  },
+  {
+    q: "Can I use these trivia questions to host a trivia night or pub quiz?",
+    a: "Yes. Every question is displayed with its answer hidden until you click to reveal it, and includes a host explanation you can read aloud after scoring each round. You can print pages directly or play on phones and tablets.",
+  },
+  {
+    q: "How are the trivia questions verified for accuracy?",
+    a: "Every single question and fact is checked against named encyclopedias, national archives, museums, scientific literature, or official league record books before publication. Sourced citations are provided on every category page.",
+  },
+  {
+    q: "What is the difference between daily trivia and category trivia?",
+    a: "Daily trivia presents a fresh 10-question mixed round every day at midnight UTC, identical for all players worldwide. Category pages contain complete 25 to 30 question banks on a single theme with interactive score tracking.",
+  },
+];
+---
+<Base
+  title={`Trivia Questions and Answers: ${CATS.length} Categories and ${total} Questions`}
+  description={`${total} hand-written trivia questions and answers across ${CATS.length} categories: general knowledge, Disney, pop culture, movies, history, science, sports and holidays, each with an explanation.`}
+  schema={[
+    breadcrumbSchema(crumbs),
+    collectionSchema({
+      name: "Trivia Questions and Answers",
+      description: `${total} hand-written trivia questions across ${CATS.length} categories.`,
+      path: "/trivia/",
+      items: CATS.map((c) => ({ name: c.h1, path: `/trivia/${c.slug}/` })),
+    }),
+    faqSchema(faq),
+  ]}
+>
+  <section class="border-b">
+    <div class="mx-auto max-w-6xl px-4 pt-6 pb-12 md:py-14">
+      <Breadcrumbs crumbs={crumbs} />
+      <p class="text-brand mt-4 text-sm font-semibold tracking-wider uppercase">Question bank and categories</p>
+      <h1 class="mt-3 max-w-[22ch] text-4xl leading-[1.05] font-extrabold md:text-6xl">Trivia questions and answers by category</h1>
+      <p class="text-muted-foreground mt-5 max-w-[62ch] text-lg">
+        {total} hand-written questions across {CATS.length} curated categories. Multiple-choice with four distinct options, verified explanations for every answer, and hidden solutions ready for game nights, pub quizzes, road trips and classrooms.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="/daily-trivia/" class="bg-brand text-brand-foreground rounded-lg px-5 py-2.5 font-semibold no-underline">Today's daily quiz</a>
+        <a href="/random-trivia-questions/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Random trivia generator</a>
+        <a href="/guides/how-to-host-a-trivia-night/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Hosting guide</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14" aria-labelledby="all-cats-h">
+    <div class="flex flex-wrap items-baseline justify-between gap-4">
+      <div>
+        <h2 id="all-cats-h" class="text-2xl font-extrabold md:text-3xl">Explore all trivia categories</h2>
+        <p class="text-muted-foreground mt-2 max-w-[60ch]">Select any category to play interactively online or read questions aloud to your quiz team.</p>
+      </div>
+      <span class="bg-card text-muted-foreground rounded-full border px-4 py-1 text-sm font-medium">{CATS.length} categories · {total} questions</span>
+    </div>
+
+    <div class="mt-10 grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+      {groups.map((grp) => (
+        <div class="flex flex-col">
+          <h3 class="text-brand text-xs font-bold tracking-wider uppercase">{grp.title}</h3>
+          <ul class="mt-4 grid gap-4">
+            {grp.keys.map((k) => {
+              const c = CAT_BY_KEY[k];
+              if (!c) return null;
+              return (
+                <li class="bg-card hover:border-brand/50 rounded-xl border p-4 transition-colors">
+                  <a href={`/trivia/${c.slug}/`} class="text-foreground hover:text-brand font-bold no-underline">
+                    {c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}
+                  </a>
+                  <p class="text-muted-foreground mt-1.5 text-xs line-clamp-2 leading-relaxed">{c.description}</p>
+                  <div class="text-muted-foreground mt-3 flex items-center justify-between text-xs font-medium">
+                    <span>{c.items.length} questions</span>
+                    <span class="text-brand">Play round →</span>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="border-t bg-card/40 py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-extrabold md:text-3xl">How to play and use our question bank</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-lg font-bold">1. Play online with instant scoring</h3>
+          <p class="text-muted-foreground mt-2 text-sm">Every category features an interactive quiz runner. Options are shuffled deterministically, your score is calculated in real time, and explanations appear with each response.</p>
+        </div>
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-lg font-bold">2. Host a pub quiz or game night</h3>
+          <p class="text-muted-foreground mt-2 text-sm">Answers are hidden by default in readable lists. The quiz master can read questions aloud, collect team sheets, and use our one-line follow-up explanations to entertain the crowd.</p>
+        </div>
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-lg font-bold">3. Fact-checked & verified sources</h3>
+          <p class="text-muted-foreground mt-2 text-sm">No speculative or AI-hallucinated trivia. Each fact is verified against Britannica, NASA, Billboard, the National Archives, or official sports databases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t py-14">
+    <div class="mx-auto max-w-4xl px-4">
+      <h2 class="text-2xl font-extrabold md:text-3xl text-center">Frequently asked questions</h2>
+      <div class="mt-8">
+        <Faq items={faq} />
+      </div>
+    </div>
+  </section>
+</Base>

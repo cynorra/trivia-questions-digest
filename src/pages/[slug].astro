@@ -1,21 +1,18 @@
 ---
-// One route for three kinds of page: trivia categories, map/flag quizzes and country fact pages.
-import CategoryPage from "../components/trivia/CategoryPage.astro";
+// One route for map/flag quizzes and country fact pages.
 import GeoPage from "../components/geo/GeoPage.astro";
 import CountryFactsPage from "../components/trivia/CountryFactsPage.astro";
 import { COUNTRY_PAGES } from "../lib/trivia/country-facts.js";
-import { CATS } from "../lib/trivia/cats.js";
 import { PAGES as GEO_PAGES } from "../lib/geo/pages.js";
 
 export function getStaticPaths() {
-  const slugs = [...CATS.map((c) => c.slug), ...GEO_PAGES.map((p) => p.slug), ...COUNTRY_PAGES.map((c) => c.slug)];
+  const slugs = [...GEO_PAGES.map((p) => p.slug), ...COUNTRY_PAGES.map((c) => c.slug)];
   if (new Set(slugs).size !== slugs.length) throw new Error("Two pages share a slug");
   return [
-    ...CATS.map((cat) => ({ params: { slug: cat.slug }, props: { cat } })),
     ...GEO_PAGES.map((page) => ({ params: { slug: page.slug }, props: { page } })),
     ...COUNTRY_PAGES.map((country) => ({ params: { slug: country.slug }, props: { country } })),
   ];
 }
-const { cat, page, country } = Astro.props;
+const { page, country } = Astro.props;
 ---
-{cat ? <CategoryPage cat={cat} /> : country ? <CountryFactsPage country={country} /> : <GeoPage page={page} />}
+{country ? <CountryFactsPage country={country} /> : <GeoPage page={page} />}

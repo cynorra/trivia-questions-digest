@@ -27,7 +27,7 @@ For random practice, use the [random trivia question generator](/random-trivia-q
 
 **Learn the anchor lists.** A few lists answer a surprising share of questions, and you learn them once for years of payoff: the [US presidents in order](/guides/us-presidents-in-order/), the [planets in order](/guides/planets-in-order/) and their key facts, the major dates of [World War II](/guides/world-war-2-timeline/), the [books of the Bible](/guides/books-of-the-bible-in-order/) if your quizzes include Bible rounds, and the continents, oceans and capitals of the largest countries.
 
-**Know the common categories.** Most quizzes draw on the same dozen subjects: general knowledge, history, science, geography, sports, film and TV, music, food, and holidays. Spend your study time where the questions are. Our category pages, from [general knowledge](/general-knowledge-trivia/) to [music](/music-trivia/), cover each one.
+**Know the common categories.** Most quizzes draw on the same dozen subjects: general knowledge, history, science, geography, sports, film and TV, music, food, and holidays. Spend your study time where the questions are. Our category pages, from [general knowledge](/trivia/general-knowledge-trivia/) to [music](/trivia/music-trivia/), cover each one.
 
 **Learn the myths.** Some questions are built around popular misconceptions, and some quizzes get them wrong. Knowing the common ones, from goldfish memory to Napoleon's height, helps either way. See [15 popular facts that are wrong](/guides/common-trivia-myths/).
 

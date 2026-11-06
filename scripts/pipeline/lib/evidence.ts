@@ -19,7 +19,7 @@ const byRegion = (r: string): PRow[] => STATES.filter((s: any) => s.region === r
 const places = (label: string, rows: PRow[], page: string): DataSet => ({ kind: 'places', label, rows, page });
 
 export const DATA: Record<string, DataSet> = {
-  ...Object.fromEntries(CATS.map((c: any) => [c.key, { kind: 'questions', label: `${c.name} trivia`, page: `/${c.slug}/`, rows: questionsOf(c).map((q: any) => ({ q: q.q, answer: q.choices[0], why: q.why })) } as DataSet])),
+  ...Object.fromEntries(CATS.map((c: any) => [c.key, { kind: 'questions', label: `${c.name} trivia`, page: `/trivia/${c.slug}/`, rows: questionsOf(c).map((q: any) => ({ q: q.q, answer: q.choices[0], why: q.why })) } as DataSet])),
   world: places('All 195 countries', byCont(Object.keys(CONTINENTS)), '/world-map-quiz/'),
   europe: places('Europe', byCont(['EU']), '/europe-map-quiz/'),
   africa: places('Africa', byCont(['AF']), '/africa-map-quiz/'),

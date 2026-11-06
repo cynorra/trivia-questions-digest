@@ -17,9 +17,9 @@ The best trivia sessions for older adults are about 40 minutes long and are more
 
 ## Where the questions come from
 
-People remember best what they lived through, so choose questions about the TV, music, films and everyday life of their younger years. For players born in the 1940s and 50s, that is roughly the 1950s to the 1970s. Our [trivia for seniors](/trivia-for-seniors/) set covers exactly that: I Love Lucy, the Beatles on Ed Sullivan, John Glenn's orbit, Hula Hoops and TV dinners. They are free to read aloud or print for your own activities; please don't republish them on another website.
+People remember best what they lived through, so choose questions about the TV, music, films and everyday life of their younger years. For players born in the 1940s and 50s, that is roughly the 1950s to the 1970s. Our [trivia for seniors](/trivia/trivia-for-seniors/) set covers exactly that: I Love Lucy, the Beatles on Ed Sullivan, John Glenn's orbit, Hula Hoops and TV dinners. They are free to read aloud or print for your own activities; please don't republish them on another website.
 
-Mix in some timeless general knowledge, too. Questions from [general knowledge trivia](/general-knowledge-trivia/) or [Bible trivia](/bible-trivia/) add variety and suit players of every background.
+Mix in some timeless general knowledge, too. Questions from [general knowledge trivia](/trivia/general-knowledge-trivia/) or [Bible trivia](/trivia/bible-trivia/) add variety and suit players of every background.
 
 ## Making it easy to play
 

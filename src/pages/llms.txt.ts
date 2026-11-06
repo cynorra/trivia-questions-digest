@@ -15,6 +15,7 @@ export const GET: APIRoute = async () => {
 ## Play
 
 - [Daily trivia](${u("/daily-trivia/")}): ten questions a day, the same for everyone.
+- [Trivia questions and answers](${u("/trivia/")}): 27 categories and 690 hand-written trivia questions with answers and explanations.
 - [Home](${u("/")}): the fun fact of the day and every section of the site.
 - [Spirit animal quiz](${u("/spirit-animal-quiz/")}): a ten-question personality match with eight animals, plus real facts about each.
 - [Random trivia questions](${u("/random-trivia-questions/")}): one random question at a time from the whole library.
@@ -23,7 +24,7 @@ ${COUNTRY_PAGES.map((c: any) => `- [${c.title}](${u(`/${c.slug}/`)}): ${c.descri
 
 ## Trivia questions and answers by category
 
-${CATS.map((c) => `- [${c.title}](${u(`/${c.slug}/`)}): ${c.description}`).join("\n")}
+${CATS.map((c) => `- [${c.title}](${u(`/trivia/${c.slug}/`)}): ${c.description}`).join("\n")}
 
 ## Map quizzes and geography
 

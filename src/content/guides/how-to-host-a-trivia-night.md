@@ -5,7 +5,7 @@ published: 2026-11-02
 tool: trivia-night
 ---
 
-Hosting a trivia night is mostly about rhythm. The questions matter, but what people remember is whether the evening moved: no long silences, no arguments about what the host said, and a close finish. This plan counts down from a week before to the last prize, so you can see what to settle when. You can lift every question you need from our [trivia categories](/general-knowledge-trivia/).
+Hosting a trivia night is mostly about rhythm. The questions matter, but what people remember is whether the evening moved: no long silences, no arguments about what the host said, and a close finish. This plan counts down from a week before to the last prize, so you can see what to settle when. You can lift every question you need from our [trivia categories](/trivia/general-knowledge-trivia/).
 
 ## A week before: the format
 
@@ -27,12 +27,12 @@ For a small family gathering, four rounds of eight questions is plenty. For a la
 
 The most common mistake is six rounds of the host's favorite subjects. Mix them:
 
-1. **Warm-up: general knowledge.** Easy questions everyone can answer. Our [general knowledge trivia](/general-knowledge-trivia/) works well here.
-2. **A history or science round.** Try [history trivia](/history-trivia/) or [science trivia](/science-trivia/).
-3. **Pop culture.** [Movie and TV trivia](/movie-trivia/) or [music trivia](/music-trivia/). Add short audio clips for a "name that tune" twist.
-4. **A themed round.** Match the season: [Christmas](/christmas-trivia/), [Thanksgiving](/thanksgiving-trivia/) or [Halloween](/halloween-trivia/).
+1. **Warm-up: general knowledge.** Easy questions everyone can answer. Our [general knowledge trivia](/trivia/general-knowledge-trivia/) works well here.
+2. **A history or science round.** Try [history trivia](/trivia/history-trivia/) or [science trivia](/trivia/science-trivia/).
+3. **Pop culture.** [Movie and TV trivia](/trivia/movie-trivia/) or [music trivia](/trivia/music-trivia/). Add short audio clips for a "name that tune" twist.
+4. **A themed round.** Match the season: [Christmas](/trivia/christmas-trivia/), [Thanksgiving](/trivia/thanksgiving-trivia/) or [Halloween](/trivia/halloween-trivia/).
 5. **A picture or wildcard round.** Celebrity baby photos, logos, or a "name the year" round.
-6. **The hard round.** Finish with our [trivia questions for adults](/trivia-questions-for-adults/), worth double points to keep everyone in the race.
+6. **The hard round.** Finish with our [trivia questions for adults](/trivia/trivia-questions-for-adults/), worth double points to keep everyone in the race.
 
 More formats, from "connections" rounds to sound rounds, are in our list of [trivia round ideas](/guides/trivia-round-ideas/).
 

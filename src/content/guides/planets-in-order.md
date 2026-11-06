@@ -5,7 +5,7 @@ published: 2026-11-02
 tool: knowledge
 ---
 
-Venus is hotter than Mercury, even though Mercury is closer to the Sun. That one fact trips up a surprising number of quiz teams, and it is a good way into the whole solar system, because nearly every planet has a detail like it. The order is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. What follows is a walk outward from the Sun, one thing to remember per stop, with the reference numbers at the end. For more space questions, see our [science trivia](/science-trivia/).
+Venus is hotter than Mercury, even though Mercury is closer to the Sun. That one fact trips up a surprising number of quiz teams, and it is a good way into the whole solar system, because nearly every planet has a detail like it. The order is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. What follows is a walk outward from the Sun, one thing to remember per stop, with the reference numbers at the end. For more space questions, see our [science trivia](/trivia/science-trivia/).
 
 ## Walking outward from the Sun
 

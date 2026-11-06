@@ -27,7 +27,7 @@ export const CATS = [
 <li>Give 20 to 30 seconds per question. If you're dropping the options for a harder round, give 45.</li>
 <li>Read the one-line explanation after each answer. It turns a list of answers into conversation.</li>
 </ul>
-<p>Once your group has warmed up, the <a href="/trivia-questions-for-adults/">harder trivia for adults</a> makes a good second round, and the <a href="/guides/how-to-host-a-trivia-night/">guide to hosting a trivia night</a> covers scoring and tiebreakers.</p>`,
+<p>Once your group has warmed up, the <a href="/trivia/trivia-questions-for-adults/">harder trivia for adults</a> makes a good second round, and the <a href="/guides/how-to-host-a-trivia-night/">guide to hosting a trivia night</a> covers scoring and tiebreakers.</p>`,
     faq: [
       { q: "How many general knowledge questions should a trivia round have?", a: "Ten is the usual round length for a pub quiz. This page has 25, so you can pick the ten that suit your group or split them into two rounds." },
       { q: "Are these general knowledge questions easy or hard?", a: "Most are easy to medium. A score of 18 out of 25 is a good result; the questions about blood types, the Eiffel Tower and Denali catch the most people." },
@@ -117,7 +117,7 @@ export const CATS = [
 <p>A sports round can lose half the room if every question needs a fan's memory. Questions such as what a score of zero is called in tennis or how many holes a round of golf has give everyone a chance, while the Stanley Cup's history and the first World Cup reward the people who follow sports closely.</p>
 <h2>Tiebreakers from this set</h2>
 <p>The number-based questions make good tiebreakers if you read them without the options: the length of a marathon, the laps in the Indianapolis 500, or the year basketball was invented. Closest answer wins.</p>
-<p>Football and basketball fans have their own sets: the <a href="/nfl-quiz/">NFL quiz</a> and the <a href="/nba-quiz/">NBA quiz</a>. The <a href="/guides/trivia-night-rules-and-scoring/">guide to trivia scoring and tiebreakers</a> has more on running a fair finish.</p>`,
+<p>Football and basketball fans have their own sets: the <a href="/trivia/nfl-quiz/">NFL quiz</a> and the <a href="/trivia/nba-quiz/">NBA quiz</a>. The <a href="/guides/trivia-night-rules-and-scoring/">guide to trivia scoring and tiebreakers</a> has more on running a fair finish.</p>`,
     faq: [
       { q: "Do these sports trivia questions include NFL and NBA questions?", a: "Yes: the first Super Bowl, touchdown scoring, the three-point shot and the number of players on a basketball court, plus baseball, hockey, soccer, golf and Olympic questions." },
       { q: "Why don't you ask who won last season?", a: "Because the answer changes every year, and an out-of-date answer is worse than none. We ask about rules, history and settled records instead." },
@@ -137,10 +137,10 @@ export const CATS = [
 <h2>Oscars and records</h2>
 <p>A handful of questions are about Academy Awards history: the first Best Picture, the three films tied at 11 Oscars, and the first winner of Best Animated Feature. These are settled facts, unlike box-office records, which change whenever a new blockbuster opens. The one money question here is the inflation-adjusted record from Guinness, which has held for decades.</p>
 <h2>Sitcoms and TV</h2>
-<p>TV questions span from I Love Lucy-era classics on the <a href="/trivia-for-seniors/">trivia for seniors</a> page to The Office, Friends, Seinfeld and Breaking Bad here. If your group skews older or younger, mix the two pages.</p>
-<p>Prefer naming films from their stories? Try <a href="/guess-the-movie/">guess the movie</a>, twenty one-line plots to identify.</p>
+<p>TV questions span from I Love Lucy-era classics on the <a href="/trivia/trivia-for-seniors/">trivia for seniors</a> page to The Office, Friends, Seinfeld and Breaking Bad here. If your group skews older or younger, mix the two pages.</p>
+<p>Prefer naming films from their stories? Try <a href="/trivia/guess-the-movie/">guess the movie</a>, twenty one-line plots to identify.</p>
 <p>For a film night, read the explanation aloud after each answer before moving on. Most of them carry a piece of trivia of their own, like the silver slippers in the original Oz book, which gives a second chance to score a point for anyone who knew it.</p>
-<p>Holiday films have their own sets: <a href="/christmas-trivia/">Christmas trivia</a> covers Home Alone, Elf and It's a Wonderful Life, and <a href="/halloween-trivia/">Halloween trivia</a> has the horror classics.</p>`,
+<p>Holiday films have their own sets: <a href="/trivia/christmas-trivia/">Christmas trivia</a> covers Home Alone, Elf and It's a Wonderful Life, and <a href="/trivia/halloween-trivia/">Halloween trivia</a> has the horror classics.</p>`,
     faq: [
       { q: "What's a good movie trivia question for a party?", a: "Which Star Wars film reveals that Darth Vader is Luke's father. It's The Empire Strikes Back, and it's a chance to point out that the famous line is usually misquoted." },
       { q: "Why aren't there box-office questions about recent films?", a: "Box-office records change every time a new blockbuster opens. We avoid them, apart from Guinness's inflation-adjusted record, which Gone with the Wind has held for decades." },
@@ -162,7 +162,7 @@ export const CATS = [
 <h2>Turning it into a listening round</h2>
 <p>For a live event, play a few seconds of a song before reading related questions. A short clip of "Respect" before asking who first recorded it, or of "Bohemian Rhapsody" before the Queen question, turns a quiz into a party.</p>
 <p>A note on "firsts" and "best-selling": sales figures for older records are estimates, so we only ask about records that are widely agreed, such as Thriller, and the explanation says the number is an estimate.</p>
-<p>The <a href="/trivia-for-seniors/">trivia for seniors</a> page has more on 1950s and 60s music, and <a href="/guides/trivia-round-ideas/">our round ideas</a> include a picture round and a song intro round.</p>`,
+<p>The <a href="/trivia/trivia-for-seniors/">trivia for seniors</a> page has more on 1950s and 60s music, and <a href="/guides/trivia-round-ideas/">our round ideas</a> include a picture round and a song intro round.</p>`,
     faq: [
       { q: "What music trivia questions work for all ages?", a: "Questions about the biggest names and the basics of music: the Beatles, the King of Rock and Roll, what crescendo means. This set mixes those with harder questions on classical composers." },
       { q: "Who first recorded 'Respect'?", a: "Otis Redding wrote and recorded it in 1965. Aretha Franklin's 1967 version, which added the spelled-out 'R-E-S-P-E-C-T', is the one most people know." },
@@ -180,7 +180,7 @@ export const CATS = [
     body: `<h2>Songs, films and stories</h2>
 <p>The festive classics come first: the Twelve Days of Christmas, Rudolph, A Christmas Carol, the Grinch, Home Alone, Elf and It's a Wonderful Life. These are the questions everyone at a holiday party can play, from grandparents to teenagers.</p>
 <h2>Traditions and where they came from</h2>
-<p>The rest of the set looks at where customs came from: the German Christmas tree, Mexico's poinsettia, Norway's yearly tree for Trafalgar Square, Boxing Day, and how much (and how little) Coca-Cola had to do with the modern image of Santa. Three questions come from the nativity accounts in Matthew and Luke. The <a href="/bible-trivia/">Bible trivia</a> page has more.</p>
+<p>The rest of the set looks at where customs came from: the German Christmas tree, Mexico's poinsettia, Norway's yearly tree for Trafalgar Square, Boxing Day, and how much (and how little) Coca-Cola had to do with the modern image of Santa. Three questions come from the nativity accounts in Matthew and Luke. The <a href="/trivia/bible-trivia/">Bible trivia</a> page has more.</p>
 <h2>Planning a Christmas quiz</h2>
 <ul>
 <li>Split the set into a "songs and films" round and a "traditions" round of about 12 each.</li>
@@ -233,7 +233,7 @@ export const CATS = [
 <p>The Day of the Dead, on November 1 and 2, is sometimes called "Mexican Halloween," but it's a separate tradition for remembering family members who have died. We include it because people often ask about the two together, and the explanation says how they differ.</p>
 <h2>A spooky round in ten minutes</h2>
 <p>Pick ten questions: two on origins, four on books and films, two on customs and two from the animal and candy questions. Read them by candlelight or with the lights low, and use the samhainophobia question as a bonus for anyone who gets the word right.</p>
-<p>Planning a seasonal quiz? The <a href="/guides/trivia-round-ideas/">round ideas guide</a> has a costume round, and the <a href="/thanksgiving-trivia/">Thanksgiving</a> and <a href="/christmas-trivia/">Christmas</a> sets carry the season forward.</p>`,
+<p>Planning a seasonal quiz? The <a href="/guides/trivia-round-ideas/">round ideas guide</a> has a costume round, and the <a href="/trivia/thanksgiving-trivia/">Thanksgiving</a> and <a href="/trivia/christmas-trivia/">Christmas</a> sets carry the season forward.</p>`,
     faq: [
       { q: "What are good Halloween trivia questions for kids and adults together?", a: "What jack-o'-lanterns were first carved from, what a group of crows is called, and who the Pumpkin King is. None of the questions in this set are gory." },
       { q: "Where did Halloween come from?", a: "Its roots are usually traced to the Celtic festival of Samhain, combined with All Hallows' Eve, the night before the Christian feast of All Saints on November 1." },
@@ -256,7 +256,7 @@ export const CATS = [
 <ul>
 <li>The Old Testament questions come first, then the Gospels and the apostles. Split the set at question 15 for two rounds.</li>
 <li>Ask a team to find the verse for each answer; the fastest team gets a bonus point.</li>
-<li>For a December gathering, add the nativity questions from the <a href="/christmas-trivia/">Christmas trivia</a> set.</li>
+<li>For a December gathering, add the nativity questions from the <a href="/trivia/christmas-trivia/">Christmas trivia</a> set.</li>
 </ul>
 <p>The questions that trip people up most are the ones where popular memory and the text differ: Jonah's "great fish" rather than a whale, or the Ten Commandments given on Sinai, which Deuteronomy calls Horeb. Those make good discussion questions for a study group.</p>
 <p>Our guide to <a href="/guides/books-of-the-bible-in-order/">the books of the Bible in order</a> has memory tips for all 66.</p>`,
@@ -279,7 +279,7 @@ export const CATS = [
 <h2>Why these are harder</h2>
 <p>Each question has a tempting wrong answer. Russia seems like the obvious answer for the most time zones, but France wins because of its overseas territories. Indonesia seems right for the most islands, but Sweden is the one usually cited. These are designed to make a confident team second-guess itself.</p>
 <h2>How to use them in a quiz night</h2>
-<p>Use this as round two or three, after the <a href="/general-knowledge-trivia/">general knowledge</a> warm-up. For a real challenge, drop the four options and let teams write answers; give half a point for close answers like "the ear" for the smallest bone. The guide to <a href="/guides/how-to-write-trivia-questions/">writing good trivia questions</a> explains how to build more questions like these.</p>
+<p>Use this as round two or three, after the <a href="/trivia/general-knowledge-trivia/">general knowledge</a> warm-up. For a real challenge, drop the four options and let teams write answers; give half a point for close answers like "the ear" for the smallest bone. The guide to <a href="/guides/how-to-write-trivia-questions/">writing good trivia questions</a> explains how to build more questions like these.</p>
 <p>A few answers come with a caveat worth sharing. Sweden's island count depends on how small a rock can be and still count, and the time-zone record depends on counting overseas territories. Saying so out loud is part of the fun: the arguments are often the best part of a hard round.</p>`,
     faq: [
       { q: "Are these trivia questions for adults explicit?", a: "No. They're harder, not adult-content. They work at an office party, a pub quiz or a family gathering with older teens." },
@@ -306,7 +306,7 @@ export const CATS = [
 <h2>Questions that start conversations</h2>
 <p>After each answer, ask a follow-up that has no wrong answer: Where were you when you first saw the Beatles on TV? What did a TV dinner taste like the first time? Who had the first color TV on your street? The quiz gives the structure; the stories are what people remember afterwards. Activity coordinators often find that one good question can fill ten minutes.</p>
 <h2>Where to go next</h2>
-<p>The <a href="/music-trivia/">music trivia</a> and <a href="/movie-trivia/">movie trivia</a> sets have more from these decades, and our guide to <a href="/guides/trivia-for-seniors-guide/">running trivia for seniors</a> covers formats, pacing and prizes for community groups.</p>`,
+<p>The <a href="/trivia/music-trivia/">music trivia</a> and <a href="/trivia/movie-trivia/">movie trivia</a> sets have more from these decades, and our guide to <a href="/guides/trivia-for-seniors-guide/">running trivia for seniors</a> covers formats, pacing and prizes for community groups.</p>`,
     faq: [
       { q: "What are good trivia questions for seniors?", a: "Questions about the decades they remember best, such as 1950s TV, 1960s music and everyday prices, with multiple-choice options and a story to share after each answer." },
       { q: "Can these questions be used in a senior center or care home activity?", a: "Yes. They're free to use for activities. Read each question twice, play in teams and leave time after each answer for people to share memories." },
@@ -328,7 +328,7 @@ export const CATS = [
 <h2>Hardest questions in the set</h2>
 <p>Most players miss the team that drafted Kobe Bryant (the Charlotte Hornets, who traded him to the Lakers on draft night) and the original name of the league. The Jerry West logo question is a good one for arguments: the league has never confirmed it, but the designer has.</p>
 <h2>Using it on game night</h2>
-<p>Read a question at each timeout or during halftime, and give a bonus point for naming the year. For a full sports round mixing the NBA with baseball, hockey, golf and the Olympics, see our <a href="/sports-trivia/">sports trivia</a>; for football, try the <a href="/nfl-quiz/">NFL quiz</a>.</p>`,
+<p>Read a question at each timeout or during halftime, and give a bonus point for naming the year. For a full sports round mixing the NBA with baseball, hockey, golf and the Olympics, see our <a href="/trivia/sports-trivia/">sports trivia</a>; for football, try the <a href="/trivia/nfl-quiz/">NFL quiz</a>.</p>`,
     faq: [
       { q: "What are good NBA trivia questions for casual fans?", a: "Questions about the biggest names and the basic rules: Michael Jordan's team, the height of the rim, the length of the shot clock. This quiz starts with those and adds harder draft and history questions." },
       { q: "Who has the most NBA championships as a player?", a: "Bill Russell, with 11 titles for the Boston Celtics in 13 seasons between 1957 and 1969." },
@@ -351,7 +351,7 @@ export const CATS = [
 <p>Not everyone at a party follows football closely. Questions on how many points a field goal or a safety is worth, how long the field is and how long a quarter lasts give every player a chance, and they're useful to know when you're watching.</p>
 <p>Where a question names a record holder, the explanation gives the number, so a host can turn it into a closest-guess tiebreaker: how many career receiving yards did Jerry Rice finish with? (22,895.)</p>
 <h2>A Super Bowl party round</h2>
-<p>Read five questions during each quarter break and the rest at halftime. The Lombardi Trophy and Mr. Irrelevant questions are crowd-pleasers. For basketball, try the <a href="/nba-quiz/">NBA quiz</a>; for every other sport, the <a href="/sports-trivia/">sports trivia</a> set.</p>`,
+<p>Read five questions during each quarter break and the rest at halftime. The Lombardi Trophy and Mr. Irrelevant questions are crowd-pleasers. For basketball, try the <a href="/trivia/nba-quiz/">NBA quiz</a>; for every other sport, the <a href="/trivia/sports-trivia/">sports trivia</a> set.</p>`,
     faq: [
       { q: "What are good NFL trivia questions for a Super Bowl party?", a: "Questions about famous moments and players: the only perfect season, Tom Brady's seven titles, the Immaculate Reception and the name of the Super Bowl trophy. All are in this quiz." },
       { q: "Which NFL team had the only perfect season?", a: "The 1972 Miami Dolphins, who went 17–0 and won Super Bowl VII." },
@@ -378,7 +378,7 @@ export const CATS = [
 </ul>
 <h2>What makes a plot clue fair</h2>
 <p>A good clue names the situation, not the title or a famous character: "a cynical TV weatherman relives the same day" points clearly to one film without giving it away. The wrong options share the genre or the decade, so guessing from the era alone won't work.</p>
-<p>For questions about famous lines, Oscar history and TV shows, play our <a href="/movie-trivia/">movie and TV trivia</a>. Holiday films are in <a href="/christmas-trivia/">Christmas trivia</a>.</p>`,
+<p>For questions about famous lines, Oscar history and TV shows, play our <a href="/trivia/movie-trivia/">movie and TV trivia</a>. Holiday films are in <a href="/trivia/christmas-trivia/">Christmas trivia</a>.</p>`,
     faq: [
       { q: "How do you play guess the movie?", a: "Read a short description of a film's plot and name the film. Here you choose from four options; for a harder game, answer without them." },
       { q: "What movies are in this guess the movie quiz?", a: "Twenty well-known films from the 1970s to the 2010s, including animated films, comedies, dramas and science fiction." },
@@ -401,7 +401,7 @@ export const CATS = [
 <p>Play a few seconds of a song from the decade before each music question, or ask everyone to come dressed in 80s style. Ask the year questions without options for a tiebreaker.</p>
 <h2>Dates worth remembering</h2>
 <p>A few dates anchor the whole decade: MTV in 1981, the Macintosh in 1984, Live Aid in 1985 and the Challenger accident in 1986. If you know those four, you can place most other 80s questions before or after them, which is often enough to choose between two options.</p>
-<p>Continue with <a href="/90s-trivia/">90s trivia</a>, or go further back with <a href="/trivia-for-seniors/">trivia from the 1950s to the 70s</a>.</p>`,
+<p>Continue with <a href="/trivia/90s-trivia/">90s trivia</a>, or go further back with <a href="/trivia/trivia-for-seniors/">trivia from the 1950s to the 70s</a>.</p>`,
     faq: [
       { q: "What are good 80s trivia questions?", a: "Questions about MTV, arcade games, famous films and the decade's big events, such as Live Aid and the Challenger launch. This set mixes all of them." },
       { q: "When did MTV start?", a: "August 1, 1981. The first video it played was 'Video Killed the Radio Star' by the Buggles." },
@@ -424,7 +424,7 @@ export const CATS = [
 <p>Nelson Mandela's release, the Channel Tunnel, the euro and the Atlanta Olympics give the set a wider view. They make good questions for players who weren't paying attention to boy bands at the time.</p>
 <h2>Dates that anchor the 90s</h2>
 <p>Mandela's release in 1990, the Channel Tunnel in 1994, the first Harry Potter book in 1997 and Google in 1998 make good anchors. Most other questions in the set fall neatly before or after one of them, and the explanation after each answer gives the exact year so you can build your own timeline as you play.</p>
-<p>Go back a decade with <a href="/80s-trivia/">80s trivia</a>, or test your film memory with <a href="/guess-the-movie/">guess the movie</a>.</p>`,
+<p>Go back a decade with <a href="/trivia/80s-trivia/">80s trivia</a>, or test your film memory with <a href="/trivia/guess-the-movie/">guess the movie</a>.</p>`,
     faq: [
       { q: "What are good 90s trivia questions?", a: "Questions about the decade's music, TV, toys and technology, from Nirvana and the Spice Girls to Tamagotchi, Pokémon and Y2K, plus big events like Mandela's release." },
       { q: "What was Y2K?", a: "A computer problem expected at the start of 2000: many programs stored years as two digits, so 2000 might be read as 1900. Large fixes meant few problems occurred." },
@@ -445,7 +445,7 @@ export const CATS = [
 <p>The record questions are the ones people argue about. Theodore Roosevelt was the youngest president, but John F. Kennedy was the youngest elected. Grover Cleveland was the first to serve two non-consecutive terms; Donald Trump is the second. Gerald Ford is the only president never elected to either the presidency or the vice presidency. Where a record could still change, like the longest-lived president, the question is dated.</p>
 <p>Money questions are reliable warm-ups: Washington is on the $1 bill, Jefferson on the nickel and Lincoln on the penny. They give everyone at the table an early point before the harder records.</p>
 <h2>Practicing the order</h2>
-<p>This quiz is about facts rather than sequence. To learn the order itself, use our guide to <a href="/guides/us-presidents-in-order/">the presidents in order</a>, which groups all 47 presidencies by era, then come back and test yourself here. More presidents questions are in the <a href="/history-trivia/">history trivia</a> set.</p>`,
+<p>This quiz is about facts rather than sequence. To learn the order itself, use our guide to <a href="/guides/us-presidents-in-order/">the presidents in order</a>, which groups all 47 presidencies by era, then come back and test yourself here. More presidents questions are in the <a href="/trivia/history-trivia/">history trivia</a> set.</p>`,
     faq: [
       { q: "What are some fun facts about US presidents?", a: "John Adams and Thomas Jefferson died on the same day, July 4, 1826; William Howard Taft later became Chief Justice; and Gerald Ford was never elected president or vice president." },
       { q: "Who was the youngest US president?", a: "Theodore Roosevelt, who was 42 when he took office in 1901. John F. Kennedy, at 43, was the youngest person elected president." },
@@ -463,7 +463,7 @@ export const CATS = [
     body: `<h2>People and firsts</h2>
 <p>Space history is full of firsts that make great trivia: the first person in space, the first woman, the first animal to orbit Earth, the lunar module that landed in 1969. The explanations add the detail that usually comes up as a follow-up, like how long Gagarin's flight lasted or which two dogs were the first to come home alive.</p>
 <h2>Planets, moons and how the sky works</h2>
-<p>The rest of the set covers the solar system beyond the basics in our <a href="/science-trivia/">science trivia</a>: the largest moon, the planet with the shortest day, the one found by calculation before anyone saw it, and what really causes the Moon's phases. That last one is the question people most often get wrong, because it's easy to confuse phases with eclipses.</p>
+<p>The rest of the set covers the solar system beyond the basics in our <a href="/trivia/science-trivia/">science trivia</a>: the largest moon, the planet with the shortest day, the one found by calculation before anyone saw it, and what really causes the Moon's phases. That last one is the question people most often get wrong, because it's easy to confuse phases with eclipses.</p>
 <p>Records about space keep changing as missions fly and telescopes find new moons, so we only ask about things that are settled: who went first, what a mission was called, how the planets move.</p>
 <h2>Using it in class or at a quiz night</h2>
 <p>For a space round, pair these questions with the space section of our <a href="/fun-facts/">fun facts</a>, which has tiebreakers like Saturn floating in water. The guide to <a href="/guides/planets-in-order/">the planets in order</a> has a table of sizes, distances and moon counts for anyone who wants to study first.</p>`,
@@ -489,7 +489,7 @@ export const CATS = [
 <p>Every answer was checked against a zoo, aquarium, museum or wildlife organization. Popular "facts" that turn out to be wrong, such as ostriches burying their heads, are left out of the quiz and explained in our guide to <a href="/guides/common-trivia-myths/">popular facts that are wrong</a>.</p>
 <h2>More animals</h2>
 <p>Curious which animal matches your personality? Try the <a href="/spirit-animal-quiz/">spirit animal quiz</a>.</p>
-<p>Octopuses, cheetahs, blue whales and bats appear in our <a href="/science-trivia/">science trivia</a>, and the animals section of the <a href="/fun-facts/">fun facts</a> page has random animal facts with sources, from cube-shaped wombat droppings to sea otters holding paws. Use them as tiebreakers or as a true-or-false round.</p>`,
+<p>Octopuses, cheetahs, blue whales and bats appear in our <a href="/trivia/science-trivia/">science trivia</a>, and the animals section of the <a href="/fun-facts/">fun facts</a> page has random animal facts with sources, from cube-shaped wombat droppings to sea otters holding paws. Use them as tiebreakers or as a true-or-false round.</p>`,
     faq: [
       { q: "What are some easy animal trivia questions?", a: "What a baby kangaroo is called (a joey), how many legs a spider has (eight) and which animal is the tallest (the giraffe) are good warm-ups." },
       { q: "Which mammals lay eggs?", a: "The platypus and the echidnas, a group called monotremes. They live in Australia and New Guinea." },
@@ -510,7 +510,7 @@ export const CATS = [
 <p>The rest of the set covers the traditions: the German Easter hare that became the Easter Bunny, the White House Easter Egg Roll, hot cross buns, Fabergé eggs, Easter witches in Sweden and the Easter Bilby in Australia. There are also questions on Holy Week itself, from Palm Sunday to Maundy Thursday and Good Friday.</p>
 <p>Two dates to remember for a tiebreaker: Easter can be as early as March 22 and as late as April 25. Ask teams to guess the latest possible date; closest answer wins.</p>
 <h2>For church groups and families</h2>
-<p>Split the set into a "Holy Week" round and a "traditions" round of ten each. For more questions drawn from the Gospels, see <a href="/bible-trivia/">Bible trivia</a>; for the year's other holidays, try <a href="/thanksgiving-trivia/">Thanksgiving</a> and <a href="/christmas-trivia/">Christmas</a> trivia.</p>`,
+<p>Split the set into a "Holy Week" round and a "traditions" round of ten each. For more questions drawn from the Gospels, see <a href="/trivia/bible-trivia/">Bible trivia</a>; for the year's other holidays, try <a href="/trivia/thanksgiving-trivia/">Thanksgiving</a> and <a href="/trivia/christmas-trivia/">Christmas</a> trivia.</p>`,
     faq: [
       { q: "Why does the date of Easter change every year?", a: "Western churches celebrate Easter on the first Sunday after the first full moon on or after March 21, so the date moves between March 22 and April 25." },
       { q: "Where did the Easter Bunny come from?", a: "From German tradition. German settlers brought the Osterhase, an egg-laying hare, to Pennsylvania in the 1700s." },
@@ -532,7 +532,7 @@ export const CATS = [
 <h2>From well-known names to deeper cuts</h2>
 <p>The set starts with names most people know, such as Rosa Parks, Harriet Tubman and Jesse Owens, and moves to questions that reward wider reading: the first African American astronaut, the first Black woman in Congress and the Nobel laureate who negotiated the 1949 armistice. Every explanation adds a date or detail that helps the answer stick.</p>
 <h2>Using it for Black History Month</h2>
-<p>Black History Month began as Negro History Week in 1926 and is observed every February. Read one question a day during the month in a classroom or at work, or use all twenty as a single round. For broader US history, try our <a href="/history-trivia/">history trivia</a> and <a href="/presidents-quiz/">presidents quiz</a>.</p>`,
+<p>Black History Month began as Negro History Week in 1926 and is observed every February. Read one question a day during the month in a classroom or at work, or use all twenty as a single round. For broader US history, try our <a href="/trivia/history-trivia/">history trivia</a> and <a href="/trivia/presidents-quiz/">presidents quiz</a>.</p>`,
     faq: [
       { q: "When is Black History Month?", a: "February in the United States and Canada. It grew out of Negro History Week, created by historian Carter G. Woodson in 1926, and was first officially recognized by President Gerald Ford in 1976." },
       { q: "What are good Black History Month trivia questions for work or school?", a: "Questions about civil rights milestones and notable firsts, such as Thurgood Marshall on the Supreme Court or Katherine Johnson at NASA. This set has twenty, each with a short explanation." },
@@ -553,7 +553,7 @@ export const CATS = [
 <p>From Beyoncé's historic tally of Grammy Awards to the worldwide stadium roar of Taylor Swift's Eras Tour, music trivia brings energy to any gathering. We balance streaming chart-toppers with cinematic powerhouses: James Cameron's Avatar, the cultural sensation of 2023's Barbie, the Marvel Cinematic Universe's defining climax in Avengers: Endgame, and Bong Joon-ho's groundbreaking Academy Award sweep with Parasite.</p>
 <h2>Tips for running a pop culture round</h2>
 <p>Pop culture is the ultimate equalizer at a quiz night because it connects generations. Younger players will instantly recognize viral TikTok and YouTube trivia, while older participants bring deep knowledge of classic 90s sitcoms and iconic movie releases. Read the question clearly, give teams 30 seconds to deliberate, and follow up each reveal with the fascinating context provided in the explanation.</p>
-<p>Looking to explore specific eras? Dive into our dedicated <a href="/80s-trivia/">80s trivia</a>, <a href="/90s-trivia/">90s trivia</a>, or test your film knowledge with <a href="/guess-the-movie/">guess the movie</a>.</p>`,
+<p>Looking to explore specific eras? Dive into our dedicated <a href="/trivia/80s-trivia/">80s trivia</a>, <a href="/trivia/90s-trivia/">90s trivia</a>, or test your film knowledge with <a href="/trivia/guess-the-movie/">guess the movie</a>.</p>`,
     faq: [
       { q: "What eras does this pop culture trivia quiz cover?", a: "This set focuses predominantly on modern pop culture from the 1990s through the 2020s, featuring milestone moments across streaming television, blockbuster films, viral internet sensations, and Billboard chart-toppers." },
       { q: "How should I score a pop culture trivia round?", a: "Award one standard point per correct answer. For questions with multiple elements, such as identifying both a show and a fictional setting, consider offering a bonus point or using it as a tiebreaker." },
@@ -575,7 +575,7 @@ export const CATS = [
 <p>This collection pulls from experiences almost every household shares: rolling dice in Monopoly, managing card trades in Uno, or placing letter tiles in Scrabble. We complement tabletop nostalgia with intriguing science and world wonders, including the mysterious sideways spin of Uranus, the astonishing reverse flight of hummingbirds, and the extraordinary depths of the Mariana Trench.</p>
 <h2>Hosting a balanced family game night</h2>
 <p>To run a fun and competitive session, consider dividing your group into mixed-generation pairs—pairing grandparents with grandchildren or siblings on opposite teams. Read each question aloud twice before revealing the four multiple-choice options. Allow 30 seconds for whispered deliberation, and award one point for each correct answer. Read the one-line explanation after scoring each round; it frequently leads into fun personal stories from family members.</p>
-<p>Ready to try other themed rounds? Check out our <a href="/general-knowledge-trivia/">general knowledge trivia</a> for classic quiz night standards, test your knowledge with <a href="/animal-trivia/">animals trivia</a>, or explore <a href="/pop-culture-trivia/">pop culture trivia</a>.</p>`,
+<p>Ready to try other themed rounds? Check out our <a href="/trivia/general-knowledge-trivia/">general knowledge trivia</a> for classic quiz night standards, test your knowledge with <a href="/trivia/animal-trivia/">animals trivia</a>, or explore <a href="/trivia/pop-culture-trivia/">pop culture trivia</a>.</p>`,
     faq: [
       { q: "How do you keep family trivia fair for players of different ages?", a: "Mix age groups by forming two-player teams pairing older players with younger participants. This ensures everyone contributes their strengths, from classic cinema knowledge to modern nature facts." },
       { q: "Can we play these family trivia questions in teams?", a: "Yes. Grouping into small teams makes the game much more collaborative. Have teams write answers down on scratch paper before revealing explanations to prevent shouting out answers early." },
@@ -597,7 +597,7 @@ export const CATS = [
 <p>Disney trivia extends beyond the cinema screen into real-world landmarks. Walt Disney opened his original dream park in Anaheim, California, in 1955, followed by Florida's sprawling Walt Disney World in 1971 with the magnificent Cinderella Castle as its focal point. Our questions explore both the beloved animated stories and the real-world spaces where generations have made family memories.</p>
 <h2>How to run a Disney round at your trivia night</h2>
 <p>Disney rounds are exceptionally popular at pub quizzes, family game nights, and birthday parties because participants of all ages recognize the songs and characters. For a lively party round, read each question aloud twice before presenting the four multiple-choice options. Give teams 30 seconds to lock in their guesses, and always read the host explanation after revealing the right answer. The background context sparks immediate nostalgic conversations across the room.</p>
-<p>Looking for more themed quiz material? Explore our <a href="/pop-culture-trivia/">pop culture trivia</a>, play through <a href="/movie-trivia/">movie trivia</a>, or test your musical knowledge with <a href="/music-trivia/">music trivia</a>.</p>`,
+<p>Looking for more themed quiz material? Explore our <a href="/trivia/pop-culture-trivia/">pop culture trivia</a>, play through <a href="/trivia/movie-trivia/">movie trivia</a>, or test your musical knowledge with <a href="/trivia/music-trivia/">music trivia</a>.</p>`,
     faq: [
       { q: "What eras of Disney are included in these trivia questions?", a: "The set spans the Golden Age of animation in the 1930s and 1940s, the Silver Age classics, the blockbuster 1990s Renaissance, modern 3D features, and classic theme park history." },
       { q: "Can children and adults play this Disney quiz together?", a: "Yes. The questions are designed for mixed-age play, balancing nostalgic classics that parents grew up with alongside modern favorites that younger players know by heart." },
@@ -619,7 +619,7 @@ export const CATS = [
 <p>Entertainment in the 2000s delivered cultural touchstones that defined a generation. Viewers gathered weekly for the real-time suspense of 24, the island enigmas of Lost, and the summer frenzy of Survivor. At movie theaters, Peter Jackson's The Lord of the Rings: The Return of the King swept eleven Oscars, while Captain Jack Sparrow transformed Pirates of the Caribbean into a cinematic juggernaut. On radio stations and MTV, Britney Spears, Eminem, Outkast, and Beyoncé dominated the charts.</p>
 <h2>Hosting an authentic 2000s quiz night</h2>
 <p>To run a memorable 2000s theme night, encourage players to dress in era-appropriate fashion—from velour tracksuits to layered graphic tees. Play 2000s pop and hip-hop hits as background music between rounds. Read each question clearly, provide the four multiple-choice options, and allow 30 seconds for teams to deliberate. After collecting score sheets, read out the one-line host explanations to spark instant debates and fond memories of flip phones and dial-up internet.</p>
-<p>Pair this set with our <a href="/90s-trivia/">90s trivia questions</a> and <a href="/80s-trivia/">80s trivia questions</a> for a complete multi-decade trivia showdown, or explore our <a href="/pop-culture-trivia/">pop culture trivia</a> for modern trends.</p>`,
+<p>Pair this set with our <a href="/trivia/90s-trivia/">90s trivia questions</a> and <a href="/trivia/80s-trivia/">80s trivia questions</a> for a complete multi-decade trivia showdown, or explore our <a href="/trivia/pop-culture-trivia/">pop culture trivia</a> for modern trends.</p>`,
     faq: [
       { q: "What makes 2000s trivia so popular for theme parties?", a: "The 2000s represents a sweet spot of nostalgia for millennials and Gen Z, featuring iconic early tech innovations, viral television shows, and chart-topping radio anthems everyone recognizes." },
       { q: "Which topics dominate 2000s trivia rounds?", a: "The strongest categories include early digital technology like iPods and MySpace, blockbuster cinematic trilogies like Lord of the Rings, peak reality television, and mainstream pop and hip-hop hits." },

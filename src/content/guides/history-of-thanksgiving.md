@@ -5,7 +5,7 @@ published: 2026-11-02
 tool: holidays
 ---
 
-The first Thanksgiving rests on one short passage in a letter. Colonist Edward Winslow wrote it in December 1621, and nearly everything else people "know" comes from 19th-century paintings and school plays, not from anyone who was there. This page reads the passage the way you would read any source: what it says, what it leaves out, and how a harvest feast became a holiday. These are the facts behind our [Thanksgiving trivia](/thanksgiving-trivia/).
+The first Thanksgiving rests on one short passage in a letter. Colonist Edward Winslow wrote it in December 1621, and nearly everything else people "know" comes from 19th-century paintings and school plays, not from anyone who was there. This page reads the passage the way you would read any source: what it says, what it leaves out, and how a harvest feast became a holiday. These are the facts behind our [Thanksgiving trivia](/trivia/thanksgiving-trivia/).
 
 ## What the letter says
 

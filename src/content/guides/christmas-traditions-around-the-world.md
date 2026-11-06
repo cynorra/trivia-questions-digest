@@ -5,7 +5,7 @@ published: 2026-11-02
 tool: holidays
 ---
 
-Christmas does not happen on one day in most of the world. It is a run of dates, from early December to the sixth of January, and each country treats a different one as the main event. Here is the season in calendar order, with the custom that belongs to each date. For ready-made questions, see our [Christmas trivia](/christmas-trivia/).
+Christmas does not happen on one day in most of the world. It is a run of dates, from early December to the sixth of January, and each country treats a different one as the main event. Here is the season in calendar order, with the custom that belongs to each date. For ready-made questions, see our [Christmas trivia](/trivia/christmas-trivia/).
 
 ## From September: the Philippines
 

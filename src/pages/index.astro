@@ -52,7 +52,7 @@ const faq = [
         <p class="text-muted-foreground mt-2 text-sm">Ten new questions every day at midnight UTC, the same for everyone, mixing history, science, film, music, sports and general knowledge. Each answer comes with a one-line explanation.</p>
       </div>
       <div class="bg-card rounded-xl border p-5">
-        <h3 class="text-lg font-bold"><a href="/general-knowledge-trivia/">Trivia questions by category</a></h3>
+        <h3 class="text-lg font-bold"><a href="/trivia/">Trivia questions by category</a></h3>
         <p class="text-muted-foreground mt-2 text-sm">{CATS.length} categories, from general knowledge and US history to Christmas, Bible and NFL trivia. Read them out at a party or play them online; answers stay hidden until you open them.</p>
       </div>
       <div class="bg-card rounded-xl border p-5">
@@ -71,7 +71,7 @@ const faq = [
           <div>
             <h3 class="text-muted-foreground text-xs font-semibold tracking-wider uppercase">{grp.title}</h3>
             <ul class="mt-3 grid gap-3">
-              {grp.keys.map((k) => { const c = CAT_BY_KEY[k]; return <li><a href={`/${c.slug}/`} class="font-semibold">{c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}</a><span class="text-muted-foreground block text-sm">{c.items.length} questions</span></li>; })}
+              {grp.keys.map((k) => { const c = CAT_BY_KEY[k]; return <li><a href={`/trivia/${c.slug}/`} class="font-semibold">{c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}</a><span class="text-muted-foreground block text-sm">{c.items.length} questions</span></li>; })}
               {grp.title === "Everyday trivia" && <li><a href="/spirit-animal-quiz/" class="font-semibold">Spirit animal quiz</a><span class="text-muted-foreground block text-sm">10 questions, 8 possible animals</span></li>}
             </ul>
           </div>

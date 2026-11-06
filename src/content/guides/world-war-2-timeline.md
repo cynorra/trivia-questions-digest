@@ -8,7 +8,7 @@ tool: knowledge
 
 Three dates hold up most of the history. On September 1, 1939, Germany invaded Poland and the war began. On December 7, 1941, Japan attacked Pearl Harbor and the United States entered it. The war then ended in Europe on May 8, 1945 (VE Day) and in the Pacific when Japan formally signed its surrender on September 2, 1945.
 
-Instead of a single year-by-year list, this guide follows the war theater by theater, because that is how the battles connect and how quiz questions tend to group them. When you're done, test yourself with our [history trivia](/history-trivia/).
+Instead of a single year-by-year list, this guide follows the war theater by theater, because that is how the battles connect and how quiz questions tend to group them. When you're done, test yourself with our [history trivia](/trivia/history-trivia/).
 
 ## Key World War 2 dates at a glance
 

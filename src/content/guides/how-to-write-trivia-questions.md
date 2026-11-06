@@ -17,7 +17,7 @@ Start with a fact: *Alaska was bought from Russia in 1867.*
 4. **Write the explanation:** "Secretary of State William Seward arranged the $7.2 million purchase, mocked at the time as 'Seward's Folly.'"
 5. **Check:** confirmed against the US State Department's Office of the Historian.
 
-You'll find that exact question in our [history trivia](/history-trivia/) set. Each step is a rule in disguise.
+You'll find that exact question in our [history trivia](/trivia/history-trivia/) set. Each step is a rule in disguise.
 
 ## One question, one answer
 

@@ -47,7 +47,7 @@ test('evidence: the data block is built and usage is checked', () => {
   assert.ok(evidenceBlock(['history']).includes('A: George Washington.'));
   const thin = '<p>History trivia is fun.</p>';
   assert.ok(findEvidenceUsageIssues(thin, ['history']).length > 0);
-  const used = '<p>George Washington, Abraham Lincoln, Franklin D. Roosevelt and Richard Nixon all appear. <a href="/history-trivia/">History trivia</a></p>';
+  const used = '<p>George Washington, Abraham Lincoln, Franklin D. Roosevelt and Richard Nixon all appear. <a href="/trivia/history-trivia/">History trivia</a></p>';
   assert.deepEqual(findEvidenceUsageIssues(used, ['history']), []);
 });
 

@@ -1,0 +1,10 @@
+---
+import CategoryPage from "../../components/trivia/CategoryPage.astro";
+import { CATS } from "../../lib/trivia/cats.js";
+
+export function getStaticPaths() {
+  return CATS.map((cat) => ({ params: { slug: cat.slug }, props: { cat } }));
+}
+const { cat } = Astro.props;
+---
+<CategoryPage cat={cat} />

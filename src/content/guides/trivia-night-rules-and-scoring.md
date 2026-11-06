@@ -42,7 +42,7 @@ Write them on a board or the first slide. When a dispute comes up, you can point
 </tbody>
 </table></div>
 
-If you read out four options, as our [category pages](/general-knowledge-trivia/) do, teams can just write A, B, C or D. That makes marking fast and removes spelling disputes completely. For a harder round, drop the options and accept written answers.
+If you read out four options, as our [category pages](/trivia/general-knowledge-trivia/) do, teams can just write A, B, C or D. That makes marking fast and removes spelling disputes completely. For a harder round, drop the options and accept written answers.
 
 A **joker** lets a team double its score in one round of its choice, declared before the round starts. It rewards teams for knowing their strengths and creates a big swing late in the night.
 

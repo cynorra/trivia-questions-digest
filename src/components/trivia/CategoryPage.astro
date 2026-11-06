@@ -10,11 +10,16 @@ import { pageDates } from "../../page-dates.js";
 import { faqSchema } from "../../lib/schema.js";
 
 const { cat } = Astro.props;
-const d = pageDates(`/${cat.slug}/`);
+const d = pageDates(`/trivia/${cat.slug}/`);
 const questions = questionsOf(cat).map(shuffled);
 const live = (await getCollection("guides", (g) => !g.data.draft)).map((g) => g.id);
 const body = unlinkMissingGuides(cat.body, live);
 const others = CATS.filter((c) => c.key !== cat.key);
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Trivia", path: "/trivia/" },
+  { name: cat.h1.charAt(0).toUpperCase() + cat.h1.slice(1), path: `/trivia/${cat.slug}/` },
+];
 ---
 <HubLayout
   topic={cat.topic}
@@ -27,6 +32,7 @@ const others = CATS.filter((c) => c.key !== cat.key);
   checked={d.updated ? d.updated.toISOString().slice(0, 10) : d.published.toISOString().slice(0, 10)}
   facts={[{ label: "Questions", value: `${questions.length}` }, { label: "Format", value: "Multiple choice, 4 options" }, { label: "Explanations", value: "Every question" }, { label: "Answers", value: "Hidden until you open them" }]}
   sources={cat.sources}
+  crumbs={crumbs}
   extraSchema={[faqSchema(cat.faq)]}
 >
   <div slot="app"><TriviaQuiz client:visible questions={questions} /></div>
@@ -37,6 +43,6 @@ const others = CATS.filter((c) => c.key !== cat.key);
 
   <h2>More trivia categories</h2>
   <ul class="cat-links">
-    {others.map((c) => <li><a href={`/${c.slug}/`}>{c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}</a> ({c.items.length})</li>)}
+    {others.map((c) => <li><a href={`/trivia/${c.slug}/`}>{c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}</a> ({c.items.length})</li>)}
   </ul>
 </HubLayout>

@@ -11,10 +11,10 @@ Six straight rounds of spoken questions can feel long by round four. Changing th
 
 Loud rooms reward short, punchy rounds that people can write down quickly.
 
-1. **General knowledge.** The classic opener. Use [general knowledge trivia](/general-knowledge-trivia/).
+1. **General knowledge.** The classic opener. Use [general knowledge trivia](/trivia/general-knowledge-trivia/).
 2. **Music intros.** Play the first five seconds of a song; teams name the artist and title, two points per song.
 3. **Picture round.** Hand out a sheet of 10 to 20 images at the start: famous faces, logos, landmarks or zoomed-in objects. Teams work on it all night and hand it in at the break.
-4. **Sports.** Stick to rules and history so answers don't go out of date: [sports trivia](/sports-trivia/).
+4. **Sports.** Stick to rules and history so answers don't go out of date: [sports trivia](/trivia/sports-trivia/).
 5. **Closest number.** Every answer is a number, and the closest team gets the point. Good as a final round.
 6. **Put in order.** Four events or inventions, ordered by date. Full marks for the exact order only.
 7. **Connections.** Ten questions whose answers share a hidden link; a bonus point for the team that names the link.
@@ -23,13 +23,13 @@ Loud rooms reward short, punchy rounds that people can write down quickly.
 
 Mixed ages call for rounds where everyone can contribute something.
 
-8. **Movies and TV.** Famous lines and Oscar history: [movie trivia](/movie-trivia/).
-9. **Food and drink.** Where dishes come from: [food trivia](/food-trivia/).
+8. **Movies and TV.** Famous lines and Oscar history: [movie trivia](/trivia/movie-trivia/).
+9. **Food and drink.** Where dishes come from: [food trivia](/trivia/food-trivia/).
 10. **Odd one out.** Four items; teams pick the one that doesn't belong and say why.
 11. **First letter.** Every answer in the round starts with the same letter.
 12. **Anagrams.** Scrambled names of countries, films or bands. Hand out on paper.
 13. **Missing word.** Read a famous line, title or quote with a word left out.
-14. **Science and nature.** Space, animals and the human body: [science trivia](/science-trivia/).
+14. **Science and nature.** Space, animals and the human body: [science trivia](/trivia/science-trivia/).
 
 ## For work
 
@@ -42,15 +42,15 @@ Fast and low-pressure, with answers that start conversations.
 
 ## For church groups, clubs and senior centers
 
-19. **Bible.** With verse references: [Bible trivia](/bible-trivia/).
-20. **Decades.** All questions from one decade, such as the 1960s. Our [trivia for seniors](/trivia-for-seniors/) has a good 1950s–70s set.
-21. **History.** US presidents, wars and famous firsts: [history trivia](/history-trivia/).
+19. **Bible.** With verse references: [Bible trivia](/trivia/bible-trivia/).
+20. **Decades.** All questions from one decade, such as the 1960s. Our [trivia for seniors](/trivia/trivia-for-seniors/) has a good 1950s–70s set.
+21. **History.** US presidents, wars and famous firsts: [history trivia](/trivia/history-trivia/).
 
 ## For holiday parties
 
-22. **Christmas.** Songs, films and traditions: [Christmas trivia](/christmas-trivia/).
-23. **Thanksgiving.** The 1621 feast and the holiday's history: [Thanksgiving trivia](/thanksgiving-trivia/).
-24. **Halloween.** Horror classics and customs: [Halloween trivia](/halloween-trivia/).
+22. **Christmas.** Songs, films and traditions: [Christmas trivia](/trivia/christmas-trivia/).
+23. **Thanksgiving.** The 1621 feast and the holiday's history: [Thanksgiving trivia](/trivia/thanksgiving-trivia/).
+24. **Halloween.** Horror classics and customs: [Halloween trivia](/trivia/halloween-trivia/).
 25. **Costume round.** At a Halloween party, each team describes a famous character in three clues; the others guess.
 
 ## Putting a night together

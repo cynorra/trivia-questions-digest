@@ -63,4 +63,4 @@ The two Roosevelts are separated by a generation; between Teddy and Hoover come 
 
 ## Testing yourself
 
-Cover the years and recite one chapter at a time, then test yourself with the presidents questions in our [history trivia](/history-trivia/) and in [today's quiz](/daily-trivia/), which often includes a history question.
+Cover the years and recite one chapter at a time, then test yourself with the presidents questions in our [history trivia](/trivia/history-trivia/) and in [today's quiz](/daily-trivia/), which often includes a history question.

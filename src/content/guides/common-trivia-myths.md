@@ -19,7 +19,7 @@ Read each statement and give teams ten seconds to mark T or F. Then read the rul
 
 **"Glass is a slow-moving liquid, which is why old windows are thicker at the bottom."** False. Glass is an amorphous solid. Old panes are uneven because of how they were made, and glaziers often set the thicker edge at the bottom.
 
-**"Mercury is the hottest planet because it's closest to the Sun."** False. Venus is hotter, because its thick atmosphere traps heat. This one appears in our [science trivia](/science-trivia/).
+**"Mercury is the hottest planet because it's closest to the Sun."** False. Venus is hotter, because its thick atmosphere traps heat. This one appears in our [science trivia](/trivia/science-trivia/).
 
 **"We only use 10 percent of our brains."** False. Brain imaging shows activity across virtually the whole brain over the course of a day.
 

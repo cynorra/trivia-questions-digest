@@ -51,7 +51,7 @@ export const COUNTRY_PAGES = [
 <h2>Food the world eats every day</h2>
 <p>Corn was domesticated in Mexico about 9,000 years ago, and vanilla, chocolate and chili peppers all come from Mexico and Mesoamerica. A few common beliefs need correcting, too: Cinco de Mayo is not Mexico's independence day, which is September 16.</p>
 <h2>Using these facts</h2>
-<p>These facts suit a geography or food round, or a classroom unit on Mexico. Pair them with the <a href="/americas-map-quiz/">North and South America map quiz</a>, and see our <a href="/food-trivia/">food trivia</a> for the Caesar salad's surprising birthplace in Tijuana.</p>`,
+<p>These facts suit a geography or food round, or a classroom unit on Mexico. Pair them with the <a href="/americas-map-quiz/">North and South America map quiz</a>, and see our <a href="/trivia/food-trivia/">food trivia</a> for the Caesar salad's surprising birthplace in Tijuana.</p>`,
     faq: [
       { q: "What are some interesting facts about Mexico?", a: "Mexico City is built on a former lake, the Great Pyramid of Cholula is the world's largest pyramid by volume, and corn was first domesticated in Mexico about 9,000 years ago." },
       { q: "Is Cinco de Mayo Mexico's independence day?", a: "No. Cinco de Mayo marks the Mexican army's victory over French forces at the Battle of Puebla in 1862. Independence Day is September 16." },

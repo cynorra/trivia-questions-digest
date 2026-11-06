@@ -5,7 +5,7 @@ published: 2026-11-02
 tool: knowledge
 ---
 
-Sixty-six books sounds like a lot until you notice they fall into ten groups, each with a fixed size. The Protestant Bible has 66 books, 39 in the Old Testament and 27 in the New, opening with Genesis and closing with Revelation; Catholic Bibles have 73. Knowing the order is useful in Bible study and a frequent question in [Bible trivia](/bible-trivia/). Here it is as a seven-day plan, one group a day, with the shape of the whole first.
+Sixty-six books sounds like a lot until you notice they fall into ten groups, each with a fixed size. The Protestant Bible has 66 books, 39 in the Old Testament and 27 in the New, opening with Genesis and closing with Revelation; Catholic Bibles have 73. Knowing the order is useful in Bible study and a frequent question in [Bible trivia](/trivia/bible-trivia/). Here it is as a seven-day plan, one group a day, with the shape of the whole first.
 
 ## The shape: 5–12–5–5–12 and 4–1–13–8–1
 
@@ -49,7 +49,7 @@ Singing the list a few times works better than reading it; many churches teach t
 
 ## What Catholic and Orthodox Bibles add
 
-Catholic Bibles include seven more Old Testament books, called the deuterocanonical books: **Tobit, Judith, 1 Maccabees, 2 Maccabees, Wisdom, Sirach and Baruch**, plus longer versions of Esther and Daniel. That brings the total to 73. Eastern Orthodox Bibles include a few more still, and the order of the Old Testament differs slightly between traditions. A trivia question asking "How many books are in the Bible?" should say which Bible it means; our [Bible trivia](/bible-trivia/) explanation gives both numbers.
+Catholic Bibles include seven more Old Testament books, called the deuterocanonical books: **Tobit, Judith, 1 Maccabees, 2 Maccabees, Wisdom, Sirach and Baruch**, plus longer versions of Esther and Daniel. That brings the total to 73. Eastern Orthodox Bibles include a few more still, and the order of the Old Testament differs slightly between traditions. A trivia question asking "How many books are in the Bible?" should say which Bible it means; our [Bible trivia](/trivia/bible-trivia/) explanation gives both numbers.
 
 ## Shortest and middle
 

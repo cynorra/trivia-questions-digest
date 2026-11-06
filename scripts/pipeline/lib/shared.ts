@@ -112,7 +112,14 @@ export async function upsertArticle(row: Partial<ArticleRow> & { slug: string })
 }
 
 export const FALLBACK_MODELS = Array.from(
-  new Set([process.env.GEMINI_MODEL || 'gemini-3.8-flash', 'gemini-3.8-flash-lite', 'gemini-3.5-flash', 'gemini-3.5-flash-lite']),
+  new Set([
+    process.env.GEMINI_MODEL || 'gemini-3.5-flash',
+    'gemini-3.8-flash',
+    'gemini-3.7-flash',
+    'gemini-3.6-flash',
+    'gemini-3.5-flash-lite',
+    'gemini-3.1-flash-lite',
+  ]),
 );
 
 export function initGemini(enableSearch = false): GoogleGenAI[] {

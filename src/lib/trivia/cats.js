@@ -6,7 +6,7 @@ import { SPORTS, SCREEN, MUSIC, ADULTS, SENIORS } from "./bank-b.js";
 import { CHRISTMAS, THANKSGIVING, HALLOWEEN, BIBLE } from "./bank-c.js";
 import { NBA, NFL, MOVIES_GUESS, EIGHTIES, NINETIES } from "./bank-d.js";
 import { PRESIDENTS, SPACE, ANIMALS, EASTER, BLACK_HISTORY } from "./bank-e.js";
-import { POP_CULTURE, FAMILY } from "./bank-f.js";
+import { POP_CULTURE, FAMILY, DISNEY, TWO_THOUSANDS } from "./bank-f.js";
 
 const BRIT = { label: "Encyclopaedia Britannica", href: "https://www.britannica.com/" };
 
@@ -582,6 +582,50 @@ export const CATS = [
       { q: "Are these family trivia questions suitable for holiday gatherings?", a: "Absolutely. The questions avoid overly specialized academic trivia in favor of engaging, universally interesting topics that spark conversation across generations at Thanksgiving, Christmas, or summer reunions." },
     ],
     sources: [BRIT, { label: "Smithsonian Institution", href: "https://www.si.edu/" }, { label: "National Geographic", href: "https://www.nationalgeographic.com/" }],
+  },
+  {
+    key: "disney", slug: "disney-trivia", topic: "trivia-night", daily: true, items: DISNEY,
+    name: "Disney trivia",
+    title: "Disney Trivia: 25 Animated Film and Theme Park Questions",
+    h1: "Disney trivia questions",
+    description: "25 Disney trivia questions with answers: classic animated films, Disney Renaissance hits, Pixar favorites, theme parks and memorable songs, all fully explained.",
+    lead: "Twenty-five questions covering a century of Disney storytelling, from Golden Age animation and 90s Renaissance anthems to modern adventures and legendary theme parks.",
+    body: `<h2>A century of classic hand-drawn and computer animation</h2>
+<p>Disney's animated catalog spans over eight decades, from early innovations like Pinocchio and Cinderella to 1990s Renaissance masterpieces such as The Little Mermaid, Aladdin, and The Lion King. Modern computer-animated landmarks from Walt Disney Animation Studios and Pixar continue to expand that universe with films like Tangled, Moana, Finding Nemo, and Monsters, Inc.</p>
+<p>Every question on this page focuses on genuine plot points, unforgettable character dynamics, and behind-the-scenes milestones rather than trivial background frame details. Knowing that Rapunzel relies on a trusty frying pan, or that Phil Collins wrote and recorded Tarzan's soundtrack in multiple world languages, makes each reveal entertaining for casual fans and dedicated Disney enthusiasts alike.</p>
+<h2>From silver screen legends to iconic theme parks</h2>
+<p>Disney trivia extends beyond the cinema screen into real-world landmarks. Walt Disney opened his original dream park in Anaheim, California, in 1955, followed by Florida's sprawling Walt Disney World in 1971 with the magnificent Cinderella Castle as its focal point. Our questions explore both the beloved animated stories and the real-world spaces where generations have made family memories.</p>
+<h2>How to run a Disney round at your trivia night</h2>
+<p>Disney rounds are exceptionally popular at pub quizzes, family game nights, and birthday parties because participants of all ages recognize the songs and characters. For a lively party round, read each question aloud twice before presenting the four multiple-choice options. Give teams 30 seconds to lock in their guesses, and always read the host explanation after revealing the right answer. The background context sparks immediate nostalgic conversations across the room.</p>
+<p>Looking for more themed quiz material? Explore our <a href="/pop-culture-trivia/">pop culture trivia</a>, play through <a href="/movie-trivia/">movie trivia</a>, or test your musical knowledge with <a href="/music-trivia/">music trivia</a>.</p>`,
+    faq: [
+      { q: "What eras of Disney are included in these trivia questions?", a: "The set spans the Golden Age of animation in the 1930s and 1940s, the Silver Age classics, the blockbuster 1990s Renaissance, modern 3D features, and classic theme park history." },
+      { q: "Can children and adults play this Disney quiz together?", a: "Yes. The questions are designed for mixed-age play, balancing nostalgic classics that parents grew up with alongside modern favorites that younger players know by heart." },
+      { q: "How many questions should I use for a Disney themed round?", a: "A standard trivia round typically uses 10 to 12 questions. With 25 questions available here, you can pick your favorites or run two full Disney rounds." },
+    ],
+    sources: [BRIT, { label: "The Walt Disney Archives", href: "https://d23.com/walt-disney-archives/" }, { label: "Oscars Official Database", href: "https://awardsdatabase.oscars.org/" }],
+  },
+  {
+    key: "two-thousands", slug: "2000s-trivia", topic: "trivia-night", daily: true, items: TWO_THOUSANDS,
+    name: "2000s trivia",
+    title: "2000s Trivia: 25 Pop Culture, Tech and Music Questions",
+    h1: "2000s trivia questions",
+    description: "25 trivia questions from the 2000s with answers: iPods, MySpace, Oscar-winning movies, Billboard chart-toppers, TV hits and memorable sports moments, explained.",
+    lead: "Twenty-five questions revisiting the first decade of the 21st century: the rise of MP3 players and social media, peak reality TV, blockbuster movie franchises and chart-topping hits.",
+    body: `<h2>The digital revolution that reshaped everyday life</h2>
+<p>The 2000s marked a pivotal bridge between the analog past and our connected mobile future. In 2001, Apple launched the original mechanical-scroll-wheel iPod, promising a thousand songs in your pocket, while Wikipedia debuted as a free collaborative experiment that changed how the world accesses knowledge. Floppy disks vanished as USB flash thumb drives arrived, and social networking took off globally through MySpace's HTML profile pages and coveted Top 8 friend lists.</p>
+<p>Capturing this technological transformation makes 2000s trivia uniquely relatable. Everyone remembers the hum of a PlayStation 2 booting up on a Friday night, burning MP3 playlists onto CD-R discs, or watching Pluto get controversial demoted from planet status by the International Astronomical Union in 2006.</p>
+<h2>Peak television, blockbuster cinema and Billboard anthems</h2>
+<p>Entertainment in the 2000s delivered cultural touchstones that defined a generation. Viewers gathered weekly for the real-time suspense of 24, the island enigmas of Lost, and the summer frenzy of Survivor. At movie theaters, Peter Jackson's The Lord of the Rings: The Return of the King swept eleven Oscars, while Captain Jack Sparrow transformed Pirates of the Caribbean into a cinematic juggernaut. On radio stations and MTV, Britney Spears, Eminem, Outkast, and Beyoncé dominated the charts.</p>
+<h2>Hosting an authentic 2000s quiz night</h2>
+<p>To run a memorable 2000s theme night, encourage players to dress in era-appropriate fashion—from velour tracksuits to layered graphic tees. Play 2000s pop and hip-hop hits as background music between rounds. Read each question clearly, provide the four multiple-choice options, and allow 30 seconds for teams to deliberate. After collecting score sheets, read out the one-line host explanations to spark instant debates and fond memories of flip phones and dial-up internet.</p>
+<p>Pair this set with our <a href="/90s-trivia/">90s trivia questions</a> and <a href="/80s-trivia/">80s trivia questions</a> for a complete multi-decade trivia showdown, or explore our <a href="/pop-culture-trivia/">pop culture trivia</a> for modern trends.</p>`,
+    faq: [
+      { q: "What makes 2000s trivia so popular for theme parties?", a: "The 2000s represents a sweet spot of nostalgia for millennials and Gen Z, featuring iconic early tech innovations, viral television shows, and chart-topping radio anthems everyone recognizes." },
+      { q: "Which topics dominate 2000s trivia rounds?", a: "The strongest categories include early digital technology like iPods and MySpace, blockbuster cinematic trilogies like Lord of the Rings, peak reality television, and mainstream pop and hip-hop hits." },
+      { q: "Can younger players who didn't grow up in the 2000s answer these questions?", a: "Yes. Because 2000s movies, music, and gaming franchises remain massive streaming and cultural staples today, most players know key milestones regardless of age." },
+    ],
+    sources: [BRIT, { label: "Billboard Charts & Archives", href: "https://www.billboard.com/charts/" }, { label: "Internet Movie Database (IMDb)", href: "https://www.imdb.com/" }],
   },
 ];
 

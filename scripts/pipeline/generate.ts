@@ -84,6 +84,7 @@ ${formBlock}
 FORMAT
 - bodyHtml: HTML using only <h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <table>/<thead>/<tbody>/<tr>/<th>/<td>, <a href>. No <h1>, no inline styles, no scripts, no markdown.
 - 1,100 to 1,700 words in bodyHtml. Short paragraphs. At least one table if the topic has numbers to compare.
+- CONCRETE DETAILS: Include exact numbers with units throughout (e.g. "10 questions", "4 rounds", "25 players", "1 point", "15 minutes", years/dates) and quote specific example questions and answers in double quotes. Avoid vague generalities. Every FAQ answer must include at least one concrete detail (a specific number, count, date, or quoted fact from the DATA/FACTS blocks).
 ${layout.box
     ? '- quickAnswer: 2-3 sentences that answer the title directly with a concrete detail; it is shown in a box at the top.'
     : '- quickAnswer: leave it out (empty string). This article has no summary box; the opening paragraph of bodyHtml answers the title itself, in a way that fits the editorial form.'}

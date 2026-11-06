@@ -6,6 +6,7 @@ import { SPORTS, SCREEN, MUSIC, ADULTS, SENIORS } from "./bank-b.js";
 import { CHRISTMAS, THANKSGIVING, HALLOWEEN, BIBLE } from "./bank-c.js";
 import { NBA, NFL, MOVIES_GUESS, EIGHTIES, NINETIES } from "./bank-d.js";
 import { PRESIDENTS, SPACE, ANIMALS, EASTER, BLACK_HISTORY } from "./bank-e.js";
+import { POP_CULTURE } from "./bank-f.js";
 
 const BRIT = { label: "Encyclopaedia Britannica", href: "https://www.britannica.com/" };
 
@@ -198,10 +199,10 @@ export const CATS = [
   {
     key: "thanksgiving", slug: "thanksgiving-trivia", topic: "holidays", daily: false, items: THANKSGIVING,
     name: "Thanksgiving",
-    title: "Thanksgiving Trivia: 20 Questions on the History and Traditions",
+    title: "Thanksgiving Trivia: 25 Questions on the History and Traditions",
     h1: "Thanksgiving trivia questions",
-    description: "20 Thanksgiving trivia questions with answers: the 1621 harvest feast, the Wampanoag and Pilgrims, Lincoln and Sarah Hale, the parade, football and turkeys.",
-    lead: "Twenty questions on what actually happened in 1621, how Thanksgiving became a national holiday, and the traditions that grew up around it, from the Macy's parade to the turkey pardon.",
+    description: "25 Thanksgiving trivia questions with answers: the 1621 harvest feast, the Wampanoag and Pilgrims, Lincoln and Sarah Hale, the parade, football and turkeys.",
+    lead: "Twenty-five questions on what actually happened in 1621, how Thanksgiving became a national holiday, and the traditions that grew up around it, from the Macy's parade to the turkey pardon.",
     body: `<h2>What the sources say about 1621</h2>
 <p>Most of what we know about the first harvest feast comes from one letter by colonist Edward Winslow. He described about 90 Wampanoag men arriving with their leader, Massasoit, five deer, fowl, and three days of eating and games. There's no record of pumpkin pie, which the colonists had no ovens or sugar to make. Several questions here are built on that letter so they rest on a primary source, not on later legend.</p>
 <h2>How it became a national holiday</h2>
@@ -220,10 +221,10 @@ export const CATS = [
   {
     key: "halloween", slug: "halloween-trivia", topic: "holidays", daily: false, items: HALLOWEEN,
     name: "Halloween",
-    title: "Halloween Trivia: 20 Spooky Questions and Answers",
+    title: "Halloween Trivia: 25 Spooky Questions and Answers",
     h1: "Halloween trivia questions",
-    description: "20 Halloween trivia questions with answers on the holiday's Celtic roots, classic horror books and films, jack-o'-lanterns, candy corn and Día de los Muertos.",
-    lead: "Twenty questions on where Halloween came from, the books and films that shaped it, and the customs that go with it, from turnip lanterns to candy corn.",
+    description: "25 Halloween trivia questions with answers on the holiday's Celtic roots, classic horror books and films, jack-o'-lanterns, candy corn and Día de los Muertos.",
+    lead: "Twenty-five questions on where Halloween came from, the books and films that shaped it, and the customs that go with it, from turnip lanterns to candy corn.",
     body: `<h2>From Samhain to trick-or-treat</h2>
 <p>Halloween's roots run back to the Celtic festival of Samhain and to All Hallows' Eve, the night before All Saints' Day. Irish and Scottish immigrants brought customs like carved lanterns to America, where the pumpkin replaced the turnip. A few questions here trace that path.</p>
 <h2>Horror classics</h2>
@@ -316,10 +317,10 @@ export const CATS = [
   {
     key: "nba", slug: "nba-quiz", topic: "trivia-night", daily: true, items: NBA,
     name: "NBA",
-    title: "NBA Quiz: 21 Basketball Trivia Questions With Answers",
+    title: "NBA Quiz: 25 Basketball Trivia Questions With Answers",
     h1: "NBA quiz",
-    description: "An NBA quiz with 21 basketball trivia questions and answers on legends, records, the draft, rules and franchises, each with the story behind it.",
-    lead: "Twenty-one questions on NBA legends, records, the draft and the rules of the pro game. Records that can still change are dated, so the answers stay right.",
+    description: "An NBA quiz with 25 basketball trivia questions and answers on legends, records, the draft, rules and franchises, each with the story behind it.",
+    lead: "Twenty-five questions on NBA legends, records, the draft and the rules of the pro game. Records that can still change are dated, so the answers stay right.",
     body: `<h2>What this NBA quiz covers</h2>
 <p>The set runs from the league's founding as the Basketball Association of America in 1946 to the modern era: Wilt Chamberlain's 100-point game, Bill Russell's 11 rings, Michael Jordan's two three-peats with the Bulls and LeBron James passing Kareem Abdul-Jabbar as the all-time leading scorer. A handful of rules questions, like the length of the shot clock and the number of fouls before you're out, give casual fans a fair chance.</p>
 <h2>Why some questions say "as of"</h2>
@@ -338,10 +339,10 @@ export const CATS = [
   {
     key: "nfl", slug: "nfl-quiz", topic: "trivia-night", daily: true, items: NFL,
     name: "NFL",
-    title: "NFL Quiz: 20 Football Trivia Questions With Answers",
+    title: "NFL Quiz: 25 Football Trivia Questions With Answers",
     h1: "NFL quiz",
-    description: "An NFL quiz with 20 football trivia questions and answers on Super Bowl history, all-time records, famous plays, stadiums and the rules of the game.",
-    lead: "Twenty questions on Super Bowl history, the league's greatest players, famous plays and how the game is scored. Built on history, so the answers don't change every season.",
+    description: "An NFL quiz with 25 football trivia questions and answers on Super Bowl history, all-time records, famous plays, stadiums and the rules of the game.",
+    lead: "Twenty-five questions on Super Bowl history, the league's greatest players, famous plays and how the game is scored. Built on history, so the answers don't change every season.",
     body: `<h2>From Canton to the Super Bowl</h2>
 <p>The NFL began in 1920 in Canton, Ohio, as the American Professional Football Association. This quiz follows its history through the questions fans love: the 1972 Dolphins' perfect season, the Immaculate Reception, "The Catch," the Buffalo Bills' four straight Super Bowl losses and Tom Brady's seven rings.</p>
 <h2>Records that hold</h2>
@@ -361,10 +362,10 @@ export const CATS = [
   {
     key: "guess-movie", slug: "guess-the-movie", topic: "trivia-night", daily: true, items: MOVIES_GUESS,
     name: "Guess the movie",
-    title: "Guess the Movie: 20 Movie Plots to Name, With Answers",
+    title: "Guess the Movie: 25 Movie Plots to Name, With Answers",
     h1: "Guess the movie from the plot",
-    description: "A guess the movie game: read a one-line plot and name the film from four choices. Twenty classics from the 1970s to the 2010s, each with a fact about it.",
-    lead: "Each question is a one-line plot summary. Name the film from four choices, then read a fact about how it was made. Twenty movies, from the 1970s to the 2010s.",
+    description: "A guess the movie game: read a one-line plot and name the film from four choices. Twenty-five classics from the 1970s to the 2010s, each with a fact about it.",
+    lead: "Each question is a one-line plot summary. Name the film from four choices, then read a fact about how it was made. Twenty-five movies, from the 1970s to the 2010s.",
     body: `<h2>How the game works</h2>
 <p>Every question describes a film in one sentence, without naming any characters you'd recognize straight away. The four choices are films from the same genre or era, so you need to know the story, not just the decade. After each answer you get one fact about the film, such as an Oscar record or how it was received.</p>
 <h2>Why plots, not quotes or pictures</h2>
@@ -388,10 +389,10 @@ export const CATS = [
   {
     key: "eighties", slug: "80s-trivia", topic: "knowledge", daily: true, items: EIGHTIES,
     name: "1980s",
-    title: "80s Trivia: 20 Questions on Music, Movies and Events",
+    title: "80s Trivia: 25 Questions on Music, Movies and Events",
     h1: "80s trivia questions",
-    description: "20 80s trivia questions with answers: MTV, Pac-Man, the Rubik's Cube, Live Aid, Challenger, Top Gun and the decade's biggest songs, films and events.",
-    lead: "Twenty questions about the decade of MTV, arcade games, Live Aid and the space shuttle. Each answer comes with the date and a detail people tend to forget.",
+    description: "25 80s trivia questions with answers: MTV, Pac-Man, the Rubik's Cube, Live Aid, Challenger, Top Gun and the decade's biggest songs, films and events.",
+    lead: "Twenty-five questions about the decade of MTV, arcade games, Live Aid and the space shuttle. Each answer comes with the date and a detail people tend to forget.",
     body: `<h2>Pop culture and big events</h2>
 <p>The 1980s questions mix the fun (Pac-Man, Cabbage Patch Kids, "Who shot J.R.?") with the events that defined the decade: the Challenger disaster, Chernobyl and the royal wedding of 1981. Music gets its own share, from the first video on MTV to Madonna, Michael Jackson's moonwalk and the charity songs of 1985.</p>
 <h2>Who it's for</h2>
@@ -411,10 +412,10 @@ export const CATS = [
   {
     key: "nineties", slug: "90s-trivia", topic: "knowledge", daily: true, items: NINETIES,
     name: "1990s",
-    title: "90s Trivia: 20 Questions on Pop Culture, Tech and Events",
+    title: "90s Trivia: 25 Questions on Pop Culture, Tech and Events",
     h1: "90s trivia questions",
-    description: "20 90s trivia questions with answers: Nirvana, the Spice Girls, Tamagotchi, the first Harry Potter book, Y2K, Google and the decade's biggest events.",
-    lead: "Twenty questions about the decade of grunge, boy bands, the early web and Y2K. Each answer comes with a date and a detail to share.",
+    description: "25 90s trivia questions with answers: Nirvana, the Spice Girls, Tamagotchi, the first Harry Potter book, Y2K, Google and the decade's biggest events.",
+    lead: "Twenty-five questions about the decade of grunge, boy bands, the early web and Y2K. Each answer comes with a date and a detail to share.",
     body: `<h2>The decade the internet arrived</h2>
 <p>The 1990s questions follow the arrival of the modern internet, from the Netscape browser to Google's founding in a garage in 1998, along with the Y2K scare that closed the decade. Science gets its moments too: the Hubble telescope and Dolly the sheep.</p>
 <h2>Pop culture</h2>
@@ -434,10 +435,10 @@ export const CATS = [
   {
     key: "presidents", slug: "presidents-quiz", topic: "knowledge", daily: true, items: PRESIDENTS,
     name: "US presidents",
-    title: "Presidents Quiz: 20 US Presidents Trivia Questions and Answers",
+    title: "Presidents Quiz: 25 US Presidents Trivia Questions and Answers",
     h1: "US presidents quiz",
-    description: "A US presidents quiz with 20 trivia questions and answers: firsts, records, money, Mount Rushmore, impeachments and fun facts about American presidents.",
-    lead: "Twenty questions about American presidents: who's on the money, who served the shortest time, who was never elected and which two died on the same day. Every answer has the story behind it.",
+    description: "A US presidents quiz with 25 trivia questions and answers: firsts, records, money, Mount Rushmore, impeachments and fun facts about American presidents.",
+    lead: "Twenty-five questions about American presidents: who's on the money, who served the shortest time, who was never elected and which two died on the same day. Every answer has the story behind it.",
     body: `<h2>Beyond the list of names</h2>
 <p>Most presidents trivia starts and ends with "who was the first president." This quiz goes further: the faces on the dollar bill, the nickel and Mount Rushmore; the shortest presidency (31 days); the only president who also led the Supreme Court; the two founders who died on the same Fourth of July. These are the facts about presidents that make good stories, not just answers.</p>
 <h2>Records worth knowing</h2>
@@ -455,10 +456,10 @@ export const CATS = [
   {
     key: "space", slug: "space-trivia", topic: "knowledge", daily: true, items: SPACE,
     name: "Space",
-    title: "Space Trivia: 20 Space Quiz Questions With Answers",
+    title: "Space Trivia: 25 Space Quiz Questions With Answers",
     h1: "Space trivia questions",
-    description: "20 space trivia questions with answers: astronauts and firsts, moons and planets, the Milky Way, telescopes and missions, each explained and checked against NASA.",
-    lead: "Twenty questions about the people, planets and spacecraft of space exploration, from Yuri Gagarin and Laika to Voyager 1 and the James Webb Space Telescope.",
+    description: "25 space trivia questions with answers: astronauts and firsts, moons and planets, the Milky Way, telescopes and missions, each explained and checked against NASA.",
+    lead: "Twenty-five questions about the people, planets and spacecraft of space exploration, from Yuri Gagarin and Laika to Voyager 1 and the James Webb Space Telescope.",
     body: `<h2>People and firsts</h2>
 <p>Space history is full of firsts that make great trivia: the first person in space, the first woman, the first animal to orbit Earth, the lunar module that landed in 1969. The explanations add the detail that usually comes up as a follow-up, like how long Gagarin's flight lasted or which two dogs were the first to come home alive.</p>
 <h2>Planets, moons and how the sky works</h2>
@@ -476,10 +477,10 @@ export const CATS = [
   {
     key: "animals", slug: "animal-trivia", topic: "knowledge", daily: true, items: ANIMALS,
     name: "Animals",
-    title: "Animal Trivia: 20 Animal Quiz Questions and Answers",
+    title: "Animal Trivia: 25 Animal Quiz Questions and Answers",
     h1: "Animal trivia questions",
-    description: "20 animal trivia questions and answers: record-breaking animals, baby and group names, strange abilities and diets, each with a fact about the animal behind it.",
-    lead: "Twenty questions about the tallest, fastest and strangest animals, what their babies and groups are called, and what they really eat. Each answer adds one more fact worth sharing.",
+    description: "25 animal trivia questions and answers: record-breaking animals, baby and group names, strange abilities and diets, each with a fact about the animal behind it.",
+    lead: "Twenty-five questions about the tallest, fastest and strangest animals, what their babies and groups are called, and what they really eat. Each answer adds one more fact worth sharing.",
     body: `<h2>Records, names and odd abilities</h2>
 <p>Animal trivia works for every age because the answers are surprising but easy to remember: the bird that flies backward, the mammals that lay eggs, the animal with eyes the size of a soccer ball. We've mixed records (tallest, fastest in a dive, longest pregnancy) with name questions (a joey, a pack, a parliament) and questions about diets and bodies.</p>
 <h2>Easy, medium and hard</h2>
@@ -499,10 +500,10 @@ export const CATS = [
   {
     key: "easter", slug: "easter-trivia", topic: "holidays", daily: false, items: EASTER,
     name: "Easter",
-    title: "Easter Trivia: 20 Easter Questions and Answers",
+    title: "Easter Trivia: 25 Easter Questions and Answers",
     h1: "Easter trivia questions",
-    description: "20 Easter trivia questions and answers: how the date is set, the Easter Bunny and egg roll, Lent and Holy Week, and Easter traditions from around the world.",
-    lead: "Twenty questions on why Easter moves every year, where the Easter Bunny came from, the days of Holy Week and how the holiday is celebrated from Sweden to Australia.",
+    description: "25 Easter trivia questions and answers: how the date is set, the Easter Bunny and egg roll, Lent and Holy Week, and Easter traditions from around the world.",
+    lead: "Twenty-five questions on why Easter moves every year, where the Easter Bunny came from, the days of Holy Week and how the holiday is celebrated from Sweden to Australia.",
     body: `<h2>Why Easter moves</h2>
 <p>Easter falls on a different date every year because it follows the Moon: in Western churches it's the first Sunday after the first full moon on or after March 21, which puts it anywhere from March 22 to April 25. Orthodox churches use the same rule on the Julian calendar, which is why their Easter is often later. Several questions in this set are built on that rule, and they make good questions for adults who think they already know the holiday.</p>
 <h2>Customs old and new</h2>
@@ -520,10 +521,10 @@ export const CATS = [
   {
     key: "black-history", slug: "black-history-trivia", topic: "knowledge", daily: false, items: BLACK_HISTORY,
     name: "Black history",
-    title: "Black History Trivia: 20 Questions and Answers",
+    title: "Black History Trivia: 25 Questions and Answers",
     h1: "Black history trivia questions",
-    description: "20 Black history trivia questions with answers for Black History Month: civil rights milestones, firsts in science, sports, politics and the arts, each explained.",
-    lead: "Twenty questions about the people and turning points of African American history, from Harriet Tubman and Frederick Douglass to Thurgood Marshall, Katherine Johnson and Juneteenth.",
+    description: "25 Black history trivia questions with answers for Black History Month: civil rights milestones, firsts in science, sports, politics and the arts, each explained.",
+    lead: "Twenty-five questions about the people and turning points of African American history, from Harriet Tubman and Frederick Douglass to Thurgood Marshall, Katherine Johnson and Juneteenth.",
     body: `<h2>What this set covers</h2>
 <p>The questions follow American history from the Underground Railroad through Reconstruction, the Harlem Renaissance, the civil rights movement and the space program. Alongside the best-known names there are people every quiz should include more often: Claudette Colvin, Shirley Chisholm, Guion Bluford, Ralph Bunche and Madam C. J. Walker.</p>
 <h2>How we wrote it</h2>
@@ -538,6 +539,27 @@ export const CATS = [
       { q: "What is Juneteenth?", a: "June 19, which marks the day in 1865 when Union troops announced the end of slavery in Galveston, Texas. It became a federal holiday in 2021." },
     ],
     sources: [{ label: "Smithsonian National Museum of African American History and Culture", href: "https://nmaahc.si.edu/" }, { label: "Library of Congress: African American History Month", href: "https://www.africanamericanhistorymonth.gov/" }, { label: "National Archives: Black history", href: "https://www.archives.gov/research/african-americans" }],
+  },
+  {
+    key: "pop-culture", slug: "pop-culture-trivia", topic: "trivia-night", daily: true, items: POP_CULTURE,
+    name: "Pop culture",
+    title: "Pop Culture Trivia: 25 Fun Modern Questions With Answers",
+    h1: "Pop culture trivia questions",
+    description: "25 fun pop culture trivia questions and answers: hit TV series, chart-topping music, blockbuster films, streaming moments and viral internet culture, all explained.",
+    lead: "Twenty-five questions covering viral internet moments, binge-worthy streaming hits, iconic movie quotes, and Grammy-winning pop anthems. Play online or read them out at your next trivia night.",
+    body: `<h2>Television, streaming and viral hits</h2>
+<p>Modern pop culture moves at lightspeed, but some moments anchor our shared memory. This round highlights the binge-worthy sensations that defined modern television: Stranger Things in Hawkins, Indiana; Michael Scott's antics at Dunder Mifflin in The Office; Walter White's alter ego in Breaking Bad; and the high-stakes world of Westeros in Game of Thrones. Internet milestones like the very first video uploaded to YouTube in 2005 and viral phenomenons like Wordle test your recall of the digital landscape.</p>
+<h2>Music charts and blockbuster cinema</h2>
+<p>From Beyoncé's historic tally of Grammy Awards to the worldwide stadium roar of Taylor Swift's Eras Tour, music trivia brings energy to any gathering. We balance streaming chart-toppers with cinematic powerhouses: James Cameron's Avatar, the cultural sensation of 2023's Barbie, the Marvel Cinematic Universe's defining climax in Avengers: Endgame, and Bong Joon-ho's groundbreaking Academy Award sweep with Parasite.</p>
+<h2>Tips for running a pop culture round</h2>
+<p>Pop culture is the ultimate equalizer at a quiz night because it connects generations. Younger players will instantly recognize viral TikTok and YouTube trivia, while older participants bring deep knowledge of classic 90s sitcoms and iconic movie releases. Read the question clearly, give teams 30 seconds to deliberate, and follow up each reveal with the fascinating context provided in the explanation.</p>
+<p>Looking to explore specific eras? Dive into our dedicated <a href="/80s-trivia/">80s trivia</a>, <a href="/90s-trivia/">90s trivia</a>, or test your film knowledge with <a href="/guess-the-movie/">guess the movie</a>.</p>`,
+    faq: [
+      { q: "What eras does this pop culture trivia quiz cover?", a: "This set focuses predominantly on modern pop culture from the 1990s through the 2020s, featuring milestone moments across streaming television, blockbuster films, viral internet sensations, and Billboard chart-toppers." },
+      { q: "How should I score a pop culture trivia round?", a: "Award one standard point per correct answer. For questions with multiple elements, such as identifying both a show and a fictional setting, consider offering a bonus point or using it as a tiebreaker." },
+      { q: "Are these pop culture questions suitable for family game nights?", a: "Yes. Every question has been curated to be clean, fun, and accessible for mixed-age gatherings, from teenagers who know viral social media trends to adults who followed 2000s television." },
+    ],
+    sources: [BRIT, { label: "Billboard Charts & Archives", href: "https://www.billboard.com/charts/" }, { label: "Oscars Official Database", href: "https://awardsdatabase.oscars.org/" }],
   },
 ];
 

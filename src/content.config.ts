@@ -2,6 +2,16 @@ import { defineCollection, z } from "astro:content";
 import type { Loader } from "astro/loaders";
 import { sourceName, liveArticles, day, updatedDay } from "./lib/articles-source.js";
 import { TOPIC_KEYS } from "./lib/topics.js";
+import { CATS } from "./lib/trivia/cats.js";
+
+function rewriteLegacyLinks(md: string): string {
+  let res = md;
+  for (const c of CATS) {
+    res = res.replaceAll(`](/${c.slug}/)`, `](/trivia/${c.slug}/)`);
+    res = res.replaceAll(`href="/${c.slug}/"`, `href="/trivia/${c.slug}/"`);
+  }
+  return res;
+}
 
 const schema = z.object({
   title: z.string().max(80),
@@ -35,11 +45,12 @@ const articles: Loader = {
           draft: false,
         },
       });
+      const body = rewriteLegacyLinks(row.body_md);
       store.set({
         id: row.slug,
         data,
-        body: row.body_md,
-        rendered: await renderMarkdown(row.body_md),
+        body,
+        rendered: await renderMarkdown(body),
         digest: generateDigest(row),
       });
     }

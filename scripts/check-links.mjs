@@ -5,9 +5,20 @@
 //   node scripts/check-links.mjs
 import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { localRows } from "../src/lib/articles-source.js";
 
-const DIST = new URL("../dist/", import.meta.url).pathname;
+const DIST = fileURLToPath(new URL("../dist/", import.meta.url));
+const REDIRECTS_FILE = fileURLToPath(new URL("../public/_redirects", import.meta.url));
+const redirects = new Set();
+if (existsSync(REDIRECTS_FILE)) {
+  for (const line of readFileSync(REDIRECTS_FILE, "utf8").split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const [from] = trimmed.split(/\s+/);
+    if (from) redirects.add(from);
+  }
+}
 const problems = [];
 
 function walk(dir) {
@@ -23,7 +34,9 @@ if (existsSync(DIST)) {
     for (const [, href] of html.matchAll(/href="(\/[^"#?]*)/g)) {
       if (href.startsWith("//")) continue;
       const target = join(DIST, href);
-      const ok = href.endsWith("/") ? existsSync(join(target, "index.html")) : existsSync(target);
+      const ok = href.endsWith("/")
+        ? existsSync(join(target, "index.html")) || redirects.has(href)
+        : existsSync(target) || redirects.has(href);
       if (!ok) problems.push(`${file.replace(DIST, "/")} -> ${href}`);
     }
   }

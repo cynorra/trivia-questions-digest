@@ -11,8 +11,8 @@
     "indexnow": "node scripts/indexnow.mjs",
     "push-guides": "node scripts/push-guides.mjs",
     "test:pipeline": "tsx --test scripts/pipeline/selftest.ts",
-    "generate": "tsx scripts/pipeline/generate.ts",
-    "auto-publish": "tsx scripts/pipeline/auto-publish.ts",
+    "generate": "tsx --env-file=.env scripts/pipeline/generate.ts",
+    "auto-publish": "tsx --env-file=.env scripts/pipeline/auto-publish.ts",
     "prebuild": "node scripts/make-geo-assets.mjs"
   },
   "engines": {

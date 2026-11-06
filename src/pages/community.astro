@@ -1,0 +1,99 @@
+---
+import Base from "../layouts/Base.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import Faq from "../components/Faq.astro";
+import CommunityHub from "../components/trivia/CommunityHub.tsx";
+import { FEATURED_COMMUNITY_QUIZZES } from "../lib/trivia/community-data.ts";
+import { SITE } from "../site.config.js";
+import { breadcrumbSchema, collectionSchema, faqSchema } from "../lib/schema.js";
+
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Community", path: "/community/" },
+];
+
+const faq = [
+  {
+    q: "How do I create and share my own custom trivia quiz?",
+    a: "Click '+ Create Custom Trivia' on this page, enter your title and creator name, write your questions with four multiple-choice options, and select the correct answer. You can immediately playtest your quiz or copy a portable share link to send to friends, students, or family.",
+  },
+  {
+    q: "Do I need to sign up or create an account to make a quiz?",
+    a: "No. Everything runs directly in your browser. When you create a quiz, it is saved to your browser's local storage and can be encoded into a portable share link that anyone can open and play immediately without logging in.",
+  },
+  {
+    q: "How can I request to have my custom quiz featured on the site?",
+    a: "After creating your quiz, click 'Submit for Site Publication'. This generates a pre-filled review request sent to our editorial desk. We review community submissions for factual accuracy, clean options, and family-friendly guidelines before adding them to the permanent featured collection.",
+  },
+  {
+    q: "Can I use community quizzes for classroom activities or live trivia nights?",
+    a: "Yes. All featured community quizzes are free to play online or read aloud during family game nights, pub quizzes, work icebreakers, and classroom study sessions.",
+  },
+];
+---
+<Base
+  title="Community Quizzes & Custom Trivia Maker: Play, Create and Share"
+  description="Create your own custom trivia questions, play quizzes crafted by fellow trivia enthusiasts, generate portable game links, and submit your quiz to be featured."
+  schema={[
+    breadcrumbSchema(crumbs),
+    collectionSchema({
+      name: "Community Trivia Quizzes",
+      description: "Custom trivia created by players and community enthusiasts.",
+      path: "/community/",
+      items: FEATURED_COMMUNITY_QUIZZES.map((q) => ({ name: q.title, path: `/community/#quiz=${q.id}` })),
+    }),
+    faqSchema(faq),
+  ]}
+>
+  <section class="border-b">
+    <div class="mx-auto max-w-6xl px-4 pt-6 pb-12 md:py-14">
+      <Breadcrumbs crumbs={crumbs} />
+      <p class="text-brand mt-4 text-sm font-semibold tracking-wider uppercase">Community & Custom Quizzes</p>
+      <h1 class="mt-3 max-w-[20ch] text-4xl leading-[1.05] font-extrabold md:text-6xl">
+        Community trivia quizzes and custom quiz maker
+      </h1>
+      <p class="text-muted-foreground mt-5 max-w-[62ch] text-lg">
+        Play trivia rounds crafted by fellow quiz enthusiasts, or build your own custom trivia game with verified answers, instant scoring, and portable links to share with family, friends, or classrooms.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <CommunityHub client:load siteEmail={SITE.email} />
+  </section>
+
+  <section class="border-t bg-card/40 py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-extrabold md:text-3xl">How community trivia works</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-lg font-bold">1. Build your custom quiz</h3>
+          <p class="text-muted-foreground mt-2 text-sm leading-relaxed">
+            Write your own questions, enter 4 plausible choices, specify the correct answer, and include an educational explanation. Quizzes are automatically saved in your browser.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-lg font-bold">2. Share instantly with friends</h3>
+          <p class="text-muted-foreground mt-2 text-sm leading-relaxed">
+            Click 'Copy Shareable Link' to generate a unique URL containing your complete quiz. Anyone who opens the link can play immediately with full interactive scoring.
+          </p>
+        </div>
+        <div class="bg-card rounded-xl border p-5">
+          <h3 class="text-lg font-bold">3. Get featured on the site</h3>
+          <p class="text-muted-foreground mt-2 text-sm leading-relaxed">
+            Submit your quiz for editorial review. Once checked against our accuracy standards and verified sources, your quiz will be published in the permanent Community Showcase!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t py-14">
+    <div class="mx-auto max-w-4xl px-4">
+      <h2 class="text-2xl font-extrabold md:text-3xl text-center">Frequently asked questions</h2>
+      <div class="mt-8">
+        <Faq items={faq} />
+      </div>
+    </div>
+  </section>
+</Base>

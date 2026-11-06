@@ -36,8 +36,9 @@ const faq = [
         <p class="text-muted-foreground mt-5 max-w-[58ch] text-lg">{total} hand-written trivia questions with answers and explanations, sourced fun facts, map quizzes for every state and country, and guides for hosting a trivia night. Every answer is checked against a named source.</p>
         <div class="mt-7 flex flex-wrap gap-3">
           <a href="/daily-trivia/" class="bg-brand text-brand-foreground rounded-lg px-5 py-2.5 font-semibold no-underline">Today's trivia questions</a>
+          <a href="/trivia/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">All categories</a>
+          <a href="/community/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Community quizzes</a>
           <a href="/map-quizzes/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Map quizzes</a>
-          <a href="/guides/" class="bg-card text-foreground rounded-lg border px-5 py-2.5 font-semibold no-underline">Guides</a>
         </div>
       </div>
       <div class="self-center"><FactOfDay client:load buildTime={buildTime} facts={FACTS} /></div>

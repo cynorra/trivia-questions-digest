@@ -5,7 +5,7 @@ import { PAGES as GEO_PAGES } from "./lib/geo/pages.js";
 import { COUNTRY_PAGES } from "./lib/trivia/country-facts.js";
 const D = "2026-11-02";
 const paths = [
-  "/", "/trivia/", "/fun-facts/", "/random-trivia-questions/", "/guides/", "/how-we-write-questions/",
+  "/", "/trivia/", "/community/", "/fun-facts/", "/random-trivia-questions/", "/guides/", "/how-we-write-questions/",
   "/about/", "/author/eren-simsir/", "/contact/", "/editorial-policy/", "/privacy/", "/terms/", "/disclaimer/",
   "/map-quizzes/", "/daily-trivia/", "/spirit-animal-quiz/", "/daily-geography-quiz/", "/geography-trivia/", "/how-we-make-our-maps/",
   ...CATS.map((c) => `/trivia/${c.slug}/`),

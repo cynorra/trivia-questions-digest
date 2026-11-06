@@ -49,6 +49,7 @@ export const NAV = [
   { href: "/guides/", label: "Guides" },
   { href: "/trivia/", label: "Trivia" },
   { href: "/daily-trivia/", label: "Daily trivia" },
+  { href: "/community/", label: "Community" },
   { href: "/map-quizzes/", label: "Map quizzes" },
   { href: "/fun-facts/", label: "Fun facts" },
   { href: "/trivia/christmas-trivia/", label: "Christmas" },

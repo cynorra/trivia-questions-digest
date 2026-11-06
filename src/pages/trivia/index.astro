@@ -88,14 +88,20 @@ const faq = [
               const c = CAT_BY_KEY[k];
               if (!c) return null;
               return (
-                <li class="bg-card hover:border-brand/50 rounded-xl border p-4 transition-colors">
-                  <a href={`/trivia/${c.slug}/`} class="text-foreground hover:text-brand font-bold no-underline">
-                    {c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}
-                  </a>
-                  <p class="text-muted-foreground mt-1.5 text-xs line-clamp-2 leading-relaxed">{c.description}</p>
+                <li class="group bg-card hover:border-brand/60 relative flex flex-col justify-between rounded-xl border p-4 shadow-xs transition-all hover:shadow-sm">
+                  <div>
+                    <h4 class="text-base font-bold">
+                      <a href={`/trivia/${c.slug}/`} class="text-foreground group-hover:text-brand after:absolute after:inset-0 no-underline">
+                        {c.h1.charAt(0).toUpperCase() + c.h1.slice(1)}
+                      </a>
+                    </h4>
+                    <p class="text-muted-foreground mt-1.5 text-xs line-clamp-2 leading-relaxed">{c.description}</p>
+                  </div>
                   <div class="text-muted-foreground mt-3 flex items-center justify-between text-xs font-medium">
                     <span>{c.items.length} questions</span>
-                    <span class="text-brand">Play round →</span>
+                    <span class="text-brand group-hover:translate-x-0.5 group-hover:underline font-semibold inline-flex items-center transition-transform">
+                      Play round →
+                    </span>
                   </div>
                 </li>
               );

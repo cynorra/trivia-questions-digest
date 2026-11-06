@@ -6,7 +6,7 @@ import { SPORTS, SCREEN, MUSIC, ADULTS, SENIORS } from "./bank-b.js";
 import { CHRISTMAS, THANKSGIVING, HALLOWEEN, BIBLE } from "./bank-c.js";
 import { NBA, NFL, MOVIES_GUESS, EIGHTIES, NINETIES } from "./bank-d.js";
 import { PRESIDENTS, SPACE, ANIMALS, EASTER, BLACK_HISTORY } from "./bank-e.js";
-import { POP_CULTURE } from "./bank-f.js";
+import { POP_CULTURE, FAMILY } from "./bank-f.js";
 
 const BRIT = { label: "Encyclopaedia Britannica", href: "https://www.britannica.com/" };
 
@@ -560,6 +560,28 @@ export const CATS = [
       { q: "Are these pop culture questions suitable for family game nights?", a: "Yes. Every question has been curated to be clean, fun, and accessible for mixed-age gatherings, from teenagers who know viral social media trends to adults who followed 2000s television." },
     ],
     sources: [BRIT, { label: "Billboard Charts & Archives", href: "https://www.billboard.com/charts/" }, { label: "Oscars Official Database", href: "https://awardsdatabase.oscars.org/" }],
+  },
+  {
+    key: "family", slug: "family-trivia", topic: "trivia-night", daily: true, items: FAMILY,
+    name: "Family trivia",
+    title: "Family Trivia: 25 Fun Questions for Game Night",
+    h1: "Family trivia questions",
+    description: "25 fun family trivia questions and answers for game night: board games, nature, space, everyday science, folklore and food, each with a full explanation.",
+    lead: "Twenty-five questions designed for family game night, living room quiz battles and road trips. Accessible for all ages without feeling dumbed down.",
+    body: `<h2>Multi-generational questions for living room play</h2>
+<p>Family trivia works best when no single player dominates because of an age advantage. Instead of leaning heavily on obscure historical dates or contemporary social media slang, this set builds on common ground: beloved board games, curious nature facts, classic animated films and everyday phenomena that spark lively discussion around the kitchen table or on long road trips.</p>
+<p>Every question offers four plausible choices and a memorable explanation. When a player learns why green Haribo gummy bears taste like strawberry, or discovers that apples float because a quarter of their volume is air, the round transforms from a dry test into an entertaining family discovery.</p>
+<h2>Board games, curious science and shared memories</h2>
+<p>This collection pulls from experiences almost every household shares: rolling dice in Monopoly, managing card trades in Uno, or placing letter tiles in Scrabble. We complement tabletop nostalgia with intriguing science and world wonders, including the mysterious sideways spin of Uranus, the astonishing reverse flight of hummingbirds, and the extraordinary depths of the Mariana Trench.</p>
+<h2>Hosting a balanced family game night</h2>
+<p>To run a fun and competitive session, consider dividing your group into mixed-generation pairs—pairing grandparents with grandchildren or siblings on opposite teams. Read each question aloud twice before revealing the four multiple-choice options. Allow 30 seconds for whispered deliberation, and award one point for each correct answer. Read the one-line explanation after scoring each round; it frequently leads into fun personal stories from family members.</p>
+<p>Ready to try other themed rounds? Check out our <a href="/general-knowledge-trivia/">general knowledge trivia</a> for classic quiz night standards, test your knowledge with <a href="/animal-trivia/">animals trivia</a>, or explore <a href="/pop-culture-trivia/">pop culture trivia</a>.</p>`,
+    faq: [
+      { q: "How do you keep family trivia fair for players of different ages?", a: "Mix age groups by forming two-player teams pairing older players with younger participants. This ensures everyone contributes their strengths, from classic cinema knowledge to modern nature facts." },
+      { q: "Can we play these family trivia questions in teams?", a: "Yes. Grouping into small teams makes the game much more collaborative. Have teams write answers down on scratch paper before revealing explanations to prevent shouting out answers early." },
+      { q: "Are these family trivia questions suitable for holiday gatherings?", a: "Absolutely. The questions avoid overly specialized academic trivia in favor of engaging, universally interesting topics that spark conversation across generations at Thanksgiving, Christmas, or summer reunions." },
+    ],
+    sources: [BRIT, { label: "Smithsonian Institution", href: "https://www.si.edu/" }, { label: "National Geographic", href: "https://www.nationalgeographic.com/" }],
   },
 ];
 

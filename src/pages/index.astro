@@ -14,7 +14,7 @@ const guides = (await getCollection("guides", (g) => !g.data.draft)).sort((a, b)
 const buildTime = Date.now();
 const total = CATS.reduce((n, c) => n + c.items.length, 0);
 const groups = [
-  { title: "Everyday trivia", keys: ["general", "adults", "food"] },
+  { title: "Everyday trivia", keys: ["general", "family", "adults", "food"] },
   { title: "History, science and Bible", keys: ["history", "presidents", "black-history", "science", "space", "animals", "bible"] },
   { title: "Decades", keys: ["eighties", "nineties", "seniors"] },
   { title: "Sports", keys: ["sports", "nfl", "nba"] },

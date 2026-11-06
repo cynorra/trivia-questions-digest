@@ -2,12 +2,24 @@
 title: "World War II Timeline: Key Dates and Facts for Trivia"
 description: "A clear World War II timeline from the invasion of Poland in 1939 to Japan's surrender in 1945, with the dates, battles and leaders that come up in trivia."
 published: 2026-11-02
+updated: 2026-11-06
 tool: knowledge
 ---
 
 Three dates hold up most of the history. On September 1, 1939, Germany invaded Poland and the war began. On December 7, 1941, Japan attacked Pearl Harbor and the United States entered it. The war then ended in Europe on May 8, 1945 (VE Day) and in the Pacific when Japan formally signed its surrender on September 2, 1945.
 
 Instead of a single year-by-year list, this guide follows the war theater by theater, because that is how the battles connect and how quiz questions tend to group them. When you're done, test yourself with our [history trivia](/history-trivia/).
+
+## Key World War 2 dates at a glance
+
+If you need the essential dates for WW2 and Second World War milestones in one quick reference:
+
+- **September 1, 1939:** World War II begins as Germany invades Poland.
+- **September 3, 1939:** Britain and France declare war on Germany.
+- **December 7, 1941:** Attack on Pearl Harbor; the United States enters the war the next day.
+- **June 6, 1944:** D-Day (Allied landings in Normandy, France).
+- **May 8, 1945:** VE Day (Victory in Europe; Nazi Germany's unconditional surrender).
+- **September 2, 1945:** Formal surrender of Japan, ending World War II.
 
 ## Who was on each side
 

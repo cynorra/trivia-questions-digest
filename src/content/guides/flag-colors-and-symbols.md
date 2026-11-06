@@ -1,7 +1,7 @@
 ---
 title: "Flag Colors and Symbols: What They Mean and Why They Repeat"
 description: "Why so many flags share colors and symbols: stripes, crosses, stars, crescents and the pan-African, pan-Arab and pan-Slavic color families."
-published: 2026-11-17
+published: 2026-11-15
 tool: flags-capitals
 ---
 

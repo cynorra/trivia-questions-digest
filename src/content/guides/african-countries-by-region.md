@@ -1,7 +1,7 @@
 ---
 title: "African Countries by Region: A Map Guide to All 54"
 description: "Learn the 54 African countries region by region: North, West, Central, East and Southern Africa, plus the island nations, with the pairs people confuse."
-published: 2026-11-13
+published: 2026-11-17
 tool: world
 ---
 

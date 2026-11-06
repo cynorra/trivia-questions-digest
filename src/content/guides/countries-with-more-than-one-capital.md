@@ -1,7 +1,7 @@
 ---
 title: "Countries With More Than One Capital, and Why"
 description: "South Africa has three capitals and Bolivia two. Here are the countries that split their capital, the ones that moved it, and how capital quizzes handle them."
-published: 2026-11-18
+published: 2026-11-20
 tool: flags-capitals
 ---
 

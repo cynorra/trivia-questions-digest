@@ -46,12 +46,12 @@ export const AUTHOR = {
 };
 
 export const NAV = [
+  { href: "/guides/", label: "Guides" },
   { href: "/daily-trivia/", label: "Daily trivia" },
   { href: "/general-knowledge-trivia/", label: "Trivia" },
   { href: "/map-quizzes/", label: "Map quizzes" },
   { href: "/fun-facts/", label: "Fun facts" },
   { href: "/christmas-trivia/", label: "Christmas" },
-  { href: "/guides/", label: "Guides" },
 ];
 
 export const FOOTER_LINKS = [

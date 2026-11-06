@@ -1,7 +1,7 @@
 ---
 title: "The 13 Colonies on the Map: Names, Groups and Founding Order"
 description: "The thirteen original colonies in their New England, Middle and Southern groups, how to find each on a map, and how colonial borders differ from today."
-published: 2026-11-19
+published: 2026-11-14
 tool: us
 ---
 

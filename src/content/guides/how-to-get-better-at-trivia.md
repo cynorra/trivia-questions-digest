@@ -1,7 +1,7 @@
 ---
 title: "How to Get Better at Trivia: 9 Habits of Strong Players"
 description: "How to get better at trivia and pub quizzes: build anchor facts, learn the common categories, practice daily, play as a team and use multiple-choice logic."
-published: 2026-11-09
+published: 2026-11-06
 tool: trivia-night
 ---
 

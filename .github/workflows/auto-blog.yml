@@ -14,8 +14,8 @@ name: Daily Auto-Blog Generator & Publisher
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "0 4 * * 1,3,5"   # 3 a week: Mon, Wed, Fri (no scaled-content bursts)
+  schedule:
+    - cron: "0 4 * * 1,3,5"   # 3 a week: Mon, Wed, Fri (no scaled-content bursts)
 
 permissions:
   contents: write

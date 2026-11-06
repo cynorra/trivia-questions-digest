@@ -1,7 +1,7 @@
 ---
 title: "World Capitals That Trip Everyone Up"
 description: "The world capitals people get wrong most, from Canberra and Ottawa to Abuja and Naypyidaw, grouped by the trap behind each mistake."
-published: 2026-11-20
+published: 2026-11-21
 tool: flags-capitals
 ---
 

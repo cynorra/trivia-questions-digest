@@ -1,7 +1,7 @@
 ---
 title: "US Regions: Which States Are in Each Census Region and Division"
 description: "The four US Census regions and nine divisions, with every state listed, why Delaware counts as the South, and how to use the regions to learn the map."
-published: 2026-11-11
+published: 2026-11-12
 tool: us
 ---
 

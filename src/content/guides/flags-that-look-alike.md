@@ -1,7 +1,7 @@
 ---
 title: "Flags That Look Alike and How to Tell Them Apart"
 description: "The world flags that look almost the same, from Chad and Romania to Indonesia and Monaco, and the one detail that separates each pair in a flag quiz."
-published: 2026-11-10
+published: 2026-11-07
 tool: flags-capitals
 ---
 

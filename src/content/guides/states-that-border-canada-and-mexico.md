@@ -1,7 +1,7 @@
 ---
 title: "States That Border Canada and Mexico: The Full Lists"
 description: "The 13 US states that border Canada and the 4 that border Mexico, with how the borders run, the water boundaries people forget, and map tips."
-published: 2026-11-12
+published: 2026-11-13
 tool: us
 ---
 

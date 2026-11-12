@@ -57,6 +57,7 @@ const SCHEMA = {
   },
   required: ['title', 'metaDescription', 'bodyHtml'],
 };
+const MAX_ATTEMPTS = 5;
 interface Draft { title: string; metaDescription: string; quickAnswer?: string; bodyHtml: string; faqs?: { question: string; answer: string }[] }
 
 // Layout varies per article so the site is not one shape: the quick-answer box and the FAQ block each appear
@@ -71,7 +72,7 @@ export function layoutFor(slug: string): Layout {
 
 const SYSTEM = `You write for ${SITE_NAME} (${SITE_NICHE}). You are precise and plain-spoken. You never invent facts, statistics, studies or quotes. You only state facts that appear in the FACTS or DATA blocks, and you copy names, answers and dates exactly as given. Return only the requested JSON.`;
 
-function buildPrompt(topic: SiteTopic, plan: KeywordPlan, formBlock: string, candidates: ArticleRow[], layout: Layout, feedback = ''): string {
+function buildPrompt(topic: SiteTopic, plan: KeywordPlan, formBlock: string, candidates: ArticleRow[], layout: Layout, feedback = '', prev = ''): string {
   // Same section first, then the rest: the model should link to the guides a reader of this one would want next.
   const ranked = candidates.filter((c) => c.status === 'published').sort((a, b) => Number(b.tool === topic.tool) - Number(a.tool === topic.tool));
   const links = ranked.slice(0, 25).map((c) => `- /guides/${c.slug}/ — ${c.title}`).join('\n');
@@ -85,7 +86,7 @@ ${evidenceBlock(topic.data)}
 ${formBlock}
 FORMAT
 - bodyHtml: HTML using only <h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <table>/<thead>/<tbody>/<tr>/<th>/<td>, <a href>. No <h1>, no inline styles, no scripts, no markdown.
-- 1,100 to 1,700 words in bodyHtml. Short paragraphs. At least one table if the topic has numbers to compare.
+- AT LEAST 1,300 words in bodyHtml (aim for 1,300 to 1,800; drafts under 900 words are rejected and models usually write about 30% less than asked), in at least 6 <h2> sections of 150+ words each. Short paragraphs. At least one table if the topic has numbers to compare.
 - CONCRETE DETAILS: Include exact numbers with units throughout (e.g. "10 questions", "4 rounds", "25 players", "1 point", "15 minutes", years/dates) and quote specific example questions and answers in double quotes. Avoid vague generalities. Every FAQ answer must include at least one concrete detail (a specific number, count, date, or quoted fact from the DATA/FACTS blocks).
 ${layout.box
     ? '- quickAnswer: 2-3 sentences that answer the title directly with a concrete detail; it is shown in a box at the top.'
@@ -99,7 +100,7 @@ ${layout.faq
 ${links || '- (none yet)'}
 - Do not start with "In this article", "Whether you", "Are you", or any sentence about the article itself.
 - Never claim to be official, never use the words guarantee/guaranteed.
-${feedback ? `\nYOUR PREVIOUS DRAFT FAILED THESE CHECKS — fix every one:\n${feedback}\n` : ''}`;
+${feedback ? `\nYOUR PREVIOUS DRAFT FAILED THESE CHECKS — fix every one:\n${feedback}\n` : ''}${prev ? `\nPREVIOUS bodyHtml (keep what is good, fix the failures above, and EXPAND it: the new bodyHtml must be longer than this one, not shorter):\n${prev}\n` : ''}`;
 }
 
 // ---- assembly: the exact markdown that is validated, written and pushed -------------------------
@@ -179,7 +180,7 @@ async function main() {
     slugs: new Set(all.filter((r) => r.status === 'published').map((r) => r.slug)),
   };
 
-  const topic = TOPICS.find((t) => findTopicIssues(t).length === 0 && !isDuplicateTopic(t.title, titles) && !all.some((r) => r.slug === slugify(t.title)));
+  const topic = TOPICS.find((t) => findTopicIssues(t).length === 0 && !isDuplicateTopic(t.title, titles) && !all.some((r) => r.slug === slugify(t.title)) && !all.some((r) => (r as any).meta?.keyword === t.keyword));
   if (!topic) { console.log('No eligible topic left in topics.ts — add topics from the Keyword Planner export.'); return; }
   console.log(`Topic: ${topic.title}  [${topic.keyword}, ${topic.volume}/mo, ${topic.tool}]`);
 
@@ -191,8 +192,9 @@ async function main() {
   const layout = layoutFor(slugify(topic.title));
   console.log(`Layout: quick-answer box ${layout.box ? 'yes' : 'no'}, FAQ block ${layout.faq ? 'yes' : 'no'}`);
   let feedback = '';
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    const raw = await callGemini(clients, buildPrompt(topic, plan, formPromptBlock(form), all, layout, feedback), SCHEMA, MAX_OUTPUT_TOKENS, false, SYSTEM);
+  let prev = '';
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const raw = await callGemini(clients, buildPrompt(topic, plan, formPromptBlock(form), all, layout, feedback, prev), SCHEMA, MAX_OUTPUT_TOKENS, false, SYSTEM);
     if (!raw) { console.warn(`Attempt ${attempt}: no completed response from Gemini.`); continue; }
     let d: Draft;
     try { d = JSON.parse(raw); } catch { feedback = '- the response was not valid JSON matching the schema'; console.warn(`Attempt ${attempt}: invalid JSON`); continue; }
@@ -201,6 +203,7 @@ async function main() {
     if (issues.length) {
       console.warn(`Attempt ${attempt}: ${issues.length} quality issue(s):\n${issues.map((i) => `  - ${i}`).join('\n')}`);
       feedback = issues.map((i) => `- ${i}`).join('\n');
+      prev = d.bodyHtml;
       continue;
     }
     const slug = slugify(a.title);
@@ -222,7 +225,7 @@ async function main() {
     return;
   }
   // Rule 4: fail loudly.
-  console.error('FAILED: no draft passed the quality gates after 3 attempts.');
+  console.error(`FAILED: no draft passed the quality gates after ${MAX_ATTEMPTS} attempts.`);
   process.exit(1);
 }
 

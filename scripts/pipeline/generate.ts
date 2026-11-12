@@ -86,7 +86,8 @@ ${evidenceBlock(topic.data)}
 ${formBlock}
 FORMAT
 - bodyHtml: HTML using only <h2>, <h3>, <p>, <ul>, <ol>, <li>, <strong>, <em>, <table>/<thead>/<tbody>/<tr>/<th>/<td>, <a href>. No <h1>, no inline styles, no scripts, no markdown.
-- AT LEAST 1,300 words in bodyHtml (aim for 1,300 to 1,800; drafts under 900 words are rejected and models usually write about 30% less than asked), in at least 6 <h2> sections of 150+ words each. Short paragraphs. At least one table if the topic has numbers to compare.
+- 1,100 to 1,400 words in bodyHtml, in at least 5 <h2> sections (under 900 words is rejected; DENSER beats longer: padding fails the concrete-detail check). EVERY paragraph must contain at least one number, date, or quoted question-and-answer pair taken from the DATA/FACTS blocks; delete any paragraph of general commentary.
+- Search wording (checked automatically): take the first three REAL SEARCH QUERIES listed above and use them almost word for word as three of your <h2> headings (or as FAQ questions when this article has a FAQ block), answering each in its first sentence. Short paragraphs. At least one table if the topic has numbers to compare.
 - CONCRETE DETAILS: Include exact numbers with units throughout (e.g. "10 questions", "4 rounds", "25 players", "1 point", "15 minutes", years/dates) and quote specific example questions and answers in double quotes. Avoid vague generalities. Every FAQ answer must include at least one concrete detail (a specific number, count, date, or quoted fact from the DATA/FACTS blocks).
 ${layout.box
     ? '- quickAnswer: 2-3 sentences that answer the title directly with a concrete detail; it is shown in a box at the top.'

@@ -7,7 +7,6 @@
 import type { SiteTopic } from './lib/topic-intent';
 
 export const TOPICS: SiteTopic[] = [
-  { title: 'Halloween Trivia Night: Rounds for a Spooky Party', keyword: 'halloween trivia', volume: 50000, tool: 'holidays', data: ['halloween'], asset: 'a full Halloween party round built from the site question set, with the host line for each answer and a costume round' },
   { title: 'Sports Trivia Night: A Round Fans and Non-Fans Can Both Play', keyword: 'sports trivia', volume: 50000, tool: 'trivia-night', data: ['sports'], asset: 'a sports round from the site questions balanced between rules and history, with closest-number tiebreakers' },
   { title: 'Movie Trivia Night: Building a Round Around Famous Lines', keyword: 'movie trivia', volume: 50000, tool: 'trivia-night', data: ['screen'], asset: 'a film round built from the site questions, with misquoted lines, Oscar history and a picture-round variant' },
   { title: 'Bible Trivia for Small Groups: A Study-Night Format', keyword: 'bible trivia questions', volume: 50000, tool: 'knowledge', data: ['bible'], asset: 'a small-group Bible trivia session from the site questions, with the verse to look up for each answer' },

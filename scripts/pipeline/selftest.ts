@@ -75,10 +75,11 @@ test('editorial forms rotate', () => {
   assert.ok(EDITORIAL_FORMS.every((f) => f.clusters.length > 0));
 });
 
-test('internal-link floor: needs 2 question/quiz pages and 2 guides', () => {
+test('internal-link floor: needs 1 question/quiz page and 2 guides', () => {
   const live = new Set(['a', 'b', 'c', 'd']);
   const bare = '<p>No links at all here.</p>';
   assert.equal(findInternalLinkIssues(bare, live).length, 2);
+  assert.deepEqual(findInternalLinkIssues('<a href="/trivia/x-trivia/">q</a><a href="/guides/a/">1</a><a href="/guides/b/">2</a>', live), []);
   const good = '<p><a href="/trivia/halloween-trivia/">Halloween questions</a> <a href="/us-states-map-quiz/">states quiz</a> <a href="/guides/a/">one</a> <a href="/guides/b/">two</a></p>';
   assert.deepEqual(findInternalLinkIssues(good, live), []);
   // the home page and the guides index are not contextual links

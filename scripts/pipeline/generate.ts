@@ -95,7 +95,7 @@ ${layout.faq
     : '- faqs: return an empty array. This article has no FAQ block; end on the last section of the editorial form, not on a list of questions.'}
 - metaDescription: 120-160 characters, includes the primary keyword, no hype.
 - title: at most 70 characters, includes the primary keyword, no year, no promises.
-- Internal links (REQUIRED, checked automatically): at least 2 links to the question pages or quiz pages named in the DATA blocks, and at least 2 links to other guides from the list below (1 if the list has fewer than 3). Put them inside the sentences where the reader would want that page, with descriptive anchor text (never "click here"). Copy every path exactly:
+- Internal links (REQUIRED, checked automatically): at least 1 link to a question page or quiz page named in the DATA blocks (do not invent other pages), and at least 2 links to other guides from the list below (1 if the list has fewer than 3). Put them inside the sentences where the reader would want that page, with descriptive anchor text (never "click here"). Copy every path exactly:
 ${links || '- (none yet)'}
 - Do not start with "In this article", "Whether you", "Are you", or any sentence about the article itself.
 - Never claim to be official, never use the words guarantee/guaranteed.

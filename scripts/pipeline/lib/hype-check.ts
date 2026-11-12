@@ -113,8 +113,8 @@ export function findBrokenInternalLinks(html: string, validSlugs: Set<string>): 
 /**
  * Internal-linking floor for every new guide. A page nothing links to is
  * found only through the sitemap, and one that links nowhere passes no
- * authority on. Needs at least 2 distinct links to non-guide pages (question
- * sets, quizzes) and links to other guides: 2 when the site has 3+ live
+ * authority on. Needs at least 1 distinct link to a non-guide page (question
+ * set or quiz; the topic's own page is enforced separately) and links to other guides: 2 when the site has 3+ live
  * guides, otherwise 1 if any exist. Same-page and external links don't count.
  */
 export function findInternalLinkIssues(html: string, publishedGuideSlugs: Set<string>, ownSlug = ''): string[] {
@@ -128,7 +128,7 @@ export function findInternalLinkIssues(html: string, publishedGuideSlugs: Set<st
   const issues: string[] = [];
   const candidates = [...publishedGuideSlugs].filter((s) => s !== ownSlug).length;
   const needGuides = candidates >= 3 ? 2 : candidates >= 1 ? 1 : 0;
-  if (pages.size < 2) issues.push(`only ${pages.size} internal link(s) to question sets or quiz pages (need 2+, e.g. /trivia/<category>/ pages named in the DATA blocks), each with descriptive anchor text`);
+  if (pages.size < 1) issues.push('no internal link to a question set or quiz page (link the /trivia/<category>/ page named in the DATA blocks, with descriptive anchor text)');
   if (guides.size < needGuides) issues.push(`only ${guides.size} link(s) to other guides (need ${needGuides}+, chosen from the candidate list, copied exactly, with descriptive anchor text)`);
   return issues;
 }

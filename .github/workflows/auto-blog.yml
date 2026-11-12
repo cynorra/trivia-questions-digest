@@ -21,6 +21,7 @@ on:
 permissions:
   contents: write
   actions: write
+  issues: write
 
 concurrency:
   group: auto-blog
@@ -61,5 +62,11 @@ jobs:
       - name: Deploy
         run: gh workflow run deploy.yml
         continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Open an issue when the run failed
+        if: failure()
+        run: |
+          gh issue create --title "Auto-blog failed on $(date -u +%F)"             --body "The daily article run failed: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" || true
         env:
           GH_TOKEN: ${{ github.token }}

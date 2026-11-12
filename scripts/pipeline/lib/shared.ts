@@ -164,11 +164,32 @@ export async function callGemini(
   maxOutputTokens: number,
   useSearch: boolean,
   systemInstruction: string,
+  opts: { models?: string[]; passes?: number } = {},
 ): Promise<string | null> {
   const clients = Array.isArray(clientsInput) ? clientsInput : [clientsInput];
+  const models = opts.models ?? FALLBACK_MODELS;
+  const passes = opts.passes ?? 1;
+  for (let pass = 1; pass <= passes; pass++) {
+    const out = await tryModels(clients, models, input, schema, maxOutputTokens, useSearch, systemInstruction);
+    if (out) return out;
+    // Everything was busy: wait and sweep the list again before giving up this attempt.
+    console.warn(`  All API models & keys momentarily busy (pass ${pass}/${passes}). Cooldown 15s...`);
+    await sleep(15000);
+  }
+  return null;
+}
 
+async function tryModels(
+  clients: GoogleGenAI[],
+  models: string[],
+  input: string,
+  schema: object,
+  maxOutputTokens: number,
+  useSearch: boolean,
+  systemInstruction: string,
+): Promise<string | null> {
   // Try combination of API clients & fallback models with zero initial delay on 429s
-  for (const modelName of FALLBACK_MODELS) {
+  for (const modelName of models) {
     for (let k = 0; k < clients.length; k++) {
       const clientIndex = (currentKeyIndex + k) % clients.length;
       const client = clients[clientIndex];
@@ -197,6 +218,7 @@ export async function callGemini(
 
         // Successfully generated — rotate client index for fair distribution
         currentKeyIndex = (clientIndex + 1) % clients.length;
+        console.log(`  Model used: ${modelName} (key ${clientIndex + 1}/${clients.length}, output_tokens=${interaction.usage?.total_output_tokens ?? '?'})`);
         return interaction.output_text ?? null;
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
@@ -213,10 +235,10 @@ export async function callGemini(
     }
   }
 
-  // If ALL models & keys hit rate limit simultaneously, do a short 10s cooldown
-  console.warn('  All API models & keys momentarily busy. Cooldown 10s before retry...');
-  await sleep(10000);
   return null;
 }
+
+/** Models that write long-form articles; the lite models are too thin for it (drafts came back at 600-850 words). */
+export const WRITER_MODELS = FALLBACK_MODELS.filter((m) => !/lite/i.test(m));
 
 

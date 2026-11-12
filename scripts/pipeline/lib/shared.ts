@@ -226,7 +226,7 @@ async function tryModels(
         if (/per day|daily/i.test(message) || /no longer available/i.test(message)) exhaustedToday.add(`${modelName}:${clientIndex}`);
 
         if (isRateLimit) {
-          console.warn(`  [Rate Limit 429] Model "${modelName}" busy — switching model/key instantly...`);
+          console.warn(`  [Rate Limit 429] Model "${modelName}" busy — switching model/key instantly... (${message.replace(/\s+/g, ' ').slice(0, 160)})`);
           // Instant switch to next model/key without sleeping!
           continue;
         }
@@ -237,8 +237,3 @@ async function tryModels(
 
   return null;
 }
-
-/** Models that write long-form articles; the lite models are too thin for it (drafts came back at 600-850 words). */
-export const WRITER_MODELS = FALLBACK_MODELS.filter((m) => !/lite/i.test(m));
-
-

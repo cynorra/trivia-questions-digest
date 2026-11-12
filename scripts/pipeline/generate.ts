@@ -21,7 +21,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { initGemini, callGemini, WRITER_MODELS, slugify, isDuplicateTopic, fetchAllArticles, upsertArticle, SITE_NAME, SITE_NICHE, type ArticleRow } from './lib/shared';
+import { initGemini, callGemini, slugify, isDuplicateTopic, fetchAllArticles, upsertArticle, SITE_NAME, SITE_NICHE, type ArticleRow } from './lib/shared';
 import { TOPICS } from './topics';
 import { findTopicIssues, type SiteTopic } from './lib/topic-intent';
 import { FACTS, findFactIssues } from './lib/facts';
@@ -195,7 +195,7 @@ async function main() {
   let feedback = '';
   let prev = '';
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-    const raw = await callGemini(clients, buildPrompt(topic, plan, formPromptBlock(form), all, layout, feedback, prev), SCHEMA, MAX_OUTPUT_TOKENS, false, SYSTEM, { models: WRITER_MODELS, passes: 3 });
+    const raw = await callGemini(clients, buildPrompt(topic, plan, formPromptBlock(form), all, layout, feedback, prev), SCHEMA, MAX_OUTPUT_TOKENS, false, SYSTEM, { passes: 3 });
     if (!raw) { console.warn(`Attempt ${attempt}: no completed response from Gemini.`); continue; }
     let d: Draft;
     try { d = JSON.parse(raw); } catch { feedback = '- the response was not valid JSON matching the schema'; console.warn(`Attempt ${attempt}: invalid JSON`); continue; }

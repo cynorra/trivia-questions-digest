@@ -11,9 +11,12 @@ import { getCollection } from "astro:content";
 import { breadcrumbSchema, webPageSchema } from "../lib/schema.js";
 import { addHeadingIds } from "../lib/toc.js";
 import { AUTHOR, METHOD } from "../site.config.js";
+import { CATS } from "../lib/trivia/cats.js";
+import { guideCategory } from "../lib/guide-links.js";
 
 interface Props {
   topic: string; // key from src/lib/topics.js
+  category?: string; // trivia category slug: guides built on this question set are listed first
   title: string;
   h1?: string;
   description: string;
@@ -28,12 +31,16 @@ interface Props {
   method?: { href: string; label: string; checkedLabel: string };
 }
 
-const { topic, title, h1 = title, description, lead, facts = [], sources = [], published, updated, checked, crumbs: crumbsProp, extraSchema = [], method = METHOD } = Astro.props;
+const { topic, category, title, h1 = title, description, lead, facts = [], sources = [], published, updated, checked, crumbs: crumbsProp, extraSchema = [], method = METHOD } = Astro.props;
 const path = Astro.url.pathname;
 const crumbs = crumbsProp ?? [{ name: "Home", path: "/" }, { name: title, path }];
-const guides = (await getCollection("guides", (g) => !g.data.draft && g.data.tool === topic))
-  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf())
-  .slice(0, 8);
+const newestFirst = (a, b) => b.data.published.valueOf() - a.data.published.valueOf();
+const allGuides = await getCollection("guides", (g) => !g.data.draft);
+const catSlugs = new Set(CATS.map((c) => c.slug));
+// Guides whose body links to this category come first (whatever their section),
+// then the rest of the section, newest first.
+const pinned = category ? allGuides.filter((g) => guideCategory(g.body ?? "", catSlugs) === category).sort(newestFirst) : [];
+const guides = [...pinned, ...allGuides.filter((g) => g.data.tool === topic && !pinned.includes(g)).sort(newestFirst)].slice(0, 8);
 
 const bodyHtml = await Astro.slots.render("default");
 const { html, toc } = addHeadingIds(bodyHtml);

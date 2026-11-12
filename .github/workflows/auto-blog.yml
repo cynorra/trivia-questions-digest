@@ -5,9 +5,10 @@
 #                    their date, flips the .md to draft: false
 #   commit the .md files, then dispatch deploy.yml
 #
-# The cron is OFF until the first articles have been read by hand
-# (playbook rule 10). Run it from the Actions tab, read the output, then
-# uncomment the schedule.
+# The schedule is ON (Mon/Wed/Fri). Every draft must also pass the internal-link
+# gate (2+ question/quiz pages, 2+ other guides; scripts/pipeline/lib/hype-check.ts),
+# and deploy.yml's check-links step fails the build if any live guide has fewer
+# than 3 inbound links from other guides.
 #
 # Secrets: GEMINI_API_KEY, FIREBASE_SERVICE_ACCOUNT (this job only)
 name: Daily Auto-Blog Generator & Publisher

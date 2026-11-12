@@ -12,12 +12,15 @@ import { COUNTRIES, CONTINENTS } from "../../lib/geo/countries.js";
 import { pageDates } from "../../page-dates.js";
 import { faqSchema, webAppSchema } from "../../lib/schema.js";
 import { existsSync } from "node:fs";
+import { PAGES as ALL_GEO_PAGES } from "../../lib/geo/pages.js";
 import { MAP_METHOD } from "../../site.config.js";
 
 const { page } = Astro.props;
 const g = page.game;
 const path = `/${page.slug}/`;
 const d = pageDates(path);
+// Sibling quizzes of the same section, so no quiz page is reachable only from the hub.
+const siblings = ALL_GEO_PAGES.filter((p) => p.slug !== page.slug && p.section === page.section).slice(0, 8);
 const CHECKED = "2026-11-02";
 
 // Headings for the tips section, written per page rather than one shared phrase.
@@ -115,6 +118,12 @@ const crumbs = [{ name: "Home", path: "/" }, { name: page.h1, path }];
         </>
       ))}
     </>
+  )}
+
+  {siblings.length > 0 && (
+    <nav aria-label="More quizzes in this section">
+      <p><strong>More {page.section === "us" ? "US geography" : "world geography"} quizzes:</strong> {siblings.map((p, i) => <>{i > 0 && " · "}<a href={`/${p.slug}/`}>{p.h1.charAt(0).toUpperCase() + p.h1.slice(1)}</a></>)}</p>
+    </nav>
   )}
 
   <Faq items={page.faq} />

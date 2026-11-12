@@ -56,6 +56,30 @@ for (const r of rows) {
   }
 }
 
+// 3. Internal-link floor for every live guide (needs dist/). A guide that other
+// guides don't link to is found only through the sitemap; one with almost no
+// links to question sets or quizzes passes nothing on.
+if (existsSync(DIST)) {
+  const guideDirs = existsSync(join(DIST, "guides")) ? readdirSync(join(DIST, "guides")).filter((d) => existsSync(join(DIST, "guides", d, "index.html"))) : [];
+  const mainOf = (html) => (html.match(/<main[\s\S]*?<\/main>/) || [html])[0];
+  const inboundFrom = Object.fromEntries(guideDirs.map((g) => [g, new Set()]));
+  for (const g of guideDirs) {
+    const main = mainOf(readFileSync(join(DIST, "guides", g, "index.html"), "utf8"));
+    const pageLinks = new Set();
+    for (const [, href] of main.matchAll(/<a [^>]*href="(\/[^"#?]*)/g)) {
+      const gm = /^\/guides\/([^/]+)\/$/.exec(href);
+      if (gm) { if (gm[1] !== g && inboundFrom[gm[1]]) inboundFrom[gm[1]].add(g); }
+      else if (href !== "/" && href !== "/guides/" && !href.startsWith("/author/")) pageLinks.add(href);
+    }
+    if (pageLinks.size < 2) console.warn(`warn: /guides/${g}/ links to only ${pageLinks.size} question set/quiz page(s); aim for 2+`);
+  }
+  if (guideDirs.length >= 5) {
+    for (const g of guideDirs) {
+      if (inboundFrom[g].size < 3) problems.push(`/guides/${g}/ is linked from only ${inboundFrom[g].size} other guide(s); every guide needs 3+ (check relatedGuides in src/lib/guide-links.js)`);
+    }
+  }
+}
+
 if (problems.length) {
   console.error(`${problems.length} link problem(s):\n` + [...new Set(problems)].join("\n"));
   process.exit(1);

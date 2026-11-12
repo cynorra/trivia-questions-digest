@@ -8,6 +8,8 @@ import { articleSchema, breadcrumbSchema, faqSchema } from "../../lib/schema.js"
 import { guideFaqs } from "../../lib/guide-faqs.js";
 import { AUTHOR } from "../../site.config.js";
 import { TOPIC_BY_KEY } from "../../lib/topics.js";
+import { CATS } from "../../lib/trivia/cats.js";
+import { guideCategory, relatedGuides } from "../../lib/guide-links.js";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides", (g) => !g.data.draft);
@@ -23,7 +25,17 @@ const path = `/guides/${guide.id}/`;
 const topic = TOPIC_BY_KEY[tool];
 const faqs = guideFaqs(guide.body ?? "");
 
-const related = (await getCollection("guides", (g) => !g.data.draft && g.data.tool === tool && g.id !== guide.id)).slice(0, 4);
+const allGuides = await getCollection("guides", (g) => !g.data.draft);
+const related = relatedGuides(guide, allGuides, 4);
+
+// The call-to-action goes to the question set this guide is actually built on
+// (the first /trivia/ page its body links to), not to a fixed page per section.
+const cat = CATS.find((c) => c.slug === guideCategory(guide.body ?? "", new Set(CATS.map((x) => x.slug))));
+const cta = cat
+  ? { href: `/trivia/${cat.slug}/`, kicker: "Play a round", name: cat.h1.charAt(0).toUpperCase() + cat.h1.slice(1), blurb: "The checked question set this guide draws on, with an explanation for every answer." }
+  : topic.hubName
+    ? { href: topic.href, kicker: topic.ctaKicker, name: topic.hubName, blurb: topic.blurb }
+    : null;
 
 const crumbs = [
   { name: "Home", path: "/" },
@@ -62,11 +74,11 @@ const fmtDate = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", mo
     </article>
     <aside class="flex min-w-0 flex-col gap-8 self-start lg:sticky lg:top-20" aria-label="Page navigation and related guides">
       <OnThisPage items={toc} />
-      {topic.hubName && (
-        <a href={topic.href} class="bg-brand-soft border-brand/30 hover:border-brand block rounded-xl border p-5 no-underline text-foreground transition-colors">
-          <span class="text-brand text-xs font-semibold tracking-wider uppercase">{topic.ctaKicker}</span>
-          <span class="font-display mt-1 block text-lg font-bold">{topic.hubName} →</span>
-          <span class="text-muted-foreground mt-1 block text-sm">{topic.blurb}</span>
+      {cta && (
+        <a href={cta.href} class="bg-brand-soft border-brand/30 hover:border-brand block rounded-xl border p-5 no-underline text-foreground transition-colors">
+          <span class="text-brand text-xs font-semibold tracking-wider uppercase">{cta.kicker}</span>
+          <span class="font-display mt-1 block text-lg font-bold">{cta.name} →</span>
+          <span class="text-muted-foreground mt-1 block text-sm">{cta.blurb}</span>
         </a>
       )}
       {related.length > 0 && (

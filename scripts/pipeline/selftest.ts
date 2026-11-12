@@ -9,7 +9,7 @@ import { findFactIssues } from './lib/facts';
 import { findTopicIssues } from './lib/topic-intent';
 import { findEvidenceUsageIssues, evidenceBlock } from './lib/evidence';
 import { TOPICS } from './topics';
-import { findHypeIssues, findBrokenInternalLinks } from './lib/hype-check';
+import { findHypeIssues, findBrokenInternalLinks, findInternalLinkIssues } from './lib/hype-check';
 import { findLowValueSignals, measureValue } from './lib/value';
 import { findUnsupportedClaims } from './lib/claims-check';
 import { whyTopicRefused } from './lib/policy';
@@ -73,4 +73,14 @@ test('editorial forms rotate', () => {
   const b = pickEditorialForm('trivia-night', 'x', [a.id]);
   assert.notEqual(a.id, b.id);
   assert.ok(EDITORIAL_FORMS.every((f) => f.clusters.length > 0));
+});
+
+test('internal-link floor: needs 2 question/quiz pages and 2 guides', () => {
+  const live = new Set(['a', 'b', 'c', 'd']);
+  const bare = '<p>No links at all here.</p>';
+  assert.equal(findInternalLinkIssues(bare, live).length, 2);
+  const good = '<p><a href="/trivia/halloween-trivia/">Halloween questions</a> <a href="/us-states-map-quiz/">states quiz</a> <a href="/guides/a/">one</a> <a href="/guides/b/">two</a></p>';
+  assert.deepEqual(findInternalLinkIssues(good, live), []);
+  // the home page and the guides index are not contextual links
+  assert.equal(findInternalLinkIssues('<a href="/">home</a><a href="/guides/">all</a>', new Set()).length, 1);
 });

@@ -109,3 +109,26 @@ export function findBrokenInternalLinks(html: string, validSlugs: Set<string>): 
   }
   return [...bad].map((s) => `internal link to a slug that does not exist: /guides/${s} — link only to slugs from the candidate list, copied exactly`);
 }
+
+/**
+ * Internal-linking floor for every new guide. A page nothing links to is
+ * found only through the sitemap, and one that links nowhere passes no
+ * authority on. Needs at least 2 distinct links to non-guide pages (question
+ * sets, quizzes) and links to other guides: 2 when the site has 3+ live
+ * guides, otherwise 1 if any exist. Same-page and external links don't count.
+ */
+export function findInternalLinkIssues(html: string, publishedGuideSlugs: Set<string>, ownSlug = ''): string[] {
+  const guides = new Set<string>();
+  const pages = new Set<string>();
+  for (const m of html.matchAll(/href=["']((?:https?:\/\/(?:www\.)?triviaquestionsdigest\.com)?\/[^"'#?]*)/gi)) {
+    const path = m[1].replace(/^https?:\/\/[^/]+/i, '');
+    const g = /^\/guides\/([^/]+)\/?$/.exec(path);
+    if (g) { if (g[1] !== ownSlug) guides.add(g[1]); } else if (path !== '/' && path !== '/guides/') pages.add(path);
+  }
+  const issues: string[] = [];
+  const candidates = [...publishedGuideSlugs].filter((s) => s !== ownSlug).length;
+  const needGuides = candidates >= 3 ? 2 : candidates >= 1 ? 1 : 0;
+  if (pages.size < 2) issues.push(`only ${pages.size} internal link(s) to question sets or quiz pages (need 2+, e.g. /trivia/<category>/ pages named in the DATA blocks), each with descriptive anchor text`);
+  if (guides.size < needGuides) issues.push(`only ${guides.size} link(s) to other guides (need ${needGuides}+, chosen from the candidate list, copied exactly, with descriptive anchor text)`);
+  return issues;
+}

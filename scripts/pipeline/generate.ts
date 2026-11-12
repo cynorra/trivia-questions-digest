@@ -32,7 +32,7 @@ import { findLowValueSignals, findBridgeFiller, swapBannedVerbs, findGenericFaqA
 import { findStockHeadings, findReusedHeadings, findStockLabels, collectHeadingSet } from './lib/structure';
 import { findTitlePasteIssues } from './lib/title-paste';
 import { findUnsupportedClaims, findTitlePromiseIssues } from './lib/claims-check';
-import { findHypeIssues, findFieldClaimIssues, findBrokenInternalLinks } from './lib/hype-check';
+import { findHypeIssues, findFieldClaimIssues, findBrokenInternalLinks, findInternalLinkIssues } from './lib/hype-check';
 // The site's own question bank: the same code the practice pages run.
 
 const ROOT = join(import.meta.dirname, '..', '..');
@@ -72,7 +72,9 @@ export function layoutFor(slug: string): Layout {
 const SYSTEM = `You write for ${SITE_NAME} (${SITE_NICHE}). You are precise and plain-spoken. You never invent facts, statistics, studies or quotes. You only state facts that appear in the FACTS or DATA blocks, and you copy names, answers and dates exactly as given. Return only the requested JSON.`;
 
 function buildPrompt(topic: SiteTopic, plan: KeywordPlan, formBlock: string, candidates: ArticleRow[], layout: Layout, feedback = ''): string {
-  const links = candidates.filter((c) => c.status === 'published').slice(0, 25).map((c) => `- /guides/${c.slug}/ — ${c.title}`).join('\n');
+  // Same section first, then the rest: the model should link to the guides a reader of this one would want next.
+  const ranked = candidates.filter((c) => c.status === 'published').sort((a, b) => Number(b.tool === topic.tool) - Number(a.tool === topic.tool));
+  const links = ranked.slice(0, 25).map((c) => `- /guides/${c.slug}/ — ${c.title}`).join('\n');
   return `Write a ${ARTICLE_KIND}.
 Working title: "${topic.title}"
 What this page must deliver that an AI Overview cannot: ${topic.asset}.
@@ -93,7 +95,7 @@ ${layout.faq
     : '- faqs: return an empty array. This article has no FAQ block; end on the last section of the editorial form, not on a list of questions.'}
 - metaDescription: 120-160 characters, includes the primary keyword, no hype.
 - title: at most 70 characters, includes the primary keyword, no year, no promises.
-- Internal links: only to the question pages named in the DATA blocks and, if relevant, to these guides (copy the path exactly):
+- Internal links (REQUIRED, checked automatically): at least 2 links to the question pages or quiz pages named in the DATA blocks, and at least 2 links to other guides from the list below (1 if the list has fewer than 3). Put them inside the sentences where the reader would want that page, with descriptive anchor text (never "click here"). Copy every path exactly:
 ${links || '- (none yet)'}
 - Do not start with "In this article", "Whether you", "Are you", or any sentence about the article itself.
 - Never claim to be official, never use the words guarantee/guaranteed.
@@ -141,6 +143,7 @@ function validate(a: { html: string; title: string; description: string }, d: Dr
   issues.push(...findHypeIssues(plain, 'body'));
   issues.push(...findFieldClaimIssues({ title: a.title, metaDescription: a.description, faqs }));
   issues.push(...findBrokenInternalLinks(a.html, corpus.slugs));
+  issues.push(...findInternalLinkIssues(a.html, corpus.slugs));
   issues.push(...findFactIssues(plain));
   issues.push(...findOpeningIssues(a.html, corpus.openings));
   issues.push(...findGenericFaqAnswers(faqs));

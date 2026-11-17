@@ -1,6 +1,6 @@
 ---
 title: "South and Central America Map Guide: Every Country, in Order"
-description: "Learn the 12 South American countries, the 7 Central American countries and the Caribbean nations on a map, in the order that makes them easiest to remember."
+description: "Learn the 12 South American and 7 Central American countries and the Caribbean nations, in the order that makes them easiest to remember."
 published: 2026-11-17
 tool: world
 ---

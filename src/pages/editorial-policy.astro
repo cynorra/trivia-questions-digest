@@ -5,7 +5,7 @@ import { SITE, AUTHOR } from "../site.config.js";
 ---
 <PageLayout
   title={"Editorial Policy"}
-  description={`How ${SITE.name} writes and checks trivia questions and guides, handles disputed answers, uses AI tools and corrects mistakes.`}
+  description={`How ${SITE.name} writes and checks trivia questions and guides, handles disputed answers and corrects mistakes.`}
   updated={pageDates("/editorial-policy/").updated ?? pageDates("/editorial-policy/").published}
 >
   <p>Every page on {SITE.name} is the responsibility of <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>. These are the rules we follow.</p>
@@ -18,7 +18,7 @@ import { SITE, AUTHOR } from "../site.config.js";
   <h2>Maps, borders and capitals</h2>
   <p>Country names, capitals and continents are checked against two independent datasets by automated tests before every build; a disagreement stops the build until a person resolves it. The map quizzes ask about the 193 UN member states and the two UN observer states, and leave out capital questions where a single answer would mislead. Disputed areas are drawn without taking a side. Details: <a href="/how-we-make-our-maps/">how we make our maps</a>.</p>
   <h2>How questions and guides are written</h2>
-  <p>Questions and guides are written and edited by a person. AI tools may help draft or check text, but every page is read in full before it is published, and every fact in it is checked against a source. We don't publish pages written to fill a keyword list, and automated tests block a build if a question is duplicated or an answer is malformed.</p>
+  <p>Questions and guides are written, edited and published by the author. Every page is read in full before it is published, and every fact in it is checked against a source. We don't publish pages written to fill a keyword list, and automated tests block a build if a question is duplicated or an answer is malformed.</p>
   <h2>Corrections</h2>
   <p>Report a mistake to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Confirmed errors are fixed in the next build, and the page's updated date changes.</p>
   <h2>Advertising</h2>

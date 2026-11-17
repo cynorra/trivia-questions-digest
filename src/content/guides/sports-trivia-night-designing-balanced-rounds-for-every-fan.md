@@ -4,6 +4,7 @@ description: "Organize your next sports trivia night with these tips. We use exp
 published: 2026-11-24
 tool: trivia-night
 draft: false
+draft: true
 ---
 
 <div class="key-takeaway"><p><strong>Quick answer:</strong> A successful sports trivia night relies on a mix of 10 questions covering rules, history, and records. For example, knowing that there are 11 players on the field in soccer allows casual fans to compete alongside seasoned experts.</p></div>

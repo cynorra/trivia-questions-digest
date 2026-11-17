@@ -3,6 +3,7 @@ title: "South and Central America Map Guide: Every Country, in Order"
 description: "Learn the 12 South American countries, the 7 Central American countries and the Caribbean nations on a map, with the order to learn them and the mistakes to avoid."
 published: 2026-11-19
 tool: world
+draft: true
 ---
 
 The Americas look simple from far away and get complicated up close. South America's countries are big and distinct, Central America's are a narrow chain of seven, and the Caribbean is a scatter of islands, several of them too small to see on a world map. The easiest way through is to walk it: start at the Mexican border, go down the isthmus, cross into South America, run down the Pacific side and back up the Atlantic side, and finish in the islands.

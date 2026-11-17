@@ -3,6 +3,7 @@ title: "Asian Countries on the Map, Region by Region"
 description: "Learn the 47 Asian countries in six regions: the Middle East, the Caucasus, Central, South, East and Southeast Asia, with tips for the Gulf and the five -stans."
 published: 2026-11-18
 tool: world
+draft: true
 ---
 
 Asia is easiest to learn from its giants outward. Saudi Arabia, Kazakhstan, India, China and Indonesia each anchor a region, and everything else is a neighbor you place relative to one of them. Asia stretches from Turkey to Japan and holds 47 countries in our [Asia map quiz](/asia-map-quiz/); the Gulf states and Central Asia's five "-stans" need the most practice.

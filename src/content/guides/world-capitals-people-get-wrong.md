@@ -3,6 +3,7 @@ title: "World Capitals That Trip Everyone Up"
 description: "The world capitals people get wrong most, from Canberra and Ottawa to Abuja and Naypyidaw, grouped by the trap behind each mistake."
 published: 2026-11-21
 tool: flags-capitals
+draft: true
 ---
 
 Say the capital out loud before you read the answer. A world capitals quiz has about 190 answers, but the misses aren't random: the same few dozen capitals cause most of the wrong answers. This page is a four-round drill, each round built around one reason people slip, and the answer sits right beside each prompt. Cover the right-hand side with your hand if you want it to count.

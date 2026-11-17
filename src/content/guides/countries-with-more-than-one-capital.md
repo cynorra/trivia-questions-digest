@@ -3,6 +3,7 @@ title: "Countries With More Than One Capital, and Why"
 description: "South Africa has three capitals and Bolivia two. Here are the countries that split their capital, the ones that moved it, and how capital quizzes handle them."
 published: 2026-11-20
 tool: flags-capitals
+draft: true
 ---
 
 "What is the capital of…?" usually has one answer. For a handful of countries it doesn't, because the constitution names one city while the government sits in another, or because the job is deliberately shared. The reasons are interesting history, and they fall into three groups, so this guide is organized by reason rather than alphabetically. It ends with the countries that moved their capital and how our quiz handles the awkward cases.

@@ -19,18 +19,20 @@ import { SITE } from "../site.config.js";
   <h2>Server logs</h2>
   <p>Like most websites, our hosting provider records basic technical data for each request, such as IP address, browser type, the page requested and the time. This is used for security and to keep the site running, and is kept only for a limited time.</p>
 
-  <h2>Advertising and cookies</h2>
-  <p>This site may show ads served by Google and its advertising partners. To do so:</p>
+  <h2 id="cookies">Advertising and cookies</h2>
+  <p>This site is intended to show ads served by Google AdSense and its advertising partners. <strong>The ad code is not loaded until you click Accept on the cookie message.</strong> If you click Reject, or make no choice, no ad script is requested and no advertising cookies are set by this site. Your choice is saved in your browser (local storage) so you are not asked again. <button type="button" id="reopen-consent" class="underline text-brand cursor-pointer">Change your choice</button> (reload the page to apply a withdrawal of consent).</p>
+  <p>If you accept, ads are shown, and:</p>
   <ul>
     <li>Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites.</li>
-    <li>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the internet.</li>
+    <li>Google uses the DoubleClick advertising cookie (also called the DART cookie) on sites that use AdSense. It lets Google and its partners serve ads based on your visits to this site and others, and it is also used to measure ads and prevent fraud.</li>
     <li>You can opt out of personalized advertising by visiting Google's <a href="https://adssettings.google.com" rel="noopener" target="_blank">Ads Settings</a>. You can also opt out of some third-party vendors' use of cookies for personalized advertising at <a href="https://www.aboutads.info/choices/" rel="noopener" target="_blank">aboutads.info</a>.</li>
   </ul>
-  <p>For more on how Google uses data from sites that use its services, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites or apps that use our services</a>.</p>
-  <p>Visitors in the European Economic Area, the United Kingdom and Switzerland are asked for consent before personalized advertising cookies are used, through a consent message shown on the site. You can change your choice at any time from that message.</p>
+  <p>For more on how Google uses data from sites that use its services, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites or apps that use our services</a>. Visitors everywhere, including the European Economic Area, the United Kingdom and Switzerland, are asked for consent before any advertising cookies are used.</p>
 
   <h2>Your privacy rights</h2>
-  <p>Depending on where you live, including several US states such as California, you may have the right to know what personal information is collected about you, to request its deletion and to opt out of the sale or sharing of personal information for targeted advertising. To make a request, email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. We will not treat you differently for exercising these rights.</p>
+  <p><strong>EU, EEA, UK and Switzerland (GDPR):</strong> the legal basis for advertising cookies is your consent, which you can withdraw at any time. You may have the right to access, correct, delete, restrict or object to the processing of your personal data, to receive a copy of it, and to complain to your data protection authority.</p>
+  <p><strong>California and other US states (CCPA/CPRA and similar laws):</strong> you may have the right to know what personal information is collected about you, to request its deletion or correction, and to opt out of the sale or sharing of personal information for targeted advertising. Choosing Reject on the cookie message keeps advertising cookies off.</p>
+  <p>To make a request, email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. We will answer within 30 days and will not treat you differently for exercising these rights.</p>
 
   <h2>Children</h2>
   <p>This site is not directed at children under 13, and we do not knowingly collect personal information from them. Its trivia is written for a general adult audience, and anyone under 13 should use it with a parent or teacher.</p>
@@ -40,4 +42,14 @@ import { SITE } from "../site.config.js";
 
   <h2>Changes to this policy</h2>
   <p>When this policy changes, the date at the top of the page changes too.</p>
+  <script is:inline>
+    (function () {
+      var b = document.getElementById("reopen-consent");
+      if (!b) return;
+      b.addEventListener("click", function () {
+        try { localStorage.removeItem("triviaquestionsdigest_consent_accepted"); } catch (e) {}
+        window.dispatchEvent(new CustomEvent("triviaquestionsdigest:reopen-consent"));
+      });
+    })();
+  </script>
 </PageLayout>

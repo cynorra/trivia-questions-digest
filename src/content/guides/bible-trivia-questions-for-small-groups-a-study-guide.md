@@ -1,7 +1,7 @@
 ---
 title: "Bible Trivia for Small Groups: A 45-Minute Session Plan"
 description: "A 45-minute small-group session with 15 Bible trivia questions and answers with references, plus tips for settling translation disputes."
-published: 2026-11-17
+published: 2026-11-25
 tool: trivia-night
 ---
 

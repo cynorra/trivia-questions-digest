@@ -1,7 +1,7 @@
 ---
 title: "Movie Trivia Night: How to Write a Quote Round That Does Not Start Arguments"
 description: "Write a movie quote round for trivia night: the famous misquotes to avoid, a ready 10-question round with answers and a Tom Hanks connections round."
-published: 2026-11-17
+published: 2026-11-23
 tool: trivia-night
 ---
 

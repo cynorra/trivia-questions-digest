@@ -1,7 +1,7 @@
 ---
 title: "Sports Trivia Night: A Plan That Works for Fans and Non-Fans"
 description: "Plan a sports trivia night non-fans can enjoy: three difficulty tiers with answers, mixed-fan rules and a closest-number tiebreaker."
-published: 2026-11-17
+published: 2026-11-27
 tool: trivia-night
 ---
 

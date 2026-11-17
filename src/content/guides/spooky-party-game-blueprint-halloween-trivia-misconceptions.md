@@ -3,6 +3,7 @@ title: "Halloween Trivia: 7 Myths Your Party Guests Believe, With a True-or-Fals
 description: "Seven common Halloween myths corrected, from turnip jack-o-lanterns to Dracula and Whitby, plus a ready 10-statement true-or-false round for a party."
 published: 2026-11-17
 tool: trivia-night
+draft: true
 ---
 
 **Most Halloween "facts" repeated at parties are half true: the holiday is old but its traditions changed, and a few famous stories were told wrong from the start.** These seven myths work as a quiz on their own. Read the myth aloud and ask whether it is true, then give the correction.

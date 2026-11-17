@@ -1,7 +1,7 @@
 ---
 title: "Asian Countries on the Map, Region by Region"
 description: "Learn the 47 Asian countries in six regions, from the Middle East to Southeast Asia, with tips for the Gulf states and the five -stans."
-published: 2026-11-17
+published: 2026-11-19
 tool: world
 ---
 

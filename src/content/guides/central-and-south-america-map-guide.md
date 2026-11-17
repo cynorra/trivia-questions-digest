@@ -1,9 +1,8 @@
 ---
 title: "South and Central America Map Guide: Every Country, in Order"
-description: "Learn the 12 South American countries, the 7 Central American countries and the Caribbean nations on a map, with the order to learn them and the mistakes to avoid."
-published: 2026-11-19
+description: "Learn the 12 South American countries, the 7 Central American countries and the Caribbean nations on a map, in the order that makes them easiest to remember."
+published: 2026-11-17
 tool: world
-draft: true
 ---
 
 The Americas look simple from far away and get complicated up close. South America's countries are big and distinct, Central America's are a narrow chain of seven, and the Caribbean is a scatter of islands, several of them too small to see on a world map. The easiest way through is to walk it: start at the Mexican border, go down the isthmus, cross into South America, run down the Pacific side and back up the Atlantic side, and finish in the islands.
@@ -37,7 +36,7 @@ At the bottom sit **Argentina**, the second-largest country on the continent, an
 The island nations are where most points are lost. Group them by size:
 
 - **The big islands:** **Cuba**, the largest; **Jamaica**, south of Cuba; and the island of Hispaniola, shared by **Haiti** in the west and the **Dominican Republic** in the east.
-- **North of Cuba:** **The Bahamas**, a long chain of islands.
+- **Northeast of Cuba:** **The Bahamas**, a long chain of islands.
 - **The Lesser Antilles,** curving from Puerto Rico toward Venezuela: **Antigua and Barbuda**, **Saint Kitts and Nevis**, **Dominica**, **Saint Lucia**, **Saint Vincent and the Grenadines**, **Grenada** and **Barbados**, with **Trinidad and Tobago** just off Venezuela's coast.
 
 Puerto Rico, the US Virgin Islands and several other islands are territories of other countries, so our quiz draws them but doesn't ask them.
@@ -49,3 +48,10 @@ Dominica is a small island nation in the Lesser Antilles; the Dominican Republic
 ## Practice
 
 The [North and South America map quiz](/americas-map-quiz/) has filters for North America (including Central America and the Caribbean) and South America, so you can learn each part separately. The small Caribbean islands are shown with dots; on a phone, turn on Zoom. Then add the [world capitals quiz](/world-capitals-quiz/) with the South America or North America filter.
+
+## Sources
+
+- [United Nations: member states](https://www.un.org/en/about-us/member-states), United Nations. The list of member states that the country counts follow.
+- [South America](https://en.wikipedia.org/wiki/South_America), Wikipedia. The continent has twelve sovereign countries.
+- [Central America](https://en.wikipedia.org/wiki/Central_America), Wikipedia. Central America is usually defined as seven countries.
+- [Landlocked country](https://en.wikipedia.org/wiki/Landlocked_country), Wikipedia. Bolivia and Paraguay as South America's landlocked countries.

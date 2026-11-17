@@ -1,10 +1,83 @@
 ---
-title: "Bible Trivia Questions for Small Groups: A Study Guide"
-description: "Host a small group session using bible trivia questions with scripture references, distinct round structures, and checked facts."
-published: 2026-11-25
-tool: knowledge
-draft: false
-draft: true
+title: "Bible Trivia for Small Groups: A 45-Minute Session Plan"
+description: "A 45-minute small-group session with 15 Bible trivia questions and answers with references, plus tips for settling translation disputes."
+published: 2026-11-17
+tool: trivia-night
 ---
 
-<h2>What is bible trivia?</h2><p>Bible trivia is an educational game that uses bible trivia questions and answer pairs to test knowledge of scripture, characters, geography, and events across the Old Testament and New Testament. Running a group session gives 5 to 25 players a low-stakes way to explore the text together while confirming verses directly in their Bibles. Every answer on our <a href="/trivia/bible-trivia/">Bible trivia question page</a> is verified against named sources, offering clear factual answers along with scripture references for further reading. You can study <a href="/guides/books-of-the-bible-in-order/">the books of the Bible in order</a> to build a solid foundation before hosting your first evening.</p><h2>What is a small group bible study?</h2><p>A small group bible study is a regular gathering of 4 to 12 people who read, discuss, and apply biblical scripture together in a casual setting like a living room or classroom. Incorporating 10 bible trivia questions at the start of a 60-minute meeting acts as an engaging icebreaker before moving into deeper passage analysis. For instance, asking "What is the first book of the Bible?" leads directly to Genesis 1:1, establishing that Genesis means "origin" and traces early history from creation through the life of Joseph in Egypt. Similarly, reviewing <a href="/guides/how-to-host-a-trivia-night/">how to host a trivia night</a> can help leaders structure rounds smoothly for groups of any size.</p><h2>How to play bible trivia in a group format</h2><p>To play bible trivia in a study group, split 6 to 20 participants into small teams of 2 to 4 players, hand out answer sheets, and read 4 rounds of 5 questions each. Award 1 point for every correct answer and 1 bonus point when a team successfully locates and reads the exact verse reference aloud within 30 seconds. A balanced 20-question study sheet includes foundational facts across both testaments, as shown in this reference guide:</p><table><thead><tr><th>Question Text</th><th>Correct Answer</th><th>Scripture Reference</th><th>Key Context Fact</th></tr></thead><tbody><tr><td>"What is the first book of the Bible?"</td><td>Genesis</td><td>Genesis 1:1</td><td>Genesis means "origin" and covers creation through Joseph.</td></tr><tr><td>"Who built the ark before the flood?"</td><td>Noah</td><td>Genesis 6–9</td><td>It rained for 40 days; God gave the rainbow in Genesis 9:13.</td></tr><tr><td>"Who led the Israelites out of Egypt?"</td><td>Moses</td><td>Exodus 14</td><td>Moses parted the Red Sea (Yam Suph) before Joshua took over.</td></tr><tr><td>"Who killed the giant Goliath?"</td><td>David</td><td>1 Samuel 17</td><td>David used a sling and stone; Saul was the first king of Israel.</td></tr><tr><td>"Which book comes first in the New Testament?"</td><td>Matthew</td><td>Matthew 1:1</td><td>The order is Matthew, Mark, Luke, John; scholars view Mark as written first.</td></tr><tr><td>"Who was swallowed by a great fish?"</td><td>Jonah</td><td>Jonah 1:17</td><td>Jonah spent 3 days and 3 nights inside the great fish, not a whale.</td></tr><tr><td>"How many apostles did Jesus choose?"</td><td>Twelve</td><td>Matthew 10:1–4</td><td>Listed in Matthew 10, Mark 3, Luke 6; Matthias replaced Judas in Acts 1.</td></tr><tr><td>"Who betrayed Jesus?"</td><td>Judas Iscariot</td><td>Matthew 26:15</td><td>Judas betrayed Jesus for 30 pieces of silver.</td></tr><tr><td>"What was Jesus' first miracle in John's Gospel?"</td><td>Turning water into wine</td><td>John 2:1–11</td><td>Occurred at the wedding at Cana as the first of his signs.</td></tr><tr><td>"Who was thrown into the lions' den?"</td><td>Daniel</td><td>Daniel 6</td><td>King Darius was tricked into the decree, but God shut the lions' mouths.</td></tr></tbody></table><h2>What are some bible trivia questions for key rounds?</h2><p>Effective bible trivia questions test distinct categories such as Old Testament history, Jesus' ministry, and apostolic letters so that players with different levels of experience can contribute. In Old Testament rounds, ask "On which mountain did Moses receive the Ten Commandments?" (Answer: Mount Sinai, Exodus 19–20; Deuteronomy calls it Horeb). Follow up with "Which son of Jacob was sold into slavery by his brothers?" (Answer: Joseph, Genesis 37, who later rose to power in Egypt to save his family from 7 years of severe famine).</p><p>For New Testament rounds, feature questions like "What is the shortest verse in the King James Bible?" (Answer: "Jesus wept." John 11:35, where Jesus mourned for Lazarus, though 1 Thessalonians 5:16 is shortest in the original Greek). Another high-yield question is "Which tax collector climbed a sycamore tree to see Jesus?" (Answer: Zacchaeus, Luke 19:1–10, who was short and climbed the tree to see over the crowd). Mix in letter history by asking "Who wrote the largest number of the New Testament letters?" (Answer: Paul, who is traditionally attributed 13 letters from Romans to Philemon).</p><h2>What are some good bible trivia questions to challenge players?</h2><p>Good bible trivia questions challenge groups by uncovering detail-oriented facts that clear up common modern assumptions. For instance, ask "Where did Samson's strength come from?" (Answer: His uncut hair as a Nazirite in Judges 16; Delilah cut his hair to strip his power, though he previously fought with a donkey's jawbone in Judges 15). Another great question is "Which book tells of a Jewish woman who became queen of Persia and saved her people?" (Answer: Esther, which forms the base for the festival of Purim and notably never mentions God by name in its 10 chapters).</p><p>You can also ask "Which apostle doubted the resurrection until he saw Jesus' wounds?" (Answer: Thomas, John 20:24–29, establishing the common phrase "doubting Thomas"). To test structural facts, ask "How many books are in the Protestant Bible?" (Answer: 66 total, with 39 in the Old Testament and 27 in the New Testament, while Catholic Bibles contain 73 books). Finally, ask "Who was the mother of John the Baptist?" (Answer: Elizabeth, Luke 1, whose husband Zechariah was struck mute until the child was born). Keeping 4 multiple-choice options on hand helps players make educated guesses when recalled details fall short.</p>
+**A Bible trivia session works best as a warm-up: fifteen questions in three short rounds, each answer with its reference, so the group can open their Bibles and check.** This plan fits a 45-minute slot with five minutes of introduction and fifteen minutes of discussion at the end.
+
+## The 45 minutes at a glance
+
+1. **5 minutes:** split into teams of two to four and hand out answer sheets.
+2. **10 minutes:** round 1, the warm-up (5 questions).
+3. **10 minutes:** round 2, stories (5 questions).
+4. **10 minutes:** round 3, details (5 questions).
+5. **10 minutes:** read the answers with their references and talk.
+
+Each round takes about ten minutes, including reading the answers. Give one point per correct answer, and one bonus point to a team that finds the reference in its Bible first.
+
+## Round 1: warm-up
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Question</th><th>Answer</th><th>Reference</th></tr></thead>
+<tbody>
+<tr><td>What is the first book of the Bible?</td><td>Genesis</td><td>Genesis 1:1</td></tr>
+<tr><td>Who built an ark before the flood?</td><td>Noah</td><td>Genesis 6-9</td></tr>
+<tr><td>Who led the Israelites out of Egypt?</td><td>Moses</td><td>Exodus 14</td></tr>
+<tr><td>Who defeated Goliath?</td><td>David</td><td>1 Samuel 17</td></tr>
+<tr><td>Which book comes first in the New Testament?</td><td>Matthew</td><td>Matthew 1:1</td></tr>
+</tbody>
+</table>
+</div>
+
+## Round 2: stories
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Question</th><th>Answer</th><th>Reference</th></tr></thead>
+<tbody>
+<tr><td>Who was swallowed by a great fish?</td><td>Jonah</td><td>Jonah 1:17</td></tr>
+<tr><td>Who was thrown into the lions' den?</td><td>Daniel</td><td>Daniel 6</td></tr>
+<tr><td>Which tax collector climbed a sycamore tree to see Jesus?</td><td>Zacchaeus</td><td>Luke 19:1-10</td></tr>
+<tr><td>Which son of Jacob was sold by his brothers?</td><td>Joseph</td><td>Genesis 37</td></tr>
+<tr><td>What was the first sign Jesus performed in John's Gospel?</td><td>Turning water into wine, at Cana</td><td>John 2:1-11</td></tr>
+</tbody>
+</table>
+</div>
+
+## Round 3: details
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Question</th><th>Answer</th><th>Reference</th></tr></thead>
+<tbody>
+<tr><td>On which mountain did Moses receive the Ten Commandments?</td><td>Mount Sinai (Deuteronomy calls it Horeb)</td><td>Exodus 19-20</td></tr>
+<tr><td>What is the shortest verse in the English Bible?</td><td>"Jesus wept."</td><td>John 11:35</td></tr>
+<tr><td>Which apostle doubted the resurrection until he saw Jesus' wounds?</td><td>Thomas</td><td>John 20:24-29</td></tr>
+<tr><td>Where did Samson's strength come from, according to the story?</td><td>His uncut hair, as a Nazirite</td><td>Judges 16</td></tr>
+<tr><td>Which book tells of a Jewish woman who became queen of Persia but does not mention God explicitly?</td><td>Esther</td><td>The book of Esther</td></tr>
+</tbody>
+</table>
+</div>
+
+## When the answer depends on the translation
+
+Bible trivia produces disputes that other trivia doesn't, because translations differ. Decide the rules before you start:
+
+- **Pick one translation** for the session and say its name. The shortest-verse question works in English ("Jesus wept") but not in every language.
+- **Accept the book's own words.** Jonah 1:17 says "a great fish"; many people remember a whale. Count "whale" as correct if the team can show the reference.
+- **Allow both names** where the Bible does. Exodus calls the mountain Sinai and Deuteronomy calls it Horeb.
+
+## Turning answers into a conversation
+
+For the last fifteen minutes, choose one answer from each round and ask an open question. For Daniel: what would you have done in the king's position? For Zacchaeus: why did Jesus choose his house? For Esther: what does it mean that the story never names God? Quiet members often speak up once a question is not about a score.
+
+More question sets are on the [Bible trivia](/trivia/bible-trivia/) page, and [the books of the Bible in order](/guides/books-of-the-bible-in-order/) works as a handout. For running the evening, see [how to host a trivia night](/guides/how-to-host-a-trivia-night/).
+
+## Sources
+
+- [Bible Gateway: John 11:35](https://www.biblegateway.com/passage/?search=John+11%3A35&version=NIV), [Genesis 6-9](https://www.biblegateway.com/passage/?search=Genesis+6-9&version=NIV), [Luke 19:1-10](https://www.biblegateway.com/passage/?search=Luke+19%3A1-10&version=NIV) and [Jonah 1:17](https://www.biblegateway.com/passage/?search=Jonah+1%3A17&version=NIV). The passages the answers and references point to. Other references can be read the same way on Bible Gateway.
+- [Jesus wept](https://en.wikipedia.org/wiki/Jesus_wept), Wikipedia. The verse is the shortest in the English Bible.
+- [Book of Esther](https://en.wikipedia.org/wiki/Book_of_Esther), Wikipedia. Esther and Song of Songs are the only books of the Hebrew Bible that do not mention God explicitly.

@@ -1,9 +1,8 @@
 ---
 title: "Asian Countries on the Map, Region by Region"
-description: "Learn the 47 Asian countries in six regions: the Middle East, the Caucasus, Central, South, East and Southeast Asia, with tips for the Gulf and the five -stans."
-published: 2026-11-18
+description: "Learn the 47 Asian countries in six regions, from the Middle East and the Caucasus to Central, South, East and Southeast Asia, with tips for the Gulf and the -stans."
+published: 2026-11-17
 tool: world
-draft: true
 ---
 
 Asia is easiest to learn from its giants outward. Saudi Arabia, Kazakhstan, India, China and Indonesia each anchor a region, and everything else is a neighbor you place relative to one of them. Asia stretches from Turkey to Japan and holds 47 countries in our [Asia map quiz](/asia-map-quiz/); the Gulf states and Central Asia's five "-stans" need the most practice.
@@ -14,11 +13,11 @@ Russia spans the north of the continent but is asked in the Europe quiz; it's dr
 
 **Saudi Arabia** is the largest country in the Middle East. On the Arabian Peninsula, **Yemen** and **Oman** lie to its south and east. Along the Persian Gulf coast, from north to south, are **Kuwait**, **Bahrain** (an island), **Qatar** (a peninsula) and the **United Arab Emirates**; learn them as a sequence, then Oman around the corner.
 
-To the north, **Turkey** anchors the northwest. South of it are **Syria**, **Lebanon**, **Israel**, **Palestine** and **Jordan** along the Mediterranean side, with **Iraq** and **Iran** to the east. Cyprus, though in the eastern Mediterranean, is grouped with Europe on this site.
+To the north, **Turkey** anchors the northwest. South of it are **Syria**, then **Lebanon**, **Israel**, **Palestine** and **Jordan** in the Levant, with **Iraq** and **Iran** to the east. Cyprus, though in the eastern Mediterranean, is grouped with Europe on this site.
 
 ## Between two seas: the Caucasus (3)
 
-**Georgia** in the north, **Armenia** in the southwest and **Azerbaijan** in the east, along the Caspian coast. Azerbaijan's Nakhchivan exclave sits separately on the other side of Armenia.
+**Georgia** in the north, **Armenia** in the south and **Azerbaijan** in the east, along the Caspian coast. Azerbaijan's Nakhchivan exclave sits separately on the other side of Armenia.
 
 ## Anchor 2: Kazakhstan and its four neighbors (5)
 
@@ -48,3 +47,8 @@ Twelve countries in this quiz have no ocean coast: Afghanistan, Armenia, Azerbai
 ## Practice
 
 Small countries such as Bahrain, Singapore and the Maldives appear as dots; on a phone, turn on Zoom. For Central Asia, remember Kazakhstan's size and Uzbekistan's central position. Play the [Asia map quiz](/asia-map-quiz/) one region at a time, then all 47 together, and use the [world capitals quiz](/world-capitals-quiz/) with the Asia filter as a next step.
+
+## Sources
+
+- [United Nations: member states](https://www.un.org/en/about-us/member-states), United Nations. The list of member states that the country counts follow.
+- [Landlocked country](https://en.wikipedia.org/wiki/Landlocked_country), Wikipedia. Which countries have no ocean coast, and the two doubly landlocked countries, including Uzbekistan.

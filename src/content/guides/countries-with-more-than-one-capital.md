@@ -1,9 +1,8 @@
 ---
 title: "Countries With More Than One Capital, and Why"
-description: "South Africa has three capitals and Bolivia two. Here are the countries that split their capital, the ones that moved it, and how capital quizzes handle them."
-published: 2026-11-20
+description: "South Africa has three capitals and Bolivia two. See which countries split their capital, which moved it, and how our capitals quiz handles them."
+published: 2026-11-17
 tool: flags-capitals
-draft: true
 ---
 
 "What is the capital of…?" usually has one answer. For a handful of countries it doesn't, because the constitution names one city while the government sits in another, or because the job is deliberately shared. The reasons are interesting history, and they fall into three groups, so this guide is organized by reason rather than alphabetically. It ends with the countries that moved their capital and how our quiz handles the awkward cases.
@@ -37,7 +36,7 @@ Usually to place the capital more centrally, to relieve a crowded coastal city, 
 - **Brazil:** from Rio de Janeiro to Brasília, a planned city, in 1960.
 - **Nigeria:** from Lagos to Abuja in 1991.
 - **Myanmar:** from Yangon to Naypyidaw in the mid-2000s.
-- **Kazakhstan:** from Almaty to Akmola, renamed Astana, in 1997. The city was called Nur-Sultan from 2019 to 2022.
+- **Kazakhstan:** from Almaty to Akmola in 1997. The city took the name Astana in 1998, was called Nur-Sultan from 2019 to 2022, and is Astana again.
 - **Tanzania:** Dodoma became the official capital, though Dar es Salaam remains the largest city.
 - **Burundi:** Gitega became the political capital in 2019; Bujumbura is the largest city.
 
@@ -52,3 +51,8 @@ Indonesia has also been building a new capital, Nusantara, on the island of Born
 ## How our capitals quiz handles these
 
 The [world capitals quiz](/world-capitals-quiz/) follows one rule: if a single answer would be misleading, the country isn't asked. That excludes Bolivia, South Africa, Sri Lanka, Eswatini, Nauru, Israel and Palestine. For countries with a clear official capital but a well-known second city, such as the Netherlands or Côte d'Ivoire, the quiz asks for the official capital and shows a note with the answer. The full list of notes is on [how we make our maps](/how-we-make-our-maps/).
+
+## Sources
+
+- [List of countries with multiple capitals](https://en.wikipedia.org/wiki/List_of_countries_with_multiple_capitals), Wikipedia. South Africa, Bolivia, the Netherlands, Benin, Sri Lanka, Eswatini, Malaysia and the other cases in this guide.
+- [Astana](https://en.wikipedia.org/wiki/Astana), Wikipedia. The 1997 move, the 1998 name, and the 2019 and 2022 changes.

@@ -3,6 +3,7 @@ title: "US Regions: Which States Are in Each Census Region and Division"
 description: "The four US Census regions and nine divisions, with every state listed, why Delaware counts as the South, and how to use the regions to learn the map."
 published: 2026-11-12
 tool: us
+updated: "2026-11-18"
 ---
 
 Delaware and Maryland are in the South. Oklahoma is in the South too, and Pennsylvania is in the Northeast. Those are the answers that surprise people, and they come from the US Census Bureau's regions, which appear in government statistics, textbooks and most US geography quizzes, including ours. "Which states are in the Midwest?" sounds like a simple question, but people answer it differently, and the Census gives one official answer.
@@ -55,3 +56,7 @@ Regions are the best way to learn the 50 states, because each one is small enoug
 - [Western states quiz](/western-states-quiz/): 13 states, including Alaska and Hawaii
 
 When you can finish all four, try the [full US states map quiz](/us-states-map-quiz/). For a day-by-day plan, see [how to memorize the 50 states](/guides/how-to-memorize-the-50-states/).
+
+For related coverage, see our guide on [States That Border Canada and Mexico: The Full Lists](/guides/states-that-border-canada-and-mexico/).
+
+For related coverage, see our guide on [The 13 Colonies on the Map: Names, Groups and Founding Order](/guides/the-13-colonies-on-the-map/).

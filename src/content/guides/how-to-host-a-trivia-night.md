@@ -2,6 +2,7 @@
 title: "How to Host a Trivia Night: Rounds, Rules, Scoring and Prizes"
 description: "A practical plan for hosting a trivia night or pub quiz at home, at work or in a bar: how many rounds, team size, timing, scoring, tiebreakers and prizes."
 published: 2026-11-02
+updated: "2026-11-18"
 tool: trivia-night
 ---
 

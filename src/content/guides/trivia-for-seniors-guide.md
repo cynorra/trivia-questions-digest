@@ -3,6 +3,7 @@ title: "How to Run a Trivia Game for Seniors That Everyone Enjoys"
 description: "How to run trivia for seniors at a community center, church or family gathering: picking questions, pacing, teams, large print, and turning answers into stories."
 published: 2026-11-02
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 The best trivia sessions for older adults are about 40 minutes long and are more conversation than competition. The questions are only the prompt; the stories that follow are the point. This is how activity coordinators, librarians and families can run one that keeps the whole room involved, starting with a plan you can use as it stands.
@@ -54,3 +55,9 @@ These conversations are often the highlight of the session. Don't rush them.
 Keep scoring light. Many groups don't keep score at all; others give a small prize to every team. If you do keep score, post it on a whiteboard and celebrate every team at the end, not just the winner.
 
 For a bigger evening with family members of all ages, see [how to host a trivia night](/guides/how-to-host-a-trivia-night/).
+
+For related coverage, see our guide on [How to Write Good Trivia Questions (With Examples)](/guides/how-to-write-trivia-questions/).
+
+For related coverage, see our guide on [Sports Trivia Night: A Plan That Works for Fans and Non-Fans](/guides/sports-trivia-night-designing-balanced-rounds-for-every-fan/).
+
+For related coverage, see our guide on [Bible Trivia for Small Groups: A 45-Minute Session Plan](/guides/bible-trivia-questions-for-small-groups-a-study-guide/).

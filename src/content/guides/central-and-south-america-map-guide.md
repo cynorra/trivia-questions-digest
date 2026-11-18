@@ -1,8 +1,9 @@
 ---
 title: "South and Central America Map Guide: Every Country, in Order"
 description: "Learn the 12 South American and 7 Central American countries and the Caribbean nations, in the order that makes them easiest to remember."
-published: 2026-11-21
+published: "2026-11-18"
 tool: world
+updated: "2026-11-18"
 ---
 
 The Americas look simple from far away and get complicated up close. South America's countries are big and distinct, Central America's are a narrow chain of seven, and the Caribbean is a scatter of islands, several of them too small to see on a world map. The easiest way through is to walk it: start at the Mexican border, go down the isthmus, cross into South America, run down the Pacific side and back up the Atlantic side, and finish in the islands.
@@ -55,3 +56,9 @@ The [North and South America map quiz](/americas-map-quiz/) has filters for Nort
 - [South America](https://en.wikipedia.org/wiki/South_America), Wikipedia. The continent has twelve sovereign countries.
 - [Central America](https://en.wikipedia.org/wiki/Central_America), Wikipedia. Central America is usually defined as seven countries.
 - [Landlocked country](https://en.wikipedia.org/wiki/Landlocked_country), Wikipedia. Bolivia and Paraguay as South America's landlocked countries.
+
+For related coverage, see our guide on [African Countries by Region: A Map Guide to All 54](/guides/african-countries-by-region/).
+
+For related coverage, see our guide on [Asian Countries on the Map, Region by Region](/guides/asian-countries-by-region/).
+
+For related coverage, see our guide on [The 7 Continents and 5 Oceans: Sizes, Order and Where They Are](/guides/continents-and-oceans/).

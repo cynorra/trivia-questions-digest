@@ -3,6 +3,7 @@ title: "World Capitals That Trip Everyone Up"
 description: "The world capitals people get wrong most, from Canberra and Ottawa to Abuja and Naypyidaw, grouped by the trap behind each mistake."
 published: 2026-11-17
 tool: flags-capitals
+updated: "2026-11-18"
 ---
 
 Say the capital out loud before you read the answer. A world capitals quiz has about 190 answers, but the misses aren't random: the same few dozen capitals cause most of the wrong answers. This page is a four-round drill, each round built around one reason people slip, and the answer sits right beside each prompt. Cover the right-hand side with your hand if you want it to count.
@@ -67,3 +68,5 @@ For the countries where "the capital" has more than one answer, see [countries w
 - [List of national capitals](https://en.wikipedia.org/wiki/List_of_national_capitals), Wikipedia. The capitals in the four rounds.
 - [List of countries with multiple capitals](https://en.wikipedia.org/wiki/List_of_countries_with_multiple_capitals), Wikipedia. Côte d'Ivoire, Tanzania and the other special cases.
 - [United Nations: member states](https://www.un.org/en/about-us/member-states), United Nations. The list of member states that the country counts follow.
+
+For related coverage, see our guide on [Flag Colors and Symbols: What They Mean and Why They Repeat](/guides/flag-colors-and-symbols/).

@@ -1,8 +1,9 @@
 ---
 title: "Asian Countries on the Map, Region by Region"
 description: "Learn the 47 Asian countries in six regions, from the Middle East to Southeast Asia, with tips for the Gulf states and the five -stans."
-published: 2026-11-19
+published: "2026-11-18"
 tool: world
+updated: "2026-11-18"
 ---
 
 Asia is easiest to learn from its giants outward. Saudi Arabia, Kazakhstan, India, China and Indonesia each anchor a region, and everything else is a neighbor you place relative to one of them. Asia stretches from Turkey to Japan and holds 47 countries in our [Asia map quiz](/asia-map-quiz/); the Gulf states and Central Asia's five "-stans" need the most practice.
@@ -52,3 +53,7 @@ Small countries such as Bahrain, Singapore and the Maldives appear as dots; on a
 
 - [United Nations: member states](https://www.un.org/en/about-us/member-states), United Nations. The list of member states that the country counts follow.
 - [Landlocked country](https://en.wikipedia.org/wiki/Landlocked_country), Wikipedia. Which countries have no ocean coast, and the two doubly landlocked countries, including Uzbekistan.
+
+For related coverage, see our guide on [African Countries by Region: A Map Guide to All 54](/guides/african-countries-by-region/).
+
+For related coverage, see our guide on [How to Learn Every Country in Europe on the Map](/guides/learn-european-countries-on-the-map/).

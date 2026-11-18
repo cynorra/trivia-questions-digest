@@ -2,6 +2,7 @@
 title: "The Planets in Order: Sizes, Moons and Facts for Space Trivia"
 description: "The eight planets in order from the Sun, with size, distance, year length and known moons, a memory sentence, and the space trivia facts people get wrong."
 published: 2026-11-02
+updated: "2026-11-18"
 tool: knowledge
 ---
 

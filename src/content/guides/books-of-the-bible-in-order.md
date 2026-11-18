@@ -3,6 +3,7 @@ title: "The Books of the Bible in Order, With Memory Tips"
 description: "All 66 books of the Protestant Bible in order, grouped into Law, History, Poetry, Prophets, Gospels and Letters, plus the Catholic additions and memory tips."
 published: 2026-11-02
 tool: knowledge
+updated: "2026-11-18"
 ---
 
 Sixty-six books sounds like a lot until you notice they fall into ten groups, each with a fixed size. The Protestant Bible has 66 books, 39 in the Old Testament and 27 in the New, opening with Genesis and closing with Revelation; Catholic Bibles have 73. Knowing the order is useful in Bible study and a frequent question in [Bible trivia](/trivia/bible-trivia/). Here it is as a seven-day plan, one group a day, with the shape of the whole first.
@@ -54,3 +55,9 @@ Catholic Bibles include seven more Old Testament books, called the deuterocanoni
 ## Shortest and middle
 
 By number of words, 3 John is the shortest book in most English translations, with 2 John and Obadiah also very short. In the 66-book Protestant Bible, the 33rd and 34th books, Micah and Nahum, sit in the middle.
+
+For related coverage, see our guide on [The Planets in Order: Sizes, Moons and Facts for Space Trivia](/guides/planets-in-order/).
+
+For related coverage, see our guide on [US Presidents in Order, With Tricks to Remember Them](/guides/us-presidents-in-order/).
+
+For related coverage, see our guide on [World War II Timeline: Key Dates and Facts for Trivia](/guides/world-war-2-timeline/).

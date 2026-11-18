@@ -2,6 +2,7 @@
 title: "Trivia Night Rules, Scoring and Tiebreakers That Keep It Fair"
 description: "Simple trivia rules to read out before you start: phones, spelling, close answers, double points, jokers, disputes, and tiebreaker questions that settle a draw."
 published: 2026-11-02
+updated: "2026-11-18"
 tool: trivia-night
 ---
 

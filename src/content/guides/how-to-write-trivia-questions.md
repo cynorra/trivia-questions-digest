@@ -2,6 +2,7 @@
 title: "How to Write Good Trivia Questions (With Examples)"
 description: "How to write trivia questions people enjoy: one clear answer, tempting wrong options, fair difficulty, no trick wording, and checking every fact against a source."
 published: 2026-11-02
+updated: "2026-11-18"
 tool: trivia-night
 ---
 

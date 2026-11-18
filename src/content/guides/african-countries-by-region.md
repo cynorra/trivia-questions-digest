@@ -3,6 +3,7 @@ title: "African Countries by Region: A Map Guide to All 54"
 description: "Learn the 54 African countries region by region: North, West, Central, East and Southern Africa, plus the island nations, with the pairs people confuse."
 published: 2026-11-17
 tool: world
+updated: "2026-11-18"
 ---
 
 Fifty-four countries make Africa the biggest single-continent test in geography, and most quiz scores leak away in the same five places. Several countries are small, and many borders were drawn in straight lines across deserts. So this guide starts with the traps, settles them one by one, and only then walks the five regions (North, West, Central, East and Southern Africa) that hold everything else.
@@ -59,3 +60,7 @@ Africa has more countries than any other continent, all 54 of them United Nation
 ## Practice
 
 Play the [Africa map quiz](/africa-map-quiz/) one region at a time: study a region here, then play until you can place all of its countries. The quiz lists every country you miss, which becomes your review list. The island nations are shown with dots; on a phone, turn on Zoom. When the map feels solid, add flags and capitals with the Africa filter in the [flag quiz](/flag-quiz/) and the [world capitals quiz](/world-capitals-quiz/).
+
+For related coverage, see our guide on [South and Central America Map Guide: Every Country, in Order](/guides/central-and-south-america-map-guide/).
+
+For related coverage, see our guide on [The 7 Continents and 5 Oceans: Sizes, Order and Where They Are](/guides/continents-and-oceans/).

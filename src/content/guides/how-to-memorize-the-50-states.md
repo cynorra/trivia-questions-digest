@@ -2,6 +2,7 @@
 title: "How to Memorize the 50 States and Where They Are"
 description: "A region-by-region method to memorize all 50 US states on the map, with anchor states, shape tricks and a practice plan that takes about a week."
 published: 2026-11-09
+updated: "2026-11-18"
 tool: us
 ---
 

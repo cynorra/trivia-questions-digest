@@ -1,8 +1,9 @@
 ---
 title: "Bible Trivia for Small Groups: A 45-Minute Session Plan"
 description: "A 45-minute small-group session with 15 Bible trivia questions and answers with references, plus tips for settling translation disputes."
-published: 2026-11-25
+published: "2026-11-18"
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 **A Bible trivia session works best as a warm-up: fifteen questions in three short rounds, each answer with its reference, so the group can open their Bibles and check.** This plan fits a 45-minute slot with five minutes of introduction and fifteen minutes of discussion at the end.
@@ -81,3 +82,5 @@ More question sets are on the [Bible trivia](/trivia/bible-trivia/) page, and [t
 - [Bible Gateway: John 11:35](https://www.biblegateway.com/passage/?search=John+11%3A35&version=NIV), [Genesis 6-9](https://www.biblegateway.com/passage/?search=Genesis+6-9&version=NIV), [Luke 19:1-10](https://www.biblegateway.com/passage/?search=Luke+19%3A1-10&version=NIV) and [Jonah 1:17](https://www.biblegateway.com/passage/?search=Jonah+1%3A17&version=NIV). The passages the answers and references point to. Other references can be read the same way on Bible Gateway.
 - [Jesus wept](https://en.wikipedia.org/wiki/Jesus_wept), Wikipedia. The verse is the shortest in the English Bible.
 - [Book of Esther](https://en.wikipedia.org/wiki/Book_of_Esther), Wikipedia. Esther and Song of Songs are the only books of the Hebrew Bible that do not mention God explicitly.
+
+For related coverage, see our guide on [Movie Trivia Night: How to Write a Quote Round That Does Not Start Arguments](/guides/movie-trivia-night-building-a-round-around-famous-lines/).

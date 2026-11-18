@@ -3,6 +3,7 @@ title: "The 7 Continents and 5 Oceans: Sizes, Order and Where They Are"
 description: "The seven continents and five oceans ranked by size, how to remember them, where continents meet, and why some countries count six continents."
 published: 2026-11-16
 tool: world
+updated: "2026-11-18"
 ---
 
 Is Europe really a separate continent from Asia? Geologically they are one landmass; they are counted separately mainly for historical and cultural reasons, with the Ural Mountains as the traditional dividing line. That one question shows what makes continents tricky: the lines are conventions, so the quickest way to learn the map is to learn where the lines are drawn first, then the sizes, then the oceans that surround them. Once they're placed, every country quiz becomes easier, because you always know which part of the map to look at.
@@ -48,3 +49,11 @@ On the map, picture the Pacific as the ocean you cross from the Americas to Asia
 ## Practice next
 
 Move to countries one continent at a time: the [Africa](/africa-map-quiz/), [Asia](/asia-map-quiz/), [Europe](/europe-map-quiz/), [Americas](/americas-map-quiz/) and [Oceania](/oceania-map-quiz/) map quizzes, then the full [world map quiz](/world-map-quiz/). The world map uses the Equal Earth projection, so each continent appears at its true relative size.
+
+For related coverage, see our guide on [Asian Countries on the Map, Region by Region](/guides/asian-countries-by-region/).
+
+For related coverage, see our guide on [South and Central America Map Guide: Every Country, in Order](/guides/central-and-south-america-map-guide/).
+
+For related coverage, see our guide on [Hard Geography Questions Most People Get Wrong (With Answers)](/guides/hard-geography-questions/).
+
+For related coverage, see our guide on [How to Learn Every Country in Europe on the Map](/guides/learn-european-countries-on-the-map/).

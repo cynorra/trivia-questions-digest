@@ -2,6 +2,7 @@
 title: "US State Capitals: Memory Tricks for All 50, Region by Region"
 description: "How to learn all 50 US state capitals: the easy ones first, the traps second, and memory hooks for each region, with a short practice plan."
 published: 2026-11-11
+updated: "2026-11-18"
 tool: us
 ---
 

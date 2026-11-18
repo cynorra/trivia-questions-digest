@@ -3,6 +3,7 @@ title: "25 Trivia Round Ideas for Pub Quizzes, Parties and Work"
 description: "Trivia round ideas and categories that work for any crowd: picture rounds, music intros, connections, true or false, holiday themes, and how to build each one."
 published: 2026-11-02
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 Six straight rounds of spoken questions can feel long by round four. Changing the format, not just the subject, is what keeps a room awake. Here are 25 round ideas, arranged by the kind of night you are running, with a note on how to run each one. Several appear in more than one setting, because the best rounds travel.
@@ -70,3 +71,5 @@ A balanced six-round night alternates subject rounds with format rounds, and put
 </table></div>
 
 For timing, scoring and the rules to read out, see [how to host a trivia night](/guides/how-to-host-a-trivia-night/) and [trivia night rules and scoring](/guides/trivia-night-rules-and-scoring/).
+
+For related coverage, see our guide on [How to Run a Trivia Game for Seniors That Everyone Enjoys](/guides/trivia-for-seniors-guide/).

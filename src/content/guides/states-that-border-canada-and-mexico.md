@@ -3,6 +3,7 @@ title: "States That Border Canada and Mexico: The Full Lists"
 description: "The 13 US states that border Canada and the 4 that border Mexico, with how the borders run, the water boundaries people forget, and map tips."
 published: 2026-11-13
 tool: us
+updated: "2026-11-18"
 ---
 
 Thirteen states touch Canada and four touch Mexico, and no state touches both. Those two borders are among the quickest things to learn on the US map, and they help you place the states around them. The easiest way to learn them is to walk each line from west to east, so that is how this guide runs.
@@ -35,3 +36,11 @@ Only four states, and the order is easy.
 ## Practice on the map
 
 The border states make good anchors when you learn the map. In the [US states map quiz](/us-states-map-quiz/), try placing the 13 Canadian border states first, then the 4 Mexican border states, then fill in everything between. The [Western states quiz](/western-states-quiz/) and [Midwest states quiz](/midwest-states-quiz/) cover most of the northern border in smaller rounds.
+
+For related coverage, see our guide on [US State Capitals: Memory Tricks for All 50, Region by Region](/guides/state-capitals-memory-tricks/).
+
+For related coverage, see our guide on [How to Memorize the 50 States and Where They Are](/guides/how-to-memorize-the-50-states/).
+
+For related coverage, see our guide on [The 13 Colonies on the Map: Names, Groups and Founding Order](/guides/the-13-colonies-on-the-map/).
+
+For related coverage, see our guide on [US Regions: Which States Are in Each Census Region and Division](/guides/us-census-regions-and-divisions/).

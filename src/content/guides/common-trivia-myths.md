@@ -2,6 +2,7 @@
 title: "15 Popular 'Facts' That Are Wrong (and What's Actually True)"
 description: "Fifteen weird facts and random facts people repeat that turn out to be false, from the Great Wall seen from space to goldfish memory, with what's really true."
 published: 2026-11-02
+updated: "2026-11-18"
 tool: knowledge
 ---
 

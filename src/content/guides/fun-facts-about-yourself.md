@@ -2,6 +2,7 @@
 title: "Fun Facts About Yourself: 50 Examples for Icebreakers"
 description: "Stuck when asked for a fun fact about yourself? How to find one, 50 example fun facts about me for work, school and dates, and three-interesting-facts formats."
 published: 2026-11-04
+updated: "2026-11-18"
 tool: trivia-night
 ---
 

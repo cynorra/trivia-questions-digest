@@ -2,6 +2,7 @@
 title: "Hard Geography Questions Most People Get Wrong (With Answers)"
 description: "Twenty hard geography questions with answers and the reason most people miss each one: capitals, borders, rivers, time zones and records that surprise."
 published: 2026-11-08
+updated: "2026-11-18"
 tool: world
 ---
 

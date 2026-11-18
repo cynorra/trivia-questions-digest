@@ -3,6 +3,7 @@ title: "Christmas Traditions Around the World: Facts for Trivia"
 description: "How Christmas is celebrated around the world, from Germany's Advent markets and Mexico's posadas to Japan's Christmas dinner and Norway's gift to London."
 published: 2026-11-02
 tool: holidays
+updated: "2026-11-18"
 ---
 
 Christmas does not happen on one day in most of the world. It is a run of dates, from early December to the sixth of January, and each country treats a different one as the main event. Here is the season in calendar order, with the custom that belongs to each date. For ready-made questions, see our [Christmas trivia](/trivia/christmas-trivia/).
@@ -63,3 +64,5 @@ Many Italian families treat Epiphany as the real gift day, when La Befana, a kin
 </table></div>
 
 A translation round makes a good change of format in a [Christmas trivia night](/guides/christmas-trivia-night/): read the greeting aloud and ask which language it is.
+
+For related coverage, see our guide on [The Real History of Thanksgiving: What Happened in 1621](/guides/history-of-thanksgiving/).

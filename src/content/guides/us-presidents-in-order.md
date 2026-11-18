@@ -2,6 +2,7 @@
 title: "US Presidents in Order, With Tricks to Remember Them"
 description: "All 47 US presidencies in order with their years in office, the presidents who served twice, the ones who died in office, and memory tricks for a presidents quiz."
 published: 2026-11-02
+updated: "2026-11-18"
 tool: knowledge
 ---
 

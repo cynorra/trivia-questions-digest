@@ -3,6 +3,7 @@ title: "How to Plan a Christmas Trivia Night (With Rounds and Questions)"
 description: "A plan for a Christmas trivia game for adults, families or the office: five festive rounds, a picture round, holiday tiebreakers, prizes and timing."
 published: 2026-11-02
 tool: holidays
+updated: "2026-11-18"
 ---
 
 Ninety minutes is enough for a good Christmas quiz, and the evening comes together around one tiebreaker: how many gifts are given in total in "The Twelve Days of Christmas"? The answer is 364. Everything else is five rounds of eight questions, and you can take the questions straight from our [Christmas trivia](/trivia/christmas-trivia/) set. Here is the night in the order it happens.
@@ -50,3 +51,5 @@ A box of chocolates or a silly trophy is plenty. General advice on timing and sc
 **At the office:** keep to three rounds and 30 minutes, mix departments in every team, and use multiple choice so nobody feels put on the spot.
 
 **With family:** pair children with adults, read the movie round first, and let younger players shout out the easy song answers for a bonus point. Keep a few general questions from [today's quiz](/daily-trivia/) in reserve for anyone who has had enough of Christmas.
+
+For related coverage, see our guide on [The Real History of Thanksgiving: What Happened in 1621](/guides/history-of-thanksgiving/).

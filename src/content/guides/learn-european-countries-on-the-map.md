@@ -3,6 +3,7 @@ title: "How to Learn Every Country in Europe on the Map"
 description: "Learn the 45 European countries on a blank map in five regional groups, with the Balkans, the Baltics and the microstates broken down step by step."
 published: 2026-11-10
 tool: world
+updated: "2026-11-18"
 ---
 
 Learn Europe backwards: start with the parts that cost points, while you are fresh, and leave the easy shapes for last as a reward. Europe packs 45 countries into a small space, which makes it the most crowded continent on a map, and a European countries quiz is less about knowing names than about telling neighbors apart. With one group a day, most people can place all 45 within a week.
@@ -64,3 +65,5 @@ Start from the shapes you already know: **Spain** and **Portugal** on the Iberia
 Take the [Europe map quiz](/europe-map-quiz/) with "Show names" on for one round, then off. When a round ends, the quiz lists every country you missed; study only those before the next round. On a phone, turn on Zoom for the Balkans and the microstates.
 
 Once Europe feels solid, the [flag quiz](/flag-quiz/) and the [world capitals quiz](/world-capitals-quiz/) both have a Europe filter, which is a good way to connect each country's name with its flag and capital.
+
+For related coverage, see our guide on [Hard Geography Questions Most People Get Wrong (With Answers)](/guides/hard-geography-questions/).

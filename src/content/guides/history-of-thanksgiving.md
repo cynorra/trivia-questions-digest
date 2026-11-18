@@ -3,6 +3,7 @@ title: "The Real History of Thanksgiving: What Happened in 1621"
 description: "What the sources say about the 1621 harvest feast, who the Wampanoag were, and how Thanksgiving became a national holiday through Sarah Hale and Lincoln."
 published: 2026-11-02
 tool: holidays
+updated: "2026-11-18"
 ---
 
 The first Thanksgiving rests on one short passage in a letter. Colonist Edward Winslow wrote it in December 1621, and nearly everything else people "know" comes from 19th-century paintings and school plays, not from anyone who was there. This page reads the passage the way you would read any source: what it says, what it leaves out, and how a harvest feast became a holiday. These are the facts behind our [Thanksgiving trivia](/trivia/thanksgiving-trivia/).
@@ -57,3 +58,7 @@ In **1939**, Franklin D. Roosevelt moved it a week earlier to lengthen the Chris
 ## Remembering the whole story
 
 Since 1970, some Native people and supporters have gathered at Plymouth on Thanksgiving for a National Day of Mourning, recalling the losses that followed colonization. Telling the 1621 story with the Wampanoag at its center, as the sources do, is both more accurate and more interesting.
+
+For related coverage, see our guide on [Christmas Traditions Around the World: Facts for Trivia](/guides/christmas-traditions-around-the-world/).
+
+For related coverage, see our guide on [How to Plan a Christmas Trivia Night (With Rounds and Questions)](/guides/christmas-trivia-night/).

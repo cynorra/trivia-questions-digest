@@ -1,8 +1,9 @@
 ---
 title: "Movie Trivia Night: How to Write a Quote Round That Does Not Start Arguments"
 description: "Write a movie quote round for trivia night: the famous misquotes to avoid, a ready 10-question round with answers and a Tom Hanks connections round."
-published: 2026-11-23
+published: "2026-11-18"
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 **A movie quote round starts arguments when it asks for the exact words, because people remember famous lines wrong. Ask for the film instead, and use the misquote as a bonus question.** The ten quotes below are checked against the American Film Institute's list of the 100 greatest movie quotes, so the host can read every answer with confidence.
@@ -70,3 +71,5 @@ Give 1 point for the film, 1 for the decade, and 2 for the misquote bonus. Ten q
 - [Beam me up, Scotty](https://en.wikipedia.org/wiki/Beam_me_up,_Scotty), Wikipedia. The phrase was never spoken in a Star Trek episode or film.
 - [Toy Story](https://en.wikipedia.org/wiki/Toy_Story) and [Forrest Gump](https://en.wikipedia.org/wiki/Forrest_Gump), Wikipedia. The 1995 computer-animated feature, Tom Hanks's roles, and the Best Actor award.
 - [Snow White and the Seven Dwarfs (1937 film)](https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)), Wikipedia. The "Disney's Folly" nickname.
+
+For related coverage, see our guide on [Halloween Trivia: 7 Myths Your Party Guests Believe, With a True-or-False Round](/guides/spooky-party-game-blueprint-halloween-trivia-misconceptions/).

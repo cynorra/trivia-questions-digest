@@ -3,7 +3,8 @@ title: "Halloween Trivia: 7 Myths Your Party Guests Believe, With a True-or-Fals
 description: "Seven common Halloween myths corrected, from turnip jack-o-lanterns to Dracula and Whitby, plus a ready 10-statement true-or-false round for a party."
 published: 2026-11-17
 tool: trivia-night
-draft: true
+draft: false
+updated: "2026-11-18"
 ---
 
 **Most Halloween "facts" repeated at parties are half true: the holiday is old but its traditions changed, and a few famous stories were told wrong from the start.** These seven myths work as a quiz on their own. Read the myth aloud and ask whether it is true, then give the correction.
@@ -62,3 +63,5 @@ Eight points or more wins a prize. For a longer evening, add a costume round and
 - [Bram Stoker](https://en.wikipedia.org/wiki/Bram_Stoker) and [Dracula](https://en.wikipedia.org/wiki/Dracula), Wikipedia. Stoker never visited Eastern Europe; the Demeter and Whitby.
 - [Frankenstein](https://en.wikipedia.org/wiki/Frankenstein), Wikipedia. 1816, the contest with Byron, and anonymous publication in 1818.
 - [Day of the Dead](https://en.wikipedia.org/wiki/Day_of_the_Dead), Wikipedia. The dates, November 1 and 2.
+
+For related coverage, see our guide on [How to Get Better at Trivia: 9 Habits of Strong Players](/guides/how-to-get-better-at-trivia/).

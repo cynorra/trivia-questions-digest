@@ -2,7 +2,7 @@
 title: "World War II Timeline: Key Dates and Facts for Trivia"
 description: "A clear World War II timeline from the invasion of Poland in 1939 to Japan's surrender in 1945, with the dates, battles and leaders that come up in trivia."
 published: 2026-11-02
-updated: 2026-11-06
+updated: "2026-11-18"
 tool: knowledge
 ---
 

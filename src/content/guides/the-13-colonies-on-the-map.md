@@ -3,6 +3,7 @@ title: "The 13 Colonies on the Map: Names, Groups and Founding Order"
 description: "The thirteen original colonies in their New England, Middle and Southern groups, how to find each on a map, and how colonial borders differ from today."
 published: 2026-11-14
 tool: us
+updated: "2026-11-18"
 ---
 
 Maine, Vermont and Florida all touch the East Coast, and none of them was one of the thirteen. Getting that straight is half the battle with this map. The thirteen British colonies that declared independence in 1776 became the first states of the United States, and on a modern map they are easy to find once you know the three groups, because they run in order down the coast. This guide starts with what is missing, then the groups, then a path from top to bottom.
@@ -49,3 +50,9 @@ Virginia was the first, with Jamestown founded in 1607. So the ends to remember 
 ## Practice
 
 Play the [13 colonies map quiz](/13-colonies-map-quiz/) with "Show names" on once, then off. Delaware and Rhode Island are small; on a phone, use Zoom. To place the colonies within the rest of the country, the [Northeast](/northeast-states-quiz/) and [Southern](/southern-states-quiz/) states quizzes are the next step.
+
+For related coverage, see our guide on [US State Capitals: Memory Tricks for All 50, Region by Region](/guides/state-capitals-memory-tricks/).
+
+For related coverage, see our guide on [States That Border Canada and Mexico: The Full Lists](/guides/states-that-border-canada-and-mexico/).
+
+For related coverage, see our guide on [US Regions: Which States Are in Each Census Region and Division](/guides/us-census-regions-and-divisions/).

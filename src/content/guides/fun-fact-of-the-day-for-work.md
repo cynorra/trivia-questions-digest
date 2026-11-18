@@ -3,6 +3,7 @@ title: "Fun Fact of the Day for Work: How to Run It (With 12 Starters)"
 description: "How to start a fun fact of the day at work, in meetings or in a team chat, plus 12 work-safe facts with sources and tips to keep the habit going."
 published: 2026-11-05
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 One short, true, work-safe fact, shared at the same time every day: that is the whole ritual, and it takes under a minute. It gives quiet colleagues an easy way to speak and starts the conversations that make remote and hybrid teams feel like teams. Our [fun facts page](/fun-facts/) shows a new sourced fact of the day, changing at midnight UTC, that you can borrow. The habit usually dies in the second week, so this guide is laid out as your first month, with the fix for each point where it tends to stall.
@@ -57,3 +58,9 @@ Each person takes a week. It spreads the work and adds variety, and it gives qui
 - **Daily quiz:** play [today's trivia quiz](/daily-trivia/) together and compare scores.
 
 And allow a skip day. If a meeting is serious, skip it. Forced fun isn't fun.
+
+For related coverage, see our guide on [Fun Facts About Yourself: 50 Examples for Icebreakers](/guides/fun-facts-about-yourself/).
+
+For related coverage, see our guide on [How to Run a Trivia Game for Seniors That Everyone Enjoys](/guides/trivia-for-seniors-guide/).
+
+For related coverage, see our guide on [Sports Trivia Night: A Plan That Works for Fans and Non-Fans](/guides/sports-trivia-night-designing-balanced-rounds-for-every-fan/).

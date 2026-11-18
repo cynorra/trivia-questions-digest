@@ -1,8 +1,9 @@
 ---
 title: "Sports Trivia Night: A Plan That Works for Fans and Non-Fans"
 description: "Plan a sports trivia night non-fans can enjoy: three difficulty tiers with answers, mixed-fan rules and a closest-number tiebreaker."
-published: 2026-11-27
+published: "2026-11-18"
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 **A sports trivia round works for a mixed room if you split the questions into three tiers: rules anyone has seen, history that fans know, and records for the experts.** Give each tier its own round, and play them in that order. The non-fans score early and stay in the game; the fans get their questions when they have already been warmed up.
@@ -78,3 +79,15 @@ For the rest of the evening, see [how to host a trivia night](/guides/how-to-hos
 - [Kentucky Derby](https://en.wikipedia.org/wiki/Kentucky_Derby), Wikipedia. The race distance of one and a quarter miles.
 - [Michael Phelps](https://en.wikipedia.org/wiki/Michael_Phelps), Wikipedia. His 28 Olympic medals, 23 of them gold.
 - [Hat-trick](https://en.wikipedia.org/wiki/Hat-trick), Wikipedia. Three goals by one player.
+
+For related coverage, see our guide on [Fun Facts About Yourself: 50 Examples for Icebreakers](/guides/fun-facts-about-yourself/).
+
+For related coverage, see our guide on [Fun Fact of the Day for Work: How to Run It (With 12 Starters)](/guides/fun-fact-of-the-day-for-work/).
+
+For related coverage, see our guide on [How to Get Better at Trivia: 9 Habits of Strong Players](/guides/how-to-get-better-at-trivia/).
+
+For related coverage, see our guide on [Halloween Trivia: 7 Myths Your Party Guests Believe, With a True-or-False Round](/guides/spooky-party-game-blueprint-halloween-trivia-misconceptions/).
+
+For related coverage, see our guide on [Movie Trivia Night: How to Write a Quote Round That Does Not Start Arguments](/guides/movie-trivia-night-building-a-round-around-famous-lines/).
+
+For related coverage, see our guide on [Bible Trivia for Small Groups: A 45-Minute Session Plan](/guides/bible-trivia-questions-for-small-groups-a-study-guide/).

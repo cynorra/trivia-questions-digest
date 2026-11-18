@@ -3,6 +3,7 @@ title: "Countries With More Than One Capital, and Why"
 description: "South Africa has three capitals and Bolivia two. See which countries split their capital, which moved it, and how our capitals quiz handles them."
 published: 2026-11-17
 tool: flags-capitals
+updated: "2026-11-18"
 ---
 
 "What is the capital of…?" usually has one answer. For a handful of countries it doesn't, because the constitution names one city while the government sits in another, or because the job is deliberately shared. The reasons are interesting history, and they fall into three groups, so this guide is organized by reason rather than alphabetically. It ends with the countries that moved their capital and how our quiz handles the awkward cases.
@@ -56,3 +57,9 @@ The [world capitals quiz](/world-capitals-quiz/) follows one rule: if a single a
 
 - [List of countries with multiple capitals](https://en.wikipedia.org/wiki/List_of_countries_with_multiple_capitals), Wikipedia. South Africa, Bolivia, the Netherlands, Benin, Sri Lanka, Eswatini, Malaysia and the other cases in this guide.
 - [Astana](https://en.wikipedia.org/wiki/Astana), Wikipedia. The 1997 move, the 1998 name, and the 2019 and 2022 changes.
+
+For related coverage, see our guide on [Flag Colors and Symbols: What They Mean and Why They Repeat](/guides/flag-colors-and-symbols/).
+
+For related coverage, see our guide on [Flags That Look Alike and How to Tell Them Apart](/guides/flags-that-look-alike/).
+
+For related coverage, see our guide on [World Capitals That Trip Everyone Up](/guides/world-capitals-people-get-wrong/).

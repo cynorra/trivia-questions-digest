@@ -3,6 +3,7 @@ title: "How to Get Better at Trivia: 9 Habits of Strong Players"
 description: "How to get better at trivia and pub quizzes: build anchor facts, learn the common categories, practice daily, play as a team and use multiple-choice logic."
 published: 2026-11-06
 tool: trivia-night
+updated: "2026-11-18"
 ---
 
 Strong trivia players aren't walking encyclopedias. The same topics come up again and again (presidents, planets, capitals, famous films, Bible stories, sports firsts), so you don't need to know everything, just the things quizzes tend to ask and a way to reason when you're not sure. Ten minutes a day, such as one daily quiz, adds up quickly. Here is a weekly plan first, then the nine habits behind it, grouped into knowing, practicing and playing.
@@ -51,3 +52,5 @@ For random practice, use the [random trivia question generator](/random-trivia-q
 **Keep up with a few areas.** Pop culture and sports change fastest. You don't need to follow everything, but skimming the year's big films, the Super Bowl result and the Oscar winners covers most "recent" questions.
 
 **Build a balanced team.** At a pub quiz, the best team isn't four history buffs. It's a mix: someone for sports, someone for music and film, someone for science, someone for history. Talk through each question briefly and trust the person who knows the area. In most pub quizzes there's no penalty for a wrong answer, so always answer.
+
+For related coverage, see our guide on [Fun Fact of the Day for Work: How to Run It (With 12 Starters)](/guides/fun-fact-of-the-day-for-work/).
